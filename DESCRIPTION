@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "paulefrens@gmail.com",
            comment = c(ORCID = "0000-0002-6635-0375"))) 
-Description: Provides access to the lists of flora and fauna protected by different laws in Peru.  The user supplies plant taxonomic names and the package returns the protected species information.
+Description: Provides access to the lists of flora protected by different laws in Peru.  The user supplies plant taxonomic names and the package returns the protected species information.
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)
@@ -19,7 +19,5 @@ Imports:
     rlang,
     lifecycle,
     dplyr
-Depends: 
-    R (>= 2.10)
 URL: https://github.com/PaulESantos/peruflorads43
 BugReports: https://github.com/PaulESantos/peruflorads43/issues
