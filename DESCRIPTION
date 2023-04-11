@@ -1,5 +1,5 @@
 Package: peruflorads43
-Title: Peruvian protected flora and fauna
+Title: Clasificacion Oficial De Especies Amenazadas De Flora Silvestre
 Version: 0.1.0
 Authors@R: 
     c(person(given = "Paul Efren",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "paulefrens@gmail.com",
            comment = c(ORCID = "0000-0002-6635-0375"))) 
-Description: Provides access to the lists of flora protected by different laws in Peru.  The user supplies plant taxonomic names and the package returns the protected species information.
+Description: Provide users with a convenient way to access and analyze information on endangered plant species in Peru.
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)

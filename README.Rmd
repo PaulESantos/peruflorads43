@@ -20,20 +20,23 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/peruflorads43)](https://CRAN.R-project.org/package=peruflorads43)
 <!-- badges: end -->
 
-The goal of `peruflorads43` is provide users with a convenient way to access and analyze information on endangered plant species in Peru. The package could include functions for species name matching.
+El objetivo de `peruflorads43` es brindar a los usuarios una forma cómoda de acceder y analizar información sobre las especies de plantas incluidas en la "Clasificación Oficial de Especies Amenazadas de Flora Silvestre en el Perú". Este paquete incluye funciones para buscar coincidencias parciales de los nombres de las especies.
 
-## Installation
-
-You can install the development version of `peruflorads43` like so:
+### Instalación
+Para instalar la versión en desarrollo de `peruflorads43` desde GitHub, se puede utilizar el siguiente comando :
 
 ``` r
 pak::pak("PaulEsantos/peruflorads43")
 ```
-### Errores ortograficos
+### Comentarios
 
-```{r}
+1.- En relación a la información contenida en el listado de especies, se ha identificado el registro duplicado de la especie *Bishopanthus soliceps*, la cual se encuentra en peligro crítico.
+
+2.- Asimismo, se han detectado errores en la escritura de los nombres de las algunas especies, se corrigieron estos errores para asegurar la precisión de la información en incorporada en `peruflorads43`.
+
+```{r, echo=FALSE}
 especies_error_ortografico <- tibble::tribble(
-               ~especies_raw,             ~tnrs_especies,
+               ~listed_name,             ~correct_name,
      "Ascidiogine wurdackii",    "Ascidiogyne wurdackii",
   "Proboscidea altheaefolia", "Proboscidea althaeifolia",
          "Jaltomata mioneii",         "Jaltomata mionei",
@@ -55,34 +58,81 @@ especies_error_ortografico <- tibble::tribble(
        "Trichopilia fragans",     "Trichopilia fragrans",
      "Trichopilia juninense",   "Trichopilia juninensis"
   )
+(especies_error_ortografico)
 ```
 
+3.-  La lista de especies se ha reducido debido a la actualización de la información taxonómica. Se han identificado especies que fueron registradas con nombres diferentes en el momento de la elaboración del listado, y en la actualidad se ha unificado el nombre utilizado para referirse a ellas. Por lo tanto, se ha producido una reducción en el número de especies listadas, pero se ha mejorado la precisión y consistencia de la información en `peruflorads43`.
 
 
-### Especies repetidas
-
-```{r }
-tab_2 <- tibble::tribble(
-   ~especies_raw,                                   ~tnrs_especies,                                 ~categoria,
-  "Bishopanthus soliceps"                         , "Bishopanthus soliceps"                       , "EN PELIGRO CRITICO (CR)",
-  "Bishopanthus soliceps"                         , "Bishopanthus soliceps"                       , "EN PELIGRO CRITICO (CR)",
-  "Ceroxylon crispum"                             , "Ceroxylon vogelianum"                        , "VULNERABLE (Vu)",
-  "Ceroxylum verriculosum"                        , "Ceroxylon vogelianum"                        , "CASI AMENAZADO (NT)",
-  "Comparettia coccinea"                          , "Comparettia coccinea"                        , "VULNERABLE (Vu)",
-  "Comparettia peruviana"                         , "Comparettia coccinea"                        , "VULNERABLE (Vu)",
-  "Geonoma weberbaueri"                           , "Geonoma undata"                              , "VULNERABLE (Vu)",
-  "Geonoma undata"                                , "Geonoma undata"                              , "CASI AMENAZADO (NT)",
-  "Haageocereus acranthus subsp. olowinskianus"   , "Haageocereus acranthus subsp. olowinskianus" , "EN PELIGRO CRITICO (CR)",
-  "Haageocereus acranthus subsp. olowinskianus"   , "Haageocereus acranthus subsp. olowinskianus" , "EN PELIGRO CRITICO (CR)",
-  "Haageocereus acranthus subsp. olowinskianus"   , "Haageocereus acranthus subsp. olowinskianus" , "EN PELIGRO CRITICO (CR)",
-  "Haageocereus acranthus subsp. olowinskianus"   , "Haageocereus acranthus subsp. olowinskianus" , "VULNERABLE (Vu)",
-  "Haageocereus pseudomelanostele subsp. setosus" , "Haageocereus multangularis"                  , "EN PELIGRO CRITICO (CR)",
-  "Haageocereus pseudomelanostele subsp. setosus" , "Haageocereus multangularis"                  , "EN PELIGRO CRITICO (CR)",
-  "Lycaste ciliata"                               , "Lycaste ciliata"                             , "VULNERABLE (Vu)",
-  "Lycaste fimbriata"                             , "Lycaste ciliata"                             , "VULNERABLE (Vu)",
-  "Mila caespitosa subsp. caespitosa"             , "Mila caespitosa"                             , "EN PELIGRO (EN)",
-  "Mila caespitosa subsp. densiseta"              , "Mila caespitosa"                             , "EN PELIGRO (EN)"
+```{r echo=FALSE}
+tibble::tribble(
+      ~species_name, ~accepted_name,
+   "Ceroxylon crispum",                  "Ceroxylon vogelianum",
+   "Ceroxylum verriculosum",             "Ceroxylon vogelianum",
+   "Comparettia coccinea",               "Comparettia coccinea",
+   "Comparettia peruviana",              "Comparettia coccinea",
+   "Geonoma undata",                     "Geonoma undata",
+   "Geonoma weberbaueri",                "Geonoma undata",
+   "Lycaste ciliata",                    "Lycaste ciliata",
+   "Lycaste fimbriata",                  "Lycaste ciliata",
+   "Mila caespitosa subsp. caespitosa",  "Mila caespitosa",
+   "Mila caespitosa subsp. densiseta",   "Mila caespitosa"
   )
-
 ```
 
+4.- Para las especies listadas bajo la categoría de forma:
+
+  - Haageocereus acranthus subsp. olowinskianus forma clavispinus (Rauh & Backeberg) Ostolaza 
+  - Haageocereus acranthus subsp. olowinskianus forma repandus (Rauh & Backeberg) Ostolaza    
+  - Haageocereus acranthus subsp. olowinskianus forma rubriflorior (Rauh & Backeberg) Ostolaza
+  
+  Estas registros se unifican bajo *Haageocereus acranthus subsp. olowinskianus*.
+  
+  - *Haageocereus pseudomelanostele subsp. setosus forma longicomus* (Akers) Ostolaza  pasa a ser sinónimo de la especie *Haageocereus multangularis*.
+  
+5.- la informacion taxonomica de las siguientes especies se conserva respecto del listado original, debido a que no se cuenta con suficiente informacion para la determinacion des estado de identificacion.
+
+- *Corryocactus quadrangularis* 
+- *Epidendrum pardothyrsus*
+- *Myrosmodes paludosum*
+- *Prosthechea cyperifolia*
+- *Stanhopea haselowiana*
+
+6.- Se tiene incluido en el listado un el genero *Ligeophila*.
+
+
+### Como usar `peruflorads43`
+
+```{r echo=TRUE}
+library(peruflorads43)
+```
+ - `search_ds043` esta fucnion puede ser empleada con un vector o data.frame:
+
+```{r echo=TRUE}
+# vector
+splist <- c("Cleistocactus clavispinus",
+              "Welfia alfredi",
+              "Matucana hayneii")
+search_ds043(splist = splist)
+
+# data.frame
+
+df <- data.frame(splist = splist)
+df
+
+df$ds_043_2006 <- search_ds043(df$splist)
+df
+# tidyverse - tibble
+df <- tibble::tibble(splist = splist)
+df |> 
+  dplyr::mutate(ds_043_2006 = search_ds043(splist))
+
+```
+ 
+ - `category_ds043_2006()` permite la identificación de la categoría en la cual esta incorporada la especie.
+ 
+```{r echo=TRUE}
+category_ds043_2006(splist = splist)
+
+```
+ 
