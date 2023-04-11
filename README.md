@@ -91,16 +91,16 @@ consistencia de la información en `peruflorads43`.
 - Haageocereus acranthus subsp. olowinskianus forma rubriflorior (Rauh &
   Backeberg) Ostolaza
 
-Estas registros se unifican bajo *Haageocereus acranthus subsp.
+Estos registros se unifican bajo *Haageocereus acranthus subsp.
 olowinskianus*.
 
 - *Haageocereus pseudomelanostele subsp. setosus forma longicomus*
   (Akers) Ostolaza pasa a ser sinónimo de la especie *Haageocereus
   multangularis*.
 
-5.- la informacion taxonomica de las siguientes especies se conserva
+5.- La información taxonómica de las siguientes especies se conserva
 respecto del listado original, debido a que no se cuenta con suficiente
-informacion para la determinacion des estado de identificacion.
+información para la determinación des estado de identificación.
 
 - *Corryocactus quadrangularis*
 - *Epidendrum pardothyrsus*

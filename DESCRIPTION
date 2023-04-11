@@ -15,8 +15,9 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Depends: R (>= 3.5.0)
 URL: https://github.com/PaulESantos/peruflorads43
 BugReports: https://github.com/PaulESantos/peruflorads43/issues
 LazyData: true
 LazyDataCompression: xz
-Date: 2023-03-25
+Date: 2023-04-10

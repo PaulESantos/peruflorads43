@@ -1,13 +1,13 @@
-citHeader("To cite perudiv in publications use:")
+citHeader("To cite peruflorads43 in publications use:")
 
 citEntry(
   entry    = "Manual",
-  title    = "perudiv: Peruvian protected flora and fauna data",
+  title    = "peruflorads43: Reviewed Official Classification of Endangered Wild Flora Species in Peru",
   author   = "Paul Efren Santos Andrade",
-  year     = 2022,
-  note     = "R package version 0.0.0.1",
-  url      = "https://github.com/PaulESantos/perudiv",
+  year     = 2023,
+  note     = "R package version 0.1.0",
+  url      = "https://github.com/PaulESantos/peruflorads43",
   textVersion = paste(
-"Santos-Andrade PE (2022). perudiv: Peruvian protected flora and fauna data. R package version 0.0.0.1"
+"Santos-Andrade P.E. (2023). peruflorads43: Reviewed Official Classification of Endangered Wild Flora Species in Peru. R package version 0.1.0"
   )
 )
