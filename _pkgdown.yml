@@ -2,3 +2,5 @@ url: https://paulesantos.github.io/peruflorads43/
 template:
   bootstrap: 5
 
+development:
+  mode: auto
