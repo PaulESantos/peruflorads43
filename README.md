@@ -6,9 +6,12 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/peruflorads43)](https://CRAN.R-project.org/package=peruflorads43)
+[![R-CMD-check](https://github.com/PaulESantos/peruflorads43/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/PaulESantos/peruflorads43/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/PaulESantos/peruflorads43/branch/master/graph/badge.svg)](https://app.codecov.io/gh/PaulESantos/peruflorads43?branch=master)
 <!-- badges: end -->
 
 El objetivo de `peruflorads43` es brindar a los usuarios una forma
@@ -114,7 +117,7 @@ información para la determinación des estado de identificación.
 
 ``` r
 library(peruflorads43)
-#> This is peruflorads043_2006_ag 0.1.0
+#> This is peruflorads043_2006_ag 0.1.1
 ```
 
 - `search_ds043` esta fucnion puede ser empleada con un vector o

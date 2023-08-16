@@ -1,5 +1,5 @@
 Package: peruflorads43
-Title: Official Classification of Endangered Wild Plant Species
+Title: Reviewed Official Classification of Endangered Wild Flora Species in Peru
 Version: 0.1.1
 Authors@R: 
     c(person(given = "Paul E.",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "paulefrens@gmail.com",
            comment = c(ORCID = "0000-0002-6635-0375"))) 
-Description: Provide users with a convenient way to access and analyze information on endangered plant species in Peru.
+Description: Provide users with a convenient way to access and analyze information on endangered plant species in Peru based on "Decreto Supremo N 043-2006-AG - Aprueban categorizacion de especies amenazadas de flora silvestre".
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)
