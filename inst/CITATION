@@ -1,13 +1,11 @@
-citHeader("To cite peruflorads43 in publications use:")
-
-citEntry(
-  entry    = "Manual",
+bibentry(
+  bibtype  = "Manual",
+  header   = "To cite peruflorads43 in publications use:",
   title    = "peruflorads43: Reviewed Official Classification of Endangered Wild Flora Species in Peru",
-  author   = "Paul Efren Santos Andrade",
-  year     = 2023,
-  note     = "R package version 0.1.0",
+  author   = "Paul E. Santos Andrade",
+  year     = "2023",
   url      = "https://github.com/PaulESantos/peruflorads43",
-  textVersion = paste(
-"Santos-Andrade P.E. (2023). peruflorads43: Reviewed Official Classification of Endangered Wild Flora Species in Peru. R package version 0.1.0"
+   textVersion = paste(
+"Santos-Andrade P.E. (2023). peruflorads43: Reviewed Official Classification of Endangered Wild Flora Species in Peru. R package version 0.1.1"
   )
-)
+  )

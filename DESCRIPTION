@@ -1,8 +1,8 @@
 Package: peruflorads43
-Title: Clasificacion Oficial De Especies Amenazadas De Flora Silvestre
+Title: Official Classification of Endangered Wild Plant Species
 Version: 0.1.1
 Authors@R: 
-    c(person(given = "Paul Efren",
+    c(person(given = "Paul E.",
            family = "Santos Andrade",
            role = c("aut", "cre"),
            email = "paulefrens@gmail.com",
@@ -21,4 +21,3 @@ URL: https://github.com/PaulESantos/peruflorads43,
 BugReports: https://github.com/PaulESantos/peruflorads43/issues
 LazyData: true
 LazyDataCompression: xz
-Date: 2023-04-10
