@@ -1,6 +1,6 @@
 Package: peruflorads43
 Title: Clasificacion Oficial De Especies Amenazadas De Flora Silvestre
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(person(given = "Paul Efren",
            family = "Santos Andrade",
