@@ -8,3 +8,4 @@ data/data_ds043_2006.xlsx
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^codecov\.yml$
