@@ -30,7 +30,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#'
 #'  # Search for multiple species vector
 #' splist <- c("Cleistocactus clavispinus",
 #'              "Welfia alfredi",
@@ -42,12 +42,9 @@
 #'  # base
 #'  df_splist <- data.frame(splist = splist)
 #'  df_splist$peutimber <- search_ds043(df_splist$splist)
-#'  # dplyr
-#'  df_splist <- data.frame(splist = splist)
-#'  dplyr::mutate(df_splist,
-#'                perutimber = search_ds043(splist))
-#'  }
-search_ds043 <- function(splist, max_distance = 0.2){
+#'
+#'
+search_ds043 <- function(splist, max_distance = 0.1){
   result <- search_sps(splist = splist, max_distance = max_distance)
   compara <- result$accepted_name == result$name_submitted
   output_result <- vector()

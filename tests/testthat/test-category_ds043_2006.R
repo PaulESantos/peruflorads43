@@ -1,4 +1,4 @@
-test_that("it returns the correct output", {
+testthat::test_that("it returns the correct output", {
 
   splist <- c("Cleistocactus clavispinus",
               "Welfia alfredi",
@@ -19,5 +19,5 @@ test_that("it returns the correct output", {
 
   result <- category_ds043_2006(splist)
 
-  expect_equal(result, expected)
+  testthat::expect_equal(result, expected)
 })

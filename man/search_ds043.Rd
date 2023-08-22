@@ -5,7 +5,7 @@
 \title{Search species name present in the  DS043-2006-AG: Aprueban Categorizacion de
 Especies Amenazadas de Flora Silvestre. 13-07-2006}
 \usage{
-search_ds043(splist, max_distance = 0.2)
+search_ds043(splist, max_distance = 0.1)
 }
 \arguments{
 \item{splist}{A character vector specifying the input taxon, each element
@@ -36,7 +36,7 @@ This function takes a species list and tries to match a name in theCategorizacio
 Especies Amenazadas de Flora Silvestre, checking if the name is listed in tha dataset.
 }
 \examples{
-\dontrun{
+
  # Search for multiple species vector
 splist <- c("Cleistocactus clavispinus",
              "Welfia alfredi",
@@ -48,9 +48,6 @@ splist <- c("Cleistocactus clavispinus",
  # base
  df_splist <- data.frame(splist = splist)
  df_splist$peutimber <- search_ds043(df_splist$splist)
- # dplyr
- df_splist <- data.frame(splist = splist)
- dplyr::mutate(df_splist,
-               perutimber = search_ds043(splist))
- }
+
+
 }

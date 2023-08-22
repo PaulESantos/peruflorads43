@@ -12,6 +12,8 @@ status](https://www.r-pkg.org/badges/version/peruflorads43)](https://CRAN.R-proj
 [![R-CMD-check](https://github.com/PaulESantos/peruflorads43/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/PaulESantos/peruflorads43/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/PaulESantos/peruflorads43/branch/master/graph/badge.svg)](https://app.codecov.io/gh/PaulESantos/peruflorads43?branch=master)
+[![](http://cranlogs.r-pkg.org/badges/grand-total/peruflorads43?color=green)](https://cran.r-project.org/package=peruflorads43)
+[![](http://cranlogs.r-pkg.org/badges/last-week/peruflorads43?color=green)](https://cran.r-project.org/package=peruflorads43)
 <!-- badges: end -->
 
 El objetivo de `peruflorads43` es brindar a los usuarios una forma
@@ -21,6 +23,17 @@ Silvestre en el Perú”. Este paquete incluye funciones para buscar
 coincidencias parciales de los nombres de las especies.
 
 ### Instalación
+
+La version estable de `peruflorads43` puede ser instalada desde CRAN,
+con la ayuda de:
+
+``` r
+install.packages("peruflorads43")
+
+# or
+
+pak::pak("peruflorads43")
+```
 
 Para instalar la versión en desarrollo de `peruflorads43` desde GitHub,
 se puede utilizar el siguiente comando :

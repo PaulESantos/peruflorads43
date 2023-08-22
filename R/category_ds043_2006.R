@@ -27,12 +27,12 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{
+#'
 #' splist <- c("Cleistocactus clavispinus",
 #'              "Welfia alfredi",
 #'              "Matucana haynei")
 #' category_ds043_2006(splist)
-#' }
+#'
 #'
 category_ds043_2006 <- function(splist, max_distance = 0.2){
   sps_result <- search_sps(splist = splist, max_distance = max_distance)
