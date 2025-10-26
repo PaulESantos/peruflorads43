@@ -13,6 +13,7 @@
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Check Threatened Plant Species Status Against Peru's DS 043-2006-AG">
 <meta name="description" content="Provides tools to match plant species names against the official threatened species list of Peru (Supreme Decree DS 043-2006-AG, 2006). Implements a hierarchical matching pipeline with exact, fuzzy, and suffix matching algorithms to handle nomenclatural variations and taxonomic changes. Supports both the original 2006 nomenclature and updated taxonomic names, allowing users to check protection status regardless of nomenclatural changes since the decree's publication. Threat categories follow IUCN standards (CR, EN, VU, NT).">
 <meta property="og:description" content="Provides tools to match plant species names against the official threatened species list of Peru (Supreme Decree DS 043-2006-AG, 2006). Implements a hierarchical matching pipeline with exact, fuzzy, and suffix matching algorithms to handle nomenclatural variations and taxonomic changes. Supports both the original 2006 nomenclature and updated taxonomic names, allowing users to check protection status regardless of nomenclatural changes since the decree's publication. Threat categories follow IUCN standards (CR, EN, VU, NT).">
+<meta property="og:image" content="https://paulesantos.github.io/peruflorads43/logo.png">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -46,147 +47,542 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="peruflorads43">peruflorads43<a class="anchor" aria-label="anchor" href="#peruflorads43"></a>
-</h1></div>
+<div class="page-header">
+<img src="logo.png" class="logo" alt=""><h1 id="peruflorads43-">peruflorads43 <a class="anchor" aria-label="anchor" href="#peruflorads43-"></a>
+</h1>
+</div>
 <!-- badges: start -->
 
-<p>El objetivo de <code>peruflorads43</code> es brindar a los usuarios una forma cómoda de acceder y analizar información sobre las especies de plantas incluidas en la “Clasificación Oficial de Especies Amenazadas de Flora Silvestre en el Perú”. Este paquete incluye funciones para buscar coincidencias parciales de los nombres de las especies.</p>
+<p><strong>peruflorads43</strong> provides comprehensive tools for working with Peru’s official threatened plant species list as established by Supreme Decree <strong>DS 043-2006-AG</strong> (July 13, 2006). The package enables researchers, conservation practitioners, and environmental consultants to:</p>
+<ul>
+<li>
+<strong>Validate species protection status</strong> against the official decree</li>
+<li>
+<strong>Match species names</strong> with advanced algorithms handling taxonomic changes</li>
+<li>
+<strong>Access complete threat data</strong> for 776+ threatened plant species</li>
+<li>
+<strong>Handle nomenclatural updates</strong> automatically since 2006</li>
+</ul>
+<div class="section level2">
+<h2 id="key-features">Key Features<a class="anchor" aria-label="anchor" href="#key-features"></a>
+</h2>
 <div class="section level3">
-<h3 id="instalación">Instalación<a class="anchor" aria-label="anchor" href="#instalaci%C3%B3n"></a>
+<h3 id="intelligent-name-matching">Intelligent Name Matching<a class="anchor" aria-label="anchor" href="#intelligent-name-matching"></a>
 </h3>
-<p>La version estable de <code>peruflorads43</code> puede ser instalada desde CRAN, con la ayuda de:</p>
+<ul>
+<li>
+<strong>Hierarchical matching pipeline</strong>: Direct → Genus → Fuzzy → Suffix matching</li>
+<li>
+<strong>Handles taxonomic complexity</strong>: Works with binomial and infraspecific taxa</li>
+<li>
+<strong>Automatic standardization</strong>: Deals with variations in formatting and spelling</li>
+<li>
+<strong>Ambiguity detection</strong>: Identifies and reports uncertain matches for manual review</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="dual-database-system">Dual Database System<a class="anchor" aria-label="anchor" href="#dual-database-system"></a>
+</h3>
+<ul>
+<li>
+<strong>Original nomenclature (2006)</strong>: Preserves names as published in DS 043-2006-AG</li>
+<li>
+<strong>Updated nomenclature (2025)</strong>: Reflects current taxonomic consensus (WCVP/POWO)</li>
+<li>
+<strong>Synonym resolution</strong>: Links historical names to accepted names automatically</li>
+</ul>
+</div>
+</div>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>Install the stable version from CRAN:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"peruflorads43"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># or</span></span>
-<span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"peruflorads43"</span><span class="op">)</span></span></code></pre></div>
-<p>Para instalar la versión en desarrollo de <code>peruflorads43</code> desde GitHub, se puede utilizar el siguiente comando :</p>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"peruflorads43"</span><span class="op">)</span></span></code></pre></div>
+<p>Or install the development version from GitHub:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"PaulEsantos/peruflorads43"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Using pak (recommended)</span></span>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"PaulESantos/peruflorads43"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Or using remotes</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"PaulESantos/peruflorads43"</span><span class="op">)</span></span></code></pre></div>
 </div>
+<div class="section level2">
+<h2 id="quick-start">Quick Start<a class="anchor" aria-label="anchor" href="#quick-start"></a>
+</h2>
 <div class="section level3">
-<h3 id="comentarios">Comentarios<a class="anchor" aria-label="anchor" href="#comentarios"></a>
+<h3 id="basic-usage">Basic Usage<a class="anchor" aria-label="anchor" href="#basic-usage"></a>
 </h3>
-<p>1.- En relación a la información contenida en el listado de especies, se ha identificado el registro duplicado de la especie <em>Bishopanthus soliceps</em>, la cual se encuentra en peligro crítico.</p>
-<p>2.- Asimismo, se han detectado errores en la escritura de los nombres de las algunas especies, se corrigieron estos errores para asegurar la precisión de la información en incorporada en <code>peruflorads43</code>.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co">#&gt; # A tibble: 20 × 2</span></span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="co">#&gt;    listed_name              correct_name            </span></span>
-<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;                    &lt;chr&gt;                   </span></span>
-<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co">#&gt;  1 Ascidiogine wurdackii    Ascidiogyne wurdackii   </span></span>
-<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt;  2 Proboscidea altheaefolia Proboscidea althaeifolia</span></span>
-<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt;  3 Jaltomata mioneii        Jaltomata mionei        </span></span>
-<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="co">#&gt;  4 Larnax macrocalix        Larnax macrocalyx       </span></span>
-<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="co">#&gt;  5 Larnax sagastegui        Larnax sagasteguii      </span></span>
-<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a><span class="co">#&gt;  6 Solanum chuquidenum      Solanum chiquidenum     </span></span>
-<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a><span class="co">#&gt;  7 Mutisia wurdacki         Mutisia wurdackii       </span></span>
-<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="co">#&gt;  8 Peltogyne altisima       Peltogyne altissima     </span></span>
-<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="co">#&gt;  9 Solanum huancabambese    Solanum huancabambense  </span></span>
-<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">#&gt; 10 Salvia opossitiflora     Salvia oppositiflora    </span></span>
-<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="co">#&gt; 11 Ligeophila spp.          Ligeophila              </span></span>
-<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="co">#&gt; 12 Masdevallia zebraceae    Masdevallia zebracea    </span></span>
-<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="co">#&gt; 13 Telipogon alegria        Telipogon alegriae      </span></span>
-<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="co">#&gt; 14 Aspasia psitticina       Aspasia psittacina      </span></span>
-<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="co">#&gt; 15 Gongora quinquinervis    Gongora quinquenervis   </span></span>
-<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a><span class="co">#&gt; 16 Maxillaria rotumdilabia  Maxillaria rotundilabia </span></span>
-<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="co">#&gt; 17 Mormodes revolutum       Mormodes revoluta       </span></span>
-<span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a><span class="co">#&gt; 18 Mormodes rolfeanum       Mormodes rolfeana       </span></span>
-<span id="cb3-22"><a href="#cb3-22" tabindex="-1"></a><span class="co">#&gt; 19 Trichopilia fragans      Trichopilia fragrans    </span></span>
-<span id="cb3-23"><a href="#cb3-23" tabindex="-1"></a><span class="co">#&gt; 20 Trichopilia juninense    Trichopilia juninensis</span></span></code></pre></div>
-<p>3.- La lista de especies se ha reducido debido a la actualización de la información taxonómica. Se han identificado especies que fueron registradas con nombres diferentes en el momento de la elaboración del listado, y en la actualidad se ha unificado el nombre utilizado para referirse a ellas. Por lo tanto, se ha producido una reducción en el número de especies listadas, pero se ha mejorado la precisión y consistencia de la información en <code>peruflorads43</code>.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co">#&gt; # A tibble: 10 × 2</span></span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="co">#&gt;    species_name                      accepted_name       </span></span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;                             &lt;chr&gt;               </span></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="co">#&gt;  1 Ceroxylon crispum                 Ceroxylon vogelianum</span></span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="co">#&gt;  2 Ceroxylum verriculosum            Ceroxylon vogelianum</span></span>
-<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co">#&gt;  3 Comparettia coccinea              Comparettia coccinea</span></span>
-<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co">#&gt;  4 Comparettia peruviana             Comparettia coccinea</span></span>
-<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">#&gt;  5 Geonoma undata                    Geonoma undata      </span></span>
-<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">#&gt;  6 Geonoma weberbaueri               Geonoma undata      </span></span>
-<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">#&gt;  7 Lycaste ciliata                   Lycaste ciliata     </span></span>
-<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co">#&gt;  8 Lycaste fimbriata                 Lycaste ciliata     </span></span>
-<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="co">#&gt;  9 Mila caespitosa subsp. caespitosa Mila caespitosa     </span></span>
-<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="co">#&gt; 10 Mila caespitosa subsp. densiseta  Mila caespitosa</span></span></code></pre></div>
-<p>4.- Para las especies listadas bajo la categoría de forma:</p>
-<ul>
-<li>Haageocereus acranthus subsp. olowinskianus forma clavispinus (Rauh &amp; Backeberg) Ostolaza</li>
-<li>Haageocereus acranthus subsp. olowinskianus forma repandus (Rauh &amp; Backeberg) Ostolaza<br>
-</li>
-<li>Haageocereus acranthus subsp. olowinskianus forma rubriflorior (Rauh &amp; Backeberg) Ostolaza</li>
-</ul>
-<p>Estos registros se unifican bajo <em>Haageocereus acranthus subsp. olowinskianus</em>.</p>
-<ul>
-<li>
-<em>Haageocereus pseudomelanostele subsp. setosus forma longicomus</em> (Akers) Ostolaza pasa a ser sinónimo de la especie <em>Haageocereus multangularis</em>.</li>
-</ul>
-<p>5.- La información taxonómica de las siguientes especies se conserva respecto del listado original, debido a que no se cuenta con suficiente información para la determinación des estado de identificación.</p>
-<ul>
-<li><em>Corryocactus quadrangularis</em></li>
-<li><em>Epidendrum pardothyrsus</em></li>
-<li><em>Myrosmodes paludosum</em></li>
-<li><em>Prosthechea cyperifolia</em></li>
-<li><em>Stanhopea haselowiana</em></li>
-</ul>
-<p>6.- Se tiene incluido en el listado un el genero <em>Ligeophila</em>.</p>
-</div>
-<div class="section level3">
-<h3 id="como-usar-peruflorads43">Como usar <code>peruflorads43</code>
-<a class="anchor" aria-label="anchor" href="#como-usar-peruflorads43"></a>
-</h3>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<p>Check if species are threatened:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/PaulESantos/peruflorads43" class="external-link">peruflorads43</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; This is peruflorads043_2006_ag 0.1.1</span></span></code></pre></div>
-<ul>
-<li>
-<code>search_ds043</code> esta fucnion puede ser empleada con un vector o data.frame:</li>
-</ul>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># vector</span></span>
-<span><span class="va">splist</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Cleistocactus clavispinus"</span>,</span>
-<span>              <span class="st">"Welfia alfredi"</span>,</span>
-<span>              <span class="st">"Matucana hayneii"</span><span class="op">)</span></span>
-<span><span class="fu">search_ds043</span><span class="op">(</span>splist <span class="op">=</span> <span class="va">splist</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "Present"        ""               "P_updated_name"</span></span>
 <span></span>
-<span><span class="co"># data.frame</span></span>
+<span><span class="co"># Simple vector of species names</span></span>
+<span><span class="va">species_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>  <span class="st">"Cattleya maxima"</span>,           <span class="co"># Orchid - Endangered</span></span>
+<span>  <span class="st">"Polylepis incana"</span>,          <span class="co"># Queñua tree - Vulnerable  </span></span>
+<span>  <span class="st">"Persea americana"</span>           <span class="co"># Avocado - Not threatened</span></span>
+<span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>splist <span class="op">=</span> <span class="va">splist</span><span class="op">)</span></span>
-<span><span class="va">df</span></span>
-<span><span class="co">#&gt;                      splist</span></span>
-<span><span class="co">#&gt; 1 Cleistocactus clavispinus</span></span>
-<span><span class="co">#&gt; 2            Welfia alfredi</span></span>
-<span><span class="co">#&gt; 3          Matucana hayneii</span></span>
-<span></span>
-<span><span class="va">df</span><span class="op">$</span><span class="va">ds_043_2006</span> <span class="op">&lt;-</span> <span class="fu">search_ds043</span><span class="op">(</span><span class="va">df</span><span class="op">$</span><span class="va">splist</span><span class="op">)</span></span>
-<span><span class="va">df</span></span>
-<span><span class="co">#&gt;                      splist    ds_043_2006</span></span>
-<span><span class="co">#&gt; 1 Cleistocactus clavispinus        Present</span></span>
-<span><span class="co">#&gt; 2            Welfia alfredi               </span></span>
-<span><span class="co">#&gt; 3          Matucana hayneii P_updated_name</span></span>
-<span><span class="co"># tidyverse - tibble</span></span>
-<span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>splist <span class="op">=</span> <span class="va">splist</span><span class="op">)</span></span>
-<span><span class="va">df</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>ds_043_2006 <span class="op">=</span> <span class="fu">search_ds043</span><span class="op">(</span><span class="va">splist</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co"># Check threat status</span></span>
+<span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>splist <span class="op">=</span> <span class="va">species_list</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>ds43 <span class="op">=</span> <span class="fu"><a href="reference/is_threatened_peru.html">is_threatened_peru</a></span><span class="op">(</span><span class="va">splist</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 3 × 2</span></span>
-<span><span class="co">#&gt;   splist                    ds_043_2006     </span></span>
-<span><span class="co">#&gt;   &lt;chr&gt;                     &lt;chr&gt;           </span></span>
-<span><span class="co">#&gt; 1 Cleistocactus clavispinus "Present"       </span></span>
-<span><span class="co">#&gt; 2 Welfia alfredi            ""              </span></span>
-<span><span class="co">#&gt; 3 Matucana hayneii          "P_updated_name"</span></span></code></pre></div>
+<span><span class="co">#&gt;   splist           ds43          </span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;            &lt;chr&gt;         </span></span>
+<span><span class="co">#&gt; 1 Cattleya maxima  CR            </span></span>
+<span><span class="co">#&gt; 2 Polylepis incana CR            </span></span>
+<span><span class="co">#&gt; 3 Persea americana Not threatened</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="detailed-matching-results">Detailed Matching Results<a class="anchor" aria-label="anchor" href="#detailed-matching-results"></a>
+</h3>
+<p>Get comprehensive matching information:</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Detailed results with matching metadata</span></span>
+<span><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/is_threatened_peru.html">is_threatened_peru</a></span><span class="op">(</span><span class="va">species_list</span>, return_details <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># View key columns</span></span>
+<span><span class="va">results</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Orig.Name</span>, <span class="va">Matched.Name</span>, <span class="va">Threat.Status</span>, <span class="va">Match.Level</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 3 × 4</span></span>
+<span><span class="co">#&gt;   Orig.Name        Matched.Name     Threat.Status  Match.Level</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;            &lt;chr&gt;            &lt;chr&gt;          &lt;chr&gt;      </span></span>
+<span><span class="co">#&gt; 1 Cattleya maxima  Cattleya maxima  CR             Exact rank </span></span>
+<span><span class="co">#&gt; 2 Polylepis incana Polylepis incana CR             Exact rank </span></span>
+<span><span class="co">#&gt; 3 Persea americana ---              Not threatened No match</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="ds-043-2006-ag-validation">DS 043-2006-AG Validation<a class="anchor" aria-label="anchor" href="#ds-043-2006-ag-validation"></a>
+</h3>
+<p>Check protection status under the official decree:</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Species with nomenclatural changes</span></span>
+<span><span class="va">species</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>  <span class="st">"Haageocereus acranthus subsp. olowinskianus"</span>,  <span class="co"># Original name (2006)</span></span>
+<span>  <span class="st">"Brassia ocanensis"</span>,                            <span class="co"># Updated name (was Ada)</span></span>
+<span>  <span class="st">"Persea americana"</span>                              <span class="co"># Not threatened</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Consolidated search across both databases</span></span>
+<span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">species</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>status <span class="op">=</span> <span class="fu"><a href="reference/is_ds043_2006_ag.html">is_ds043_2006_ag</a></span><span class="op">(</span><span class="va">species</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 3 × 2</span></span>
+<span><span class="co">#&gt;   species                                     status           </span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;                                       &lt;chr&gt;            </span></span>
+<span><span class="co">#&gt; 1 Haageocereus acranthus subsp. olowinskianus VU (synonym)     </span></span>
+<span><span class="co">#&gt; 2 Brassia ocanensis                           VU (updated name)</span></span>
+<span><span class="co">#&gt; 3 Persea americana                            Not threatened</span></span>
+<span></span>
+<span></span>
+<span></span>
+<span><span class="co"># Detailed reconciliation</span></span>
+<span><span class="va">details</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/is_ds043_2006_ag.html">is_ds043_2006_ag</a></span><span class="op">(</span><span class="va">species</span>, return_details <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">details</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Input.Name</span>, <span class="va">Consolidated.Status</span>, <span class="va">Final.Source</span>, <span class="va">Nomenclature.Status</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 3 × 4</span></span>
+<span><span class="co">#&gt;   Input.Name                Consolidated.Status Final.Source Nomenclature.Status</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;                     &lt;chr&gt;               &lt;chr&gt;        &lt;chr&gt;              </span></span>
+<span><span class="co">#&gt; 1 Haageocereus acranthus s… VU (synonym)        DS 043-2006… Synonym (name upda…</span></span>
+<span><span class="co">#&gt; 2 Brassia ocanensis         VU (updated name)   DS 043-2006… Name updated since…</span></span>
+<span><span class="co">#&gt; 3 Persea americana          Not threatened      Not in DS 0… Not applicable</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="handling-fuzzy-matches">Handling Fuzzy Matches<a class="anchor" aria-label="anchor" href="#handling-fuzzy-matches"></a>
+</h3>
+<p>The package automatically handles misspellings and variations:</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Species with typos</span></span>
+<span><span class="va">species_fuzzy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>  <span class="st">"Catleya maxima"</span>,      <span class="co"># Missing 't' in Cattleya</span></span>
+<span>  <span class="st">"Polylepys incana"</span>     <span class="co"># Wrong spelling of Polylepis</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/is_threatened_peru.html">is_threatened_peru</a></span><span class="op">(</span><span class="va">species_fuzzy</span>, return_details <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Check fuzzy matching quality</span></span>
+<span><span class="va">results</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Orig.Name</span>, <span class="va">Matched.Name</span>, <span class="va">Threat.Status</span>, </span>
+<span>         <span class="va">fuzzy_genus_dist</span>, <span class="va">fuzzy_match_genus</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 2 × 5</span></span>
+<span><span class="co">#&gt;   Orig.Name        Matched.Name Threat.Status fuzzy_genus_dist fuzzy_match_genus</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;            &lt;chr&gt;        &lt;chr&gt;                    &lt;dbl&gt; &lt;lgl&gt;            </span></span>
+<span><span class="co">#&gt; 1 Catleya maxima   Cattleya ma… CR                           1 TRUE             </span></span>
+<span><span class="co">#&gt; 2 Polylepys incana Polylepis i… CR                           1 TRUE</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="reviewing-ambiguous-matches">Reviewing Ambiguous Matches<a class="anchor" aria-label="anchor" href="#reviewing-ambiguous-matches"></a>
+</h3>
+<p>When multiple candidates have identical match scores:</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Get ambiguous matches for quality control</span></span>
+<span><span class="va">ambiguous</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_ambiguous_matches.html">get_ambiguous_matches</a></span><span class="op">(</span><span class="va">results</span>, type <span class="op">=</span> <span class="st">"all"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; No ambiguous all matches found.</span></span>
+<span></span>
+<span><span class="co"># Save for manual curation</span></span>
+<span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NULL.html" class="external-link">is.null</a></span><span class="op">(</span><span class="va">ambiguous</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="fu"><a href="reference/get_ambiguous_matches.html">get_ambiguous_matches</a></span><span class="op">(</span></span>
+<span>    <span class="va">results</span>, </span>
+<span>    type <span class="op">=</span> <span class="st">"genus"</span>,</span>
+<span>    save_to_file <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre></div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="database-structure">Database Structure<a class="anchor" aria-label="anchor" href="#database-structure"></a>
+</h2>
+<div class="section level3">
+<h3 id="original-database-ds-043-2006-ag-2006">Original Database (DS 043-2006-AG 2006)<a class="anchor" aria-label="anchor" href="#original-database-ds-043-2006-ag-2006"></a>
+</h3>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Access original nomenclature</span></span>
+<span><span class="va">db_original</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_threatened_database.html">get_threatened_database</a></span><span class="op">(</span>type <span class="op">=</span> <span class="st">"original"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Summary statistics</span></span>
+<span><span class="fu"><a href="reference/get_database_summary.html">get_database_summary</a></span><span class="op">(</span><span class="st">"original"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 1 × 10</span></span>
+<span><span class="co">#&gt;   Database Total_Species    CR    EN    VU    NT Families Genera</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;            &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;  &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1 original           776   193    73   391   119       80    290</span></span>
+<span><span class="co">#&gt; # ℹ 2 more variables: Has_Infraspecies &lt;int&gt;, Max_Rank &lt;dbl&gt;</span></span></code></pre></div>
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>776+ species as listed in 2006</li>
+<li>Includes both accepted names and synonyms</li>
+<li>Original infraspecific rank formatting</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="updated-database-current-nomenclature">Updated Database (Current Nomenclature)<a class="anchor" aria-label="anchor" href="#updated-database-current-nomenclature"></a>
+</h3>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Access updated nomenclature</span></span>
+<span><span class="va">db_updated</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_threatened_database.html">get_threatened_database</a></span><span class="op">(</span>type <span class="op">=</span> <span class="st">"updated"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Compare with original</span></span>
+<span><span class="fu"><a href="reference/get_database_summary.html">get_database_summary</a></span><span class="op">(</span><span class="st">"both"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 2 × 10</span></span>
+<span><span class="co">#&gt;   Database        Total_Species    CR    EN    VU    NT Families Genera</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;                   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;  &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1 Original (2006)           776   193    73   391   119       80    290</span></span>
+<span><span class="co">#&gt; 2 Updated                   179    44    16    93    26       30     85</span></span>
+<span><span class="co">#&gt; # ℹ 2 more variables: Has_Infraspecies &lt;int&gt;, Max_Rank &lt;dbl&gt;</span></span></code></pre></div>
+<p><strong>Key characteristics:</strong> - Current taxonomic consensus (WCVP/POWO) - Supports trinomial names - Only accepted names (synonyms resolved) - Updated to 2025 nomenclature</p>
+</div>
+</div>
+<div class="section level2">
+<h2 id="advanced-features">Advanced Features<a class="anchor" aria-label="anchor" href="#advanced-features"></a>
+</h2>
+<div class="section level3">
+<h3 id="comparison-between-databases">Comparison Between Databases<a class="anchor" aria-label="anchor" href="#comparison-between-databases"></a>
+</h3>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Side-by-side comparison</span></span>
+<span><span class="va">comparison</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/comparison_table_ds043.html">comparison_table_ds043</a></span><span class="op">(</span><span class="va">species</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">comparison</span> <span class="op">|&gt;</span></span>
+<span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">input_species</span>, <span class="va">status_original</span>, <span class="va">status_updated</span>, </span>
+<span>         <span class="va">nomenclature_status</span>, <span class="va">protected_by_ds_043</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 3 × 5</span></span>
+<span><span class="co">#&gt;   input_species               status_original status_updated nomenclature_status</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;                       &lt;chr&gt;           &lt;chr&gt;          &lt;chr&gt;              </span></span>
+<span><span class="co">#&gt; 1 Haageocereus acranthus sub… VU              Not threatened Synonym (name upda…</span></span>
+<span><span class="co">#&gt; 2 Brassia ocanensis           Not threatened  VU             Name updated since…</span></span>
+<span><span class="co">#&gt; 3 Persea americana            Not threatened  Not threatened Not applicable     </span></span>
+<span><span class="co">#&gt; # ℹ 1 more variable: protected_by_ds_043 &lt;chr&gt;</span></span></code></pre></div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="legal-framework">Legal Framework<a class="anchor" aria-label="anchor" href="#legal-framework"></a>
+</h2>
+<p><strong>Supreme Decree DS 043-2006-AG</strong><br><em>Aprueban Categorización de Especies Amenazadas de Flora Silvestre</em></p>
+<p>Issued by: Ministry of Agriculture, Peru<br>
+Date: July 13, 2006</p>
+<div class="section level3">
+<h3 id="iucn-threat-categories">IUCN Threat Categories<a class="anchor" aria-label="anchor" href="#iucn-threat-categories"></a>
+</h3>
+<table class="table">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th>Category</th>
+<th>Code</th>
+<th>Spanish</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Critically Endangered</td>
+<td><strong>CR</strong></td>
+<td>En Peligro Crítico</td>
+<td>Extremely high risk of extinction</td>
+</tr>
+<tr class="even">
+<td>Endangered</td>
+<td><strong>EN</strong></td>
+<td>En Peligro</td>
+<td>Very high risk of extinction</td>
+</tr>
+<tr class="odd">
+<td>Vulnerable</td>
+<td><strong>VU</strong></td>
+<td>Vulnerable</td>
+<td>High risk of extinction</td>
+</tr>
+<tr class="even">
+<td>Near Threatened</td>
+<td><strong>NT</strong></td>
+<td>Casi Amenazado</td>
+<td>Close to qualifying for threatened status</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section level2">
+<h2 id="use-cases">Use Cases<a class="anchor" aria-label="anchor" href="#use-cases"></a>
+</h2>
+<div class="section level3">
+<h3 id="id_1-environmental-impact-assessment-eia">1. Environmental Impact Assessment (EIA)<a class="anchor" aria-label="anchor" href="#id_1-environmental-impact-assessment-eia"></a>
+</h3>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Species list from field survey</span></span>
+<span><span class="va">field_species</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Achyrocline saturejoides"</span>, <span class="st">"Bouteloua simplex"</span>, <span class="st">"Jarava ichu"</span>, <span class="st">"Cenchrus clandestinus"</span>, <span class="st">"Grindelia boliviana"</span>, <span class="st">"Tagetes filifolia"</span>, <span class="st">"Bidens pilosa"</span>, <span class="st">"Cumulopuntia boliviana"</span>, <span class="st">"Ageratina sternbergiana"</span>, <span class="st">"Roca"</span>, <span class="st">"Nassella inconspicua"</span>, <span class="st">"Dalea sp"</span>, <span class="st">"Baccharis tricuneata"</span>, <span class="st">"Lepechinia meyenii"</span>, <span class="st">"Erodium cicutarium"</span>, <span class="st">"Suelo"</span>, <span class="st">"Ephedra rupestris"</span>, <span class="st">"Achyrocline saturejoides"</span>, <span class="st">"Ageratina sternbergiana"</span>, <span class="st">"Astragalus garbancillo"</span>, <span class="st">"Baccharis tola"</span>, <span class="st">"Bidens pilosa"</span>, <span class="st">"Bouteloua simplex"</span>, <span class="st">"Cenchrus clandestinus"</span>, <span class="st">"Cumulopuntia boliviana"</span>, <span class="st">"Jarava ichu"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">field_species</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>status <span class="op">=</span> <span class="fu"><a href="reference/is_ds043_2006_ag.html">is_ds043_2006_ag</a></span><span class="op">(</span><span class="va">field_species</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">status</span> <span class="op">!=</span> <span class="st">"Not threatened"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; The species list (splist) should only include binomial names. The following names were submitted at the genus level: 'ROCA', 'SUELO'</span></span>
+<span><span class="co">#&gt; The species list (splist) should only include binomial names. The following names were submitted at the genus level: 'ROCA', 'SUELO'</span></span>
+<span><span class="co">#&gt; # A tibble: 1 × 2</span></span>
+<span><span class="co">#&gt;   field_species     status</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;             &lt;chr&gt; </span></span>
+<span><span class="co">#&gt; 1 Ephedra rupestris CR</span></span>
+<span></span>
+<span><span class="co"># Check DS 043 protection status</span></span>
+<span><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/is_ds043_2006_ag.html">is_ds043_2006_ag</a></span><span class="op">(</span><span class="va">field_species</span>, return_details <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="co">#&gt; The species list (splist) should only include binomial names. The following names were submitted at the genus level: 'ROCA', 'SUELO'</span></span>
+<span><span class="co">#&gt; The species list (splist) should only include binomial names. The following names were submitted at the genus level: 'ROCA', 'SUELO'</span></span>
+<span></span>
+<span><span class="va">results</span></span>
+<span><span class="co">#&gt; # A tibble: 26 × 14</span></span>
+<span><span class="co">#&gt;    Input.Name        Consolidated.Name Consolidated.Status Consolidated.Category</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;             &lt;chr&gt;             &lt;chr&gt;               &lt;chr&gt;                </span></span>
+<span><span class="co">#&gt;  1 Achyrocline satu… ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt;  2 Bouteloua simplex ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt;  3 Jarava ichu       ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt;  4 Cenchrus clandes… ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt;  5 Grindelia bolivi… ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt;  6 Tagetes filifolia ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt;  7 Bidens pilosa     ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt;  8 Cumulopuntia bol… ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt;  9 Ageratina sternb… ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt; 10 Roca              ---               Not threatened      &lt;NA&gt;                 </span></span>
+<span><span class="co">#&gt; # ℹ 16 more rows</span></span>
+<span><span class="co">#&gt; # ℹ 10 more variables: Protected.DS043 &lt;lgl&gt;, Is.Synonym &lt;lgl&gt;,</span></span>
+<span><span class="co">#&gt; #   Accepted.Name &lt;chr&gt;, Final.Source &lt;chr&gt;, Match.Scenario &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   Nomenclature.Status &lt;chr&gt;, Original.Matched &lt;chr&gt;, Original.Status &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   Updated.Matched &lt;chr&gt;, Updated.Status &lt;chr&gt;</span></span>
+<span></span>
+<span><span class="co"># Generate report </span></span>
+<span><span class="va">results</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">Protected.DS043</span> <span class="op">==</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Input.Name</span>, <span class="va">Consolidated.Status</span>, <span class="va">Final.Source</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 1 × 3</span></span>
+<span><span class="co">#&gt;   Input.Name        Consolidated.Status Final.Source             </span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;             &lt;chr&gt;               &lt;chr&gt;                    </span></span>
+<span><span class="co">#&gt; 1 Ephedra rupestris CR                  DS 043-2006-AG (original)</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="id_1-research-and-monitoring">1. Research and Monitoring<a class="anchor" aria-label="anchor" href="#id_1-research-and-monitoring"></a>
+</h3>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Historical species records</span></span>
+<span><span class="va">historical_names</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>  <span class="st">"Lycaste locusta"</span>,     <span class="co"># Old name</span></span>
+<span>  <span class="st">"Ida locusta"</span>          <span class="co"># Current accepted name</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Check nomenclatural updates</span></span>
+<span><span class="va">nomenclature_check</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/is_ds043_2006_ag.html">is_ds043_2006_ag</a></span><span class="op">(</span></span>
+<span>  <span class="va">historical_names</span>, </span>
+<span>  return_details <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Identify synonyms</span></span>
+<span><span class="va">nomenclature_check</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">Is.Synonym</span> <span class="op">==</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">Input.Name</span>, <span class="va">Accepted.Name</span>, <span class="va">Nomenclature.Status</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 1 × 3</span></span>
+<span><span class="co">#&gt;   Input.Name      Accepted.Name Nomenclature.Status   </span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;           &lt;chr&gt;         &lt;chr&gt;                 </span></span>
+<span><span class="co">#&gt; 1 Lycaste locusta Ida locusta   Synonym (name updated)</span></span></code></pre></div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="algorithm-details">Algorithm Details<a class="anchor" aria-label="anchor" href="#algorithm-details"></a>
+</h2>
+<div class="section level3">
+<h3 id="hierarchical-matching-pipeline">Hierarchical Matching Pipeline<a class="anchor" aria-label="anchor" href="#hierarchical-matching-pipeline"></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Direct Match</strong> (Node 1)
+<ul>
+<li>Exact matching for full scientific names</li>
+<li>Handles binomial, trinomial, and quaternomial names</li>
+<li>Fastest and most reliable method</li>
+</ul>
+</li>
+<li>
+<strong>Genus Match</strong> (Nodes 2-3)
+<ul>
+<li>Exact genus matching</li>
+<li>Fuzzy genus matching (Levenshtein distance ≤ 1)</li>
+<li>Foundation for species-level matching</li>
+</ul>
+</li>
+<li>
+<strong>Species Match</strong> (Nodes 4-5)
+<ul>
+<li>Direct species epithet matching within genus</li>
+<li>Fuzzy species matching (Levenshtein distance ≤ 1)</li>
+</ul>
+</li>
+<li>
+<strong>Infraspecies Match</strong> (Nodes 6-7)
+<ul>
+<li>Direct infraspecific rank matching (SUBSP., VAR., F., etc.)</li>
+<li>Fuzzy infraspecific epithet matching</li>
+<li>Support for two-level infraspecies (Rank 4, original database only)</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section level3">
+<h3 id="rank-validation">Rank Validation<a class="anchor" aria-label="anchor" href="#rank-validation"></a>
+</h3>
+<p>The algorithm implements <strong>strict rank validation</strong> to prevent false positives:</p>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Example: User inputs trinomial, database has binomial</span></span>
+<span><span class="co"># Input:  "Cattleya maxima var. alba" (Rank 3, doesn't exist)</span></span>
+<span><span class="co"># Database: "Cattleya maxima" (Rank 2, exists)</span></span>
+<span><span class="co"># Result: NO MATCH (correct) - prevents false positive</span></span></code></pre></div>
+<p>This ensures taxonomic precision and avoids inappropriate matches.</p>
+</div>
+</div>
+<div class="section level2">
+<h2 id="performance-considerations">Performance Considerations<a class="anchor" aria-label="anchor" href="#performance-considerations"></a>
+</h2>
+<div class="section level3">
+<h3 id="duplicate-handling">Duplicate Handling<a class="anchor" aria-label="anchor" href="#duplicate-handling"></a>
+</h3>
+<p>The package automatically handles duplicate names efficiently:</p>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Input with duplicates</span></span>
+<span><span class="va">species_dup</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>  <span class="st">"Cattleya maxima"</span>, </span>
+<span>  <span class="st">"Polylepis incana"</span>, </span>
+<span>  <span class="st">"Cattleya maxima"</span>  <span class="co"># Duplicate</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/matching_threatenedperu.html">matching_threatenedperu</a></span><span class="op">(</span><span class="va">species_dup</span><span class="op">)</span></span>
+<span><span class="va">results</span></span>
+<span><span class="co">#&gt;   sorter        Orig.Name     Matched.Name Threat.Status Author</span></span>
+<span><span class="co">#&gt; 1      1  Cattleya maxima  Cattleya maxima            CR       </span></span>
+<span><span class="co">#&gt; 2      2 Polylepis incana Polylepis incana            CR       </span></span>
+<span><span class="co">#&gt; 3      3  Cattleya maxima  Cattleya maxima            CR       </span></span>
+<span><span class="co">#&gt;   accepted_name_author Matched.Rank Comp.Rank Match.Level Orig.Genus</span></span>
+<span><span class="co">#&gt; 1               Lindl.            2      TRUE  Exact rank   CATTLEYA</span></span>
+<span><span class="co">#&gt; 2                Kunth            2      TRUE  Exact rank  POLYLEPIS</span></span>
+<span><span class="co">#&gt; 3               Lindl.            2      TRUE  Exact rank   CATTLEYA</span></span>
+<span><span class="co">#&gt;   Orig.Species Orig.Infraspecies Orig.Infraspecies_2 Rank Orig.Infra.Rank</span></span>
+<span><span class="co">#&gt; 1       MAXIMA              &lt;NA&gt;                &lt;NA&gt;    2            &lt;NA&gt;</span></span>
+<span><span class="co">#&gt; 2       INCANA              &lt;NA&gt;                &lt;NA&gt;    2            &lt;NA&gt;</span></span>
+<span><span class="co">#&gt; 3       MAXIMA              &lt;NA&gt;                &lt;NA&gt;    2            &lt;NA&gt;</span></span>
+<span><span class="co">#&gt;   Orig.Infra.Rank_2 matched direct_match Matched.Genus Matched.Species</span></span>
+<span><span class="co">#&gt; 1              &lt;NA&gt;    TRUE         TRUE      CATTLEYA          MAXIMA</span></span>
+<span><span class="co">#&gt; 2              &lt;NA&gt;    TRUE         TRUE     POLYLEPIS          INCANA</span></span>
+<span><span class="co">#&gt; 3              &lt;NA&gt;    TRUE         TRUE      CATTLEYA          MAXIMA</span></span>
+<span><span class="co">#&gt;   Matched.Infra.Rank Matched.Infraspecies Matched.Infra.Rank_2</span></span>
+<span><span class="co">#&gt; 1               &lt;NA&gt;                 &lt;NA&gt;                 &lt;NA&gt;</span></span>
+<span><span class="co">#&gt; 2               &lt;NA&gt;                 &lt;NA&gt;                 &lt;NA&gt;</span></span>
+<span><span class="co">#&gt; 3               &lt;NA&gt;                 &lt;NA&gt;                 &lt;NA&gt;</span></span>
+<span><span class="co">#&gt;   Matched.Infraspecies_2 genus_match fuzzy_match_genus fuzzy_genus_dist</span></span>
+<span><span class="co">#&gt; 1                   &lt;NA&gt;          NA                NA               NA</span></span>
+<span><span class="co">#&gt; 2                   &lt;NA&gt;          NA                NA               NA</span></span>
+<span><span class="co">#&gt; 3                   &lt;NA&gt;          NA                NA               NA</span></span>
+<span><span class="co">#&gt;   direct_match_species_within_genus suffix_match_species_within_genus</span></span>
+<span><span class="co">#&gt; 1                                NA                                NA</span></span>
+<span><span class="co">#&gt; 2                                NA                                NA</span></span>
+<span><span class="co">#&gt; 3                                NA                                NA</span></span>
+<span><span class="co">#&gt;   fuzzy_match_species_within_genus fuzzy_species_dist Matched.Rank.Calculated</span></span>
+<span><span class="co">#&gt; 1                               NA                 NA                       2</span></span>
+<span><span class="co">#&gt; 2                               NA                 NA                       2</span></span>
+<span><span class="co">#&gt; 3                               NA                 NA                       2</span></span>
+<span><span class="co">#&gt;   valid_rank direct_match_infra_rank fuzzy_match_infraspecies</span></span>
+<span><span class="co">#&gt; 1       TRUE                      NA                       NA</span></span>
+<span><span class="co">#&gt; 2       TRUE                      NA                       NA</span></span>
+<span><span class="co">#&gt; 3       TRUE                      NA                       NA</span></span>
+<span><span class="co">#&gt;   fuzzy_infraspecies_dist  tag infraspecies infraspecies_2 threat_category</span></span>
+<span><span class="co">#&gt; 1                      NA &lt;NA&gt;         &lt;NA&gt;           &lt;NA&gt;              CR</span></span>
+<span><span class="co">#&gt; 2                      NA &lt;NA&gt;         &lt;NA&gt;           &lt;NA&gt;              CR</span></span>
+<span><span class="co">#&gt; 3                      NA &lt;NA&gt;         &lt;NA&gt;           &lt;NA&gt;              CR</span></span></code></pre></div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
+</h2>
+<p>If you use <strong>peruflorads43</strong> in your research, please cite:</p>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"peruflorads43"</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bibtex"><code class="sourceCode bibtex"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="va">@Manual</span>{<span class="ot">peruflorads432025</span>,</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>  <span class="dt">title</span> = {peruflorads43: Check Threatened Plant Species Status Against Peru's DS 043-2006-AG},</span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>  <span class="dt">author</span> = {Paul E. Santos Andrade},</span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a>  <span class="dt">year</span> = {2025},</span>
+<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a>  <span class="dt">note</span> = {R package version 0.1.1},</span>
+<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a>  <span class="dt">url</span> = {https://github.com/PaulESantos/peruflorads43},</span>
+<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a>}</span></code></pre></div>
+<p><strong>Legal reference:</strong></p>
+<p>Ministerio de Agricultura. (2006). Decreto Supremo N° 043-2006-AG: Aprueban Categorización de Especies Amenazadas de Flora Silvestre. El Peruano, July 13, 2006.</p>
+</div>
+<div class="section level2">
+<h2 id="contributing">Contributing<a class="anchor" aria-label="anchor" href="#contributing"></a>
+</h2>
+<p>Contributions are welcome! Please see <a href="CONTRIBUTING.html">CONTRIBUTING.md</a> for guidelines.</p>
+<div class="section level3">
+<h3 id="reporting-issues">Reporting Issues<a class="anchor" aria-label="anchor" href="#reporting-issues"></a>
+</h3>
 <ul>
 <li>
-<code>category_ds043_2006()</code> permite la identificación de la categoría en la cual esta incorporada la especie.</li>
+<strong>Taxonomic issues</strong>: Report incorrect matches or missing species</li>
+<li>
+<strong>Bug reports</strong>: Use GitHub Issues with reproducible examples</li>
+<li>
+<strong>Feature requests</strong>: Suggest new functionality</li>
+<li>
+<strong>Documentation</strong>: Help improve examples and vignettes</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">category_ds043_2006</span><span class="op">(</span>splist <span class="op">=</span> <span class="va">splist</span><span class="op">)</span></span>
-<span><span class="co">#&gt;              name_submitted           category             accepted_name</span></span>
-<span><span class="co">#&gt; 1 Cleistocactus clavispinus En peligro critico Cleistocactus clavispinus</span></span>
-<span><span class="co">#&gt; 2            Welfia alfredi               &lt;NA&gt;                      &lt;NA&gt;</span></span>
-<span><span class="co">#&gt; 3          Matucana hayneii         Vulnerable           Matucana haynei</span></span>
-<span><span class="co">#&gt;   accepted_family</span></span>
-<span><span class="co">#&gt; 1       Cactaceae</span></span>
-<span><span class="co">#&gt; 2            &lt;NA&gt;</span></span>
-<span><span class="co">#&gt; 3       Cactaceae</span></span></code></pre></div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="acknowledgments">Acknowledgments<a class="anchor" aria-label="anchor" href="#acknowledgments"></a>
+</h2>
+<ul>
+<li>
+<strong>SERFOR</strong> (Servicio Nacional Forestal y de Fauna Silvestre) for the original DS 043-2006-AG data</li>
+<li>
+<strong>Royal Botanic Gardens, Kew</strong> for WCVP and POWO taxonomic resources</li>
+</ul>
+<hr>
+<p><strong>Disclaimer</strong>: This package implements DS 043-2006-AG for research and conservation purposes. For official legal determinations, consult the original decree and relevant Peruvian authorities.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
