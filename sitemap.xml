@@ -1,42 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/404.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/index.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/reference/category_ds043_2006.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/reference/dot-match_algorithm.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/reference/ds43_2006_sps_class.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/reference/ds_043_2006_ag.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/reference/search_ds043.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/reference/tab_ds43_2006.html</loc>
-  </url>
-  <url>
-    <loc>https://paulesantos.github.io/peruflorads43/reference/tab_ds43_2006_position.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://paulesantos.github.io/peruflorads43/404.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/LICENSE-text.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/LICENSE.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/authors.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/index.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/check_ds043.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/comparison_table_ds043.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/direct_match.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/direct_match_infra_rank_within_species.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/direct_match_infra_rank_within_species_helper.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/direct_match_species_within_genus_helper.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/dot-backup_ambiguous_attrs.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/dot-consolidate_ambiguous_attrs.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/dot-final_assertions.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/dot-restore_ambiguous_attrs.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/fuzzy_match_genus.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/fuzzy_match_infraspecies2_within_infraspecies.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/fuzzy_match_infraspecies2_within_infraspecies_helper.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/fuzzy_match_infraspecies_within_species.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/fuzzy_match_infraspecies_within_species_helper.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/fuzzy_match_species_within_genus.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/fuzzy_match_species_within_genus_helper.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/genus_match.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/get_ambiguous_matches.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/get_database_summary.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/get_threatened_database.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/index.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/is_ds043_2006_ag.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/is_threatened_peru.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/map_dfr_progress.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/matching_threatenedperu.html</loc></url>
+<url><loc>https://paulesantos.github.io/peruflorads43/reference/suffix_match_species_within_genus_helper.html</loc></url>
 </urlset>
+
