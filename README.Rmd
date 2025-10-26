@@ -23,132 +23,342 @@ knitr::opts_chunk$set(
 [![](http://cranlogs.r-pkg.org/badges/grand-total/peruflorads43?color=green)](https://cran.r-project.org/package=peruflorads43)
 [![](http://cranlogs.r-pkg.org/badges/last-week/peruflorads43?color=green)](https://cran.r-project.org/package=peruflorads43)
 <!-- badges: end -->
+## Overview
 
-El objetivo de `peruflorads43` es brindar a los usuarios una forma cómoda de acceder y analizar información sobre las especies de plantas incluidas en la "Clasificación Oficial de Especies Amenazadas de Flora Silvestre en el Perú". Este paquete incluye funciones para buscar coincidencias parciales de los nombres de las especies.
+**peruflorads43** provides comprehensive tools for working with Peru's official threatened plant species list as established by Supreme Decree **DS 043-2006-AG** (July 13, 2006). The package enables researchers, conservation practitioners, and environmental consultants to:
 
-### Instalación
+- **Validate species protection status** against the official decree
+- **Match species names** with advanced algorithms handling taxonomic changes
+- **Access complete threat data** for 776+ threatened plant species
+- **Handle nomenclatural updates** automatically since 2006
 
 
-La version estable de `peruflorads43` puede ser instalada desde CRAN, con la ayuda de:
+## Key Features
 
+### Intelligent Name Matching
+
+- **Hierarchical matching pipeline**: Direct → Genus → Fuzzy → Suffix matching
+- **Handles taxonomic complexity**: Works with binomial and infraspecific taxa
+- **Automatic standardization**: Deals with variations in formatting and spelling
+- **Ambiguity detection**: Identifies and reports uncertain matches for manual review
+
+### Dual Database System
+
+- **Original nomenclature (2006)**: Preserves names as published in DS 043-2006-AG
+- **Updated nomenclature (2025)**: Reflects current taxonomic consensus (WCVP/POWO)
+- **Synonym resolution**: Links historical names to accepted names automatically
+
+
+## Installation
+
+Install the stable version from CRAN:
 ```r
 install.packages("peruflorads43")
-
-# or
-
-pak::pak("peruflorads43")
 ```
 
+Or install the development version from GitHub:
+```r
+# Using pak (recommended)
+pak::pak("PaulESantos/peruflorads43")
 
-Para instalar la versión en desarrollo de `peruflorads43` desde GitHub, se puede utilizar el siguiente comando :
-
-``` r
-pak::pak("PaulEsantos/peruflorads43")
-```
-### Comentarios
-
-1.- En relación a la información contenida en el listado de especies, se ha identificado el registro duplicado de la especie *Bishopanthus soliceps*, la cual se encuentra en peligro crítico.
-
-2.- Asimismo, se han detectado errores en la escritura de los nombres de las algunas especies, se corrigieron estos errores para asegurar la precisión de la información en incorporada en `peruflorads43`.
-
-```{r, echo=FALSE}
-especies_error_ortografico <- tibble::tribble(
-               ~listed_name,             ~correct_name,
-     "Ascidiogine wurdackii",    "Ascidiogyne wurdackii",
-  "Proboscidea altheaefolia", "Proboscidea althaeifolia",
-         "Jaltomata mioneii",         "Jaltomata mionei",
-         "Larnax macrocalix",        "Larnax macrocalyx",
-         "Larnax sagastegui",       "Larnax sagasteguii",
-       "Solanum chuquidenum",      "Solanum chiquidenum",
-          "Mutisia wurdacki",        "Mutisia wurdackii",
-        "Peltogyne altisima",      "Peltogyne altissima",
-     "Solanum huancabambese",   "Solanum huancabambense",
-      "Salvia opossitiflora",     "Salvia oppositiflora",
-           "Ligeophila spp.",               "Ligeophila",
-     "Masdevallia zebraceae",     "Masdevallia zebracea",
-         "Telipogon alegria",       "Telipogon alegriae",
-        "Aspasia psitticina",       "Aspasia psittacina",
-     "Gongora quinquinervis",    "Gongora quinquenervis",
-   "Maxillaria rotumdilabia",  "Maxillaria rotundilabia",
-        "Mormodes revolutum",        "Mormodes revoluta",
-        "Mormodes rolfeanum",        "Mormodes rolfeana",
-       "Trichopilia fragans",     "Trichopilia fragrans",
-     "Trichopilia juninense",   "Trichopilia juninensis"
-  )
-(especies_error_ortografico)
+# Or using remotes
+remotes::install_github("PaulESantos/peruflorads43")
 ```
 
-3.-  La lista de especies se ha reducido debido a la actualización de la información taxonómica. Se han identificado especies que fueron registradas con nombres diferentes en el momento de la elaboración del listado, y en la actualidad se ha unificado el nombre utilizado para referirse a ellas. Por lo tanto, se ha producido una reducción en el número de especies listadas, pero se ha mejorado la precisión y consistencia de la información en `peruflorads43`.
+## Quick Start
 
+### Basic Usage
 
-```{r echo=FALSE}
-tibble::tribble(
-      ~species_name, ~accepted_name,
-   "Ceroxylon crispum",                  "Ceroxylon vogelianum",
-   "Ceroxylum verriculosum",             "Ceroxylon vogelianum",
-   "Comparettia coccinea",               "Comparettia coccinea",
-   "Comparettia peruviana",              "Comparettia coccinea",
-   "Geonoma undata",                     "Geonoma undata",
-   "Geonoma weberbaueri",                "Geonoma undata",
-   "Lycaste ciliata",                    "Lycaste ciliata",
-   "Lycaste fimbriata",                  "Lycaste ciliata",
-   "Mila caespitosa subsp. caespitosa",  "Mila caespitosa",
-   "Mila caespitosa subsp. densiseta",   "Mila caespitosa"
-  )
-```
-
-4.- Para las especies listadas bajo la categoría de forma:
-
-  - Haageocereus acranthus subsp. olowinskianus forma clavispinus (Rauh & Backeberg) Ostolaza 
-  - Haageocereus acranthus subsp. olowinskianus forma repandus (Rauh & Backeberg) Ostolaza    
-  - Haageocereus acranthus subsp. olowinskianus forma rubriflorior (Rauh & Backeberg) Ostolaza
-  
-  Estos registros se unifican bajo *Haageocereus acranthus subsp. olowinskianus*.
-  
-  - *Haageocereus pseudomelanostele subsp. setosus forma longicomus* (Akers) Ostolaza  pasa a ser sinónimo de la especie *Haageocereus multangularis*.
-  
-5.- La información taxonómica de las siguientes especies se conserva respecto del listado original, debido a que no se cuenta con suficiente información para la determinación des estado de identificación.
-
-- *Corryocactus quadrangularis* 
-- *Epidendrum pardothyrsus*
-- *Myrosmodes paludosum*
-- *Prosthechea cyperifolia*
-- *Stanhopea haselowiana*
-
-6.- Se tiene incluido en el listado un el genero *Ligeophila*.
-
-
-### Como usar `peruflorads43`
-
-```{r echo=TRUE}
+Check if species are threatened:
+```{r}
 library(peruflorads43)
-```
- - `search_ds043` esta fucnion puede ser empleada con un vector o data.frame:
 
-```{r echo=TRUE}
-# vector
-splist <- c("Cleistocactus clavispinus",
-              "Welfia alfredi",
-              "Matucana hayneii")
-search_ds043(splist = splist)
+# Simple vector of species names
+species_list <- c(
+  "Cattleya maxima",           # Orchid - Endangered
+  "Polylepis incana",          # Queñua tree - Vulnerable  
+  "Persea americana"           # Avocado - Not threatened
+)
 
-# data.frame
-
-df <- data.frame(splist = splist)
-df
-
-df$ds_043_2006 <- search_ds043(df$splist)
-df
-# tidyverse - tibble
-df <- tibble::tibble(splist = splist)
-df |> 
-  dplyr::mutate(ds_043_2006 = search_ds043(splist))
+# Check threat status
+is_threatened_peru(species_list)
 
 ```
- 
- - `category_ds043_2006()` permite la identificación de la categoría en la cual esta incorporada la especie.
- 
-```{r echo=TRUE}
-category_ds043_2006(splist = splist)
+
+### Detailed Matching Results
+
+Get comprehensive matching information:
+
+```{r}
+# Detailed results with matching metadata
+results <- is_threatened_peru(species_list, return_details = TRUE)
+
+# View key columns
+results |> 
+  dplyr::select(Orig.Name, Matched.Name, Threat.Status, Match.Level)
 
 ```
+
+### DS 043-2006-AG Validation
+
+Check protection status under the official decree:
+
+```{r}
+# Species with nomenclatural changes
+species <- c(
+  "Haageocereus acranthus subsp. olowinskianus",  # Original name (2006)
+  "Brassia ocanensis",                            # Updated name (was Ada)
+  "Persea americana"                              # Not threatened
+)
+
+# Consolidated search across both databases
+status <- is_ds043_2006_ag(species)
+status
+
+
+# Detailed reconciliation
+details <- is_ds043_2006_ag(species, return_details = TRUE)
+
+details |>
+  dplyr::select(Input.Name, Consolidated.Status, Final.Source, Nomenclature.Status)
+```
+
+### Handling Fuzzy Matches
+
+The package automatically handles misspellings and variations:
+
+```{r}
+# Species with typos
+species_fuzzy <- c(
+  "Catleya maxima",      # Missing 't' in Cattleya
+  "Polylepys incana"     # Wrong spelling of Polylepis
+)
+
+results <- is_threatened_peru(species_fuzzy, return_details = TRUE)
+
+# Check fuzzy matching quality
+results |>
+  dplyr::select(Orig.Name, Matched.Name, Threat.Status, 
+         fuzzy_genus_dist, fuzzy_match_genus)
+```
+
+### Reviewing Ambiguous Matches
+
+When multiple candidates have identical match scores:
+```{r}
+# Get ambiguous matches for quality control
+ambiguous <- get_ambiguous_matches(results, type = "all")
+
+# Save for manual curation
+if (!is.null(ambiguous)) {
+  get_ambiguous_matches(
+    results, 
+    type = "genus",
+    save_to_file = TRUE
+  )
+}
+```
+
+## Database Structure
+
+### Original Database (DS 043-2006-AG 2006)
+
+```{r}
+# Access original nomenclature
+db_original <- get_threatened_database(type = "original")
+
+# Summary statistics
+get_database_summary("original")
+
+```
+
+**Key characteristics:**
+
+- 776+ species as listed in 2006
+- Includes both accepted names and synonyms
+- Original infraspecific rank formatting
+
+### Updated Database (Current Nomenclature)
+
+```{r}
+# Access updated nomenclature
+db_updated <- get_threatened_database(type = "updated")
+
+# Compare with original
+get_database_summary("both")
+```
+
+**Key characteristics:**
+- Current taxonomic consensus (WCVP/POWO)
+- Supports trinomial names
+- Only accepted names (synonyms resolved)
+- Updated to 2025 nomenclature
+
+## Advanced Features
+
+### Comparison Between Databases
+
+```{r}
+# Side-by-side comparison
+comparison <- comparison_table_ds043(species)
+
+comparison |>
+ dplyr::select(input_species, status_original, status_updated, 
+         nomenclature_status, protected_by_ds_043)
+```
+
+
+## Legal Framework
+
+**Supreme Decree DS 043-2006-AG**  
+*Aprueban Categorización de Especies Amenazadas de Flora Silvestre*
+
+Issued by: Ministry of Agriculture, Peru  
+Date: July 13, 2006  
+
+### IUCN Threat Categories
+
+| Category | Code | Spanish | Description |
+|----------|------|---------|-------------|
+| Critically Endangered | **CR** | En Peligro Crítico | Extremely high risk of extinction |
+| Endangered | **EN** | En Peligro | Very high risk of extinction |
+| Vulnerable | **VU** | Vulnerable | High risk of extinction |
+| Near Threatened | **NT** | Casi Amenazado | Close to qualifying for threatened status |
+
+## Use Cases
+
+### 1. Environmental Impact Assessment (EIA)
+```{r}
+# Species list from field survey
+field_species <- c("Achyrocline saturejoides", "Bouteloua simplex", "Jarava ichu", "Cenchrus clandestinus", "Grindelia boliviana", "Tagetes filifolia", "Bidens pilosa", "Cumulopuntia boliviana", "Ageratina sternbergiana", "Roca", "Nassella inconspicua", "Dalea sp", "Baccharis tricuneata", "Lepechinia meyenii", "Erodium cicutarium", "Suelo", "Ephedra rupestris", "Achyrocline saturejoides", "Ageratina sternbergiana", "Astragalus garbancillo", "Baccharis tola", "Bidens pilosa", "Bouteloua simplex", "Cenchrus clandestinus", "Cumulopuntia boliviana", "Jarava ichu")
+
+
+# Check DS 043 protection status
+results <- is_ds043_2006_ag(field_species, return_details = TRUE)
+
+result
+
+# Generate report 
+results |>
+  dplyr::filter(Protected.DS043 == TRUE) |>
+  dplyr::select(Input.Name, Consolidated.Status, Final.Source)
+
+
+```
+
+
+### 1. Research and Monitoring
+```{r}
+# Historical species records
+historical_names <- c(
+  "Lycaste locusta",     # Old name
+  "Ida locusta"          # Current accepted name
+)
+
+# Check nomenclatural updates
+nomenclature_check <- is_ds043_2006_ag(
+  historical_names, 
+  return_details = TRUE
+)
+
+# Identify synonyms
+nomenclature_check |>
+  dplyr::filter(Is.Synonym == TRUE) |>
+  dplyr::select(Input.Name, Accepted.Name, Nomenclature.Status)
+```
+
+## Algorithm Details
+
+### Hierarchical Matching Pipeline
+
+1. **Direct Match** (Node 1)
+   - Exact matching for full scientific names
+   - Handles binomial, trinomial, and quaternomial names
+   - Fastest and most reliable method
+
+2. **Genus Match** (Nodes 2-3)
+   - Exact genus matching
+   - Fuzzy genus matching (Levenshtein distance ≤ 1)
+   - Foundation for species-level matching
+
+3. **Species Match** (Nodes 4-5)
+   - Direct species epithet matching within genus
+   - Fuzzy species matching (Levenshtein distance ≤ 1)
+
+4. **Infraspecies Match** (Nodes 6-7)
+   - Direct infraspecific rank matching (SUBSP., VAR., F., etc.)
+   - Fuzzy infraspecific epithet matching
+   - Support for two-level infraspecies (Rank 4, original database only)
+
+### Rank Validation
+
+The algorithm implements **strict rank validation** to prevent false positives:
+
+```r
+# Example: User inputs trinomial, database has binomial
+# Input:  "Cattleya maxima var. alba" (Rank 3, doesn't exist)
+# Database: "Cattleya maxima" (Rank 2, exists)
+# Result: NO MATCH (correct) - prevents false positive
+```
+
+This ensures taxonomic precision and avoids inappropriate matches.
+
+## Performance Considerations
+
+### Duplicate Handling
+
+The package automatically handles duplicate names efficiently:
+```{r}
+# Input with duplicates
+species_dup <- c(
+  "Cattleya maxima", 
+  "Polylepis incana", 
+  "Cattleya maxima"  # Duplicate
+)
+
+results <- matching_threatenedperu(species_dup)
+results
+
+```
+
+
+## Citation
+
+If you use **peruflorads43** in your research, please cite:
+```r
+citation("peruflorads43")
+```
+```bibtex
+@Manual{peruflorads432025,
+  title = {peruflorads43: Check Threatened Plant Species Status Against Peru's DS 043-2006-AG},
+  author = {Paul E. Santos Andrade},
+  year = {2025},
+  note = {R package version 0.1.1},
+  url = {https://github.com/PaulESantos/peruflorads43},
+}
+```
+
+**Legal reference:**
+
+Ministerio de Agricultura. (2006). Decreto Supremo N° 043-2006-AG: Aprueban Categorización de Especies Amenazadas de Flora Silvestre. El Peruano, July 13, 2006.
+
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### Reporting Issues
+
+- **Taxonomic issues**: Report incorrect matches or missing species
+- **Bug reports**: Use GitHub Issues with reproducible examples
+- **Feature requests**: Suggest new functionality
+- **Documentation**: Help improve examples and vignettes
+
+
+## Acknowledgments
+
+- **SERFOR** (Servicio Nacional Forestal y de Fauna Silvestre) for the original DS 043-2006-AG data
+- **Royal Botanic Gardens, Kew** for WCVP and POWO taxonomic resources
+
+---
+
+**Disclaimer**: This package implements DS 043-2006-AG for research and conservation purposes. For official legal determinations, consult the original decree and relevant Peruvian authorities.

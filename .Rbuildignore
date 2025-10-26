@@ -9,3 +9,8 @@ data/data_ds043_2006.xlsx
 ^docs$
 ^pkgdown$
 ^codecov\.yml$
+NAT-3-3-03-DS-043-2006-AG.pdf
+^deprecated
+^cleanning_data
+^data-raw$
+ds_043_2006_092025_f1.xlsx

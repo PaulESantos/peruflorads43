@@ -1,0 +1,778 @@
+id,categoria,familia,especie,nombre_comun,genero,specific_epithet,tag,infraespecie,forma,scientific_name,author
+1,EN PELIGRO CRITICO (CR),ACANTHACEAE,Aphelandra cuscoensis Wasshausen,NA,Aphelandra,cuscoensis,NA,NA,NA,Aphelandra cuscoensis,Wasshausen
+2,EN PELIGRO CRITICO (CR),ACANTHACEAE,Aphelandra formosa (Humboldt & Bonpland) Ness,NA,Aphelandra,formosa,NA,NA,NA,Aphelandra formosa,(Humboldt & Bonpland) Ness
+3,EN PELIGRO CRITICO (CR),ACANTHACEAE,Aphelandra wurdackii Wassh,NA,Aphelandra,wurdackii,NA,NA,NA,Aphelandra wurdackii,Wassh
+4,EN PELIGRO CRITICO (CR),ACANTHACEAE,Tetramerium sagasteguianum T.F Daniel,NA,Tetramerium,sagasteguianum,NA,NA,NA,Tetramerium sagasteguianum,T.F Daniel
+5,EN PELIGRO CRITICO (CR),AMARYLLIDACEAE,Pucara leucantha Ravenna,NA,Pucara,leucantha,NA,NA,NA,Pucara leucantha,Ravenna
+6,EN PELIGRO CRITICO (CR),AMARYLLIDACEAE,Rauhia decora Ravenna,NA,Rauhia,decora,NA,NA,NA,Rauhia decora,Ravenna
+7,EN PELIGRO CRITICO (CR),AMARYLLIDACEAE,Rauhia multiflora (Kunth) Ravenna,NA,Rauhia,multiflora,NA,NA,NA,Rauhia multiflora,(Kunth) Ravenna
+8,EN PELIGRO CRITICO (CR),AMARYLLIDACEAE,Rauhia staminosa Ravenna,NA,Rauhia,staminosa,NA,NA,NA,Rauhia staminosa,Ravenna
+9,EN PELIGRO CRITICO (CR),ANACARDIACEAE,Haplorhus peruviana Engl.,"ccasi, molle macho",Haplorhus,peruviana,NA,NA,NA,Haplorhus peruviana,Engl.
+10,EN PELIGRO CRITICO (CR),ANACARDIACEAE,Loxopterygium huasango Spruce ex Engl.,"hualtaco, huasango",Loxopterygium,huasango,NA,NA,NA,Loxopterygium huasango,Spruce ex Engl.
+11,EN PELIGRO CRITICO (CR),APIACEAE,Domeykoa amplexicaulis (H.Wolf) Mathias & Constance,NA,Domeykoa,amplexicaulis,NA,NA,NA,Domeykoa amplexicaulis,(H.Wolf) Mathias & Constance
+12,EN PELIGRO CRITICO (CR),ARALIACEAE,Aralia soratensis Marchal,q´ello phati,Aralia,soratensis,NA,NA,NA,Aralia soratensis,Marchal
+13,EN PELIGRO CRITICO (CR),ARECACEAE,Ceroxylon parvifrons (Engel) H.Wendl,NA,Ceroxylon,parvifrons,NA,NA,NA,Ceroxylon parvifrons,(Engel) H.Wendl
+14,EN PELIGRO CRITICO (CR),ARECACEAE,Ceroxylon weberbaueri Burret,NA,Ceroxylon,weberbaueri,NA,NA,NA,Ceroxylon weberbaueri,Burret
+15,EN PELIGRO CRITICO (CR),ASTERACEAE,Ambrosia dentata (Cabrera) Dillon,NA,Ambrosia,dentata,NA,NA,NA,Ambrosia dentata,(Cabrera) Dillon
+16,EN PELIGRO CRITICO (CR),ASTERACEAE,Ambrosia pannosa Payne,NA,Ambrosia,pannosa,NA,NA,NA,Ambrosia pannosa,Payne
+17,EN PELIGRO CRITICO (CR),ASTERACEAE,Arnaldoa macbrideana Ferreyra,NA,Arnaldoa,macbrideana,NA,NA,NA,Arnaldoa macbrideana,Ferreyra
+18,EN PELIGRO CRITICO (CR),ASTERACEAE,Arnaldoa weberbaueri (Muschl.) Ferreyra,NA,Arnaldoa,weberbaueri,NA,NA,NA,Arnaldoa weberbaueri,(Muschl.) Ferreyra
+19,EN PELIGRO CRITICO (CR),ASTERACEAE,Ascidiogine wurdackii Cuatrec.,NA,Ascidiogine,wurdackii,NA,NA,NA,Ascidiogine wurdackii,Cuatrec.
+20,EN PELIGRO CRITICO (CR),ASTERACEAE,Ascidiogyne sanchezvegae Cabrera,NA,Ascidiogyne,sanchezvegae,NA,NA,NA,Ascidiogyne sanchezvegae,Cabrera
+21,EN PELIGRO CRITICO (CR),ASTERACEAE,Bishopanthus soliceps H.Rob.,NA,Bishopanthus,soliceps,NA,NA,NA,Bishopanthus soliceps,H.Rob.
+22,EN PELIGRO CRITICO (CR),ASTERACEAE,Caxamarca sanchezii M.O.Dillon & Sagast.,NA,Caxamarca,sanchezii,NA,NA,NA,Caxamarca sanchezii,M.O.Dillon & Sagast.
+23,EN PELIGRO CRITICO (CR),ASTERACEAE,Chersodoma arequipensis (Cuatrec) Cuatrec.,NA,Chersodoma,arequipensis,NA,NA,NA,Chersodoma arequipensis,(Cuatrec) Cuatrec.
+24,EN PELIGRO CRITICO (CR),ASTERACEAE,Chucoa ilicifolia Cabrera,NA,Chucoa,ilicifolia,NA,NA,NA,Chucoa ilicifolia,Cabrera
+25,EN PELIGRO CRITICO (CR),ASTERACEAE,Dasyphyllum brevispinum Sagast. & Dillon,NA,Dasyphyllum,brevispinum,NA,NA,NA,Dasyphyllum brevispinum,Sagast. & Dillon
+26,EN PELIGRO CRITICO (CR),ASTERACEAE,Dyssodia lopez-mirandae Cabrera,NA,Dyssodia,lopez-mirandae,NA,NA,NA,Dyssodia lopez-mirandae,Cabrera
+27,EN PELIGRO CRITICO (CR),ASTERACEAE,Ferreyrella cuatrecasasii R.M. King & H.Rob,NA,Ferreyrella,cuatrecasasii,NA,NA,NA,Ferreyrella cuatrecasasii,R.M. King & H.Rob
+28,EN PELIGRO CRITICO (CR),ASTERACEAE,Ferreyrella peruviana S.F Blake,NA,Ferreyrella,peruviana,NA,NA,NA,Ferreyrella peruviana,S.F Blake
+29,EN PELIGRO CRITICO (CR),ASTERACEAE,Fulcaldea laurifolia (Humb. & Bonpl.) Poir. Ex Less.,NA,Fulcaldea,laurifolia,NA,NA,NA,Fulcaldea laurifolia,(Humb. & Bonpl.) Poir. Ex Less.
+30,EN PELIGRO CRITICO (CR),ASTERACEAE,Gynoxys dilloniana Sagast. & Dillon,NA,Gynoxys,dilloniana,NA,NA,NA,Gynoxys dilloniana,Sagast. & Dillon
+31,EN PELIGRO CRITICO (CR),ASTERACEAE,Helogyne hutchisonii R.M King & H.Rob,NA,Helogyne,hutchisonii,NA,NA,NA,Helogyne hutchisonii,R.M King & H.Rob
+32,EN PELIGRO CRITICO (CR),ASTERACEAE,Mikania filicifolia B. Robinson,NA,Mikania,filicifolia,NA,NA,NA,Mikania filicifolia,B. Robinson
+33,EN PELIGRO CRITICO (CR),ASTERACEAE,Onoseris chrysactinioides Sagast. & Dillon,NA,Onoseris,chrysactinioides,NA,NA,NA,Onoseris chrysactinioides,Sagast. & Dillon
+34,EN PELIGRO CRITICO (CR),ASTERACEAE,Pentacalia nunezii H.Rob & Cuatrec.,NA,Pentacalia,nunezii,NA,NA,NA,Pentacalia nunezii,H.Rob & Cuatrec.
+35,EN PELIGRO CRITICO (CR),ASTERACEAE,Senecio calcicola Meyen &Walp,NA,Senecio,calcicola,NA,NA,NA,Senecio calcicola,Meyen &Walp
+36,EN PELIGRO CRITICO (CR),ASTERACEAE,Senecio chachaniensis Cuatrec.,NA,Senecio,chachaniensis,NA,NA,NA,Senecio chachaniensis,Cuatrec.
+37,EN PELIGRO CRITICO (CR),ASTERACEAE,Senecio mollendoensis Cabrera,NA,Senecio,mollendoensis,NA,NA,NA,Senecio mollendoensis,Cabrera
+38,EN PELIGRO CRITICO (CR),ASTERACEAE,Senecio okopanus Cabrera,NA,Senecio,okopanus,NA,NA,NA,Senecio okopanus,Cabrera
+39,EN PELIGRO CRITICO (CR),ASTERACEAE,Senecio smithianus Cabrera,NA,Senecio,smithianus,NA,NA,NA,Senecio smithianus,Cabrera
+40,EN PELIGRO CRITICO (CR),ASTERACEAE,Senecio yurensis Rusbi,NA,Senecio,yurensis,NA,NA,NA,Senecio yurensis,Rusbi
+41,EN PELIGRO CRITICO (CR),ASTERACEAE,Smallanthus glabratus (D.C) H. Rob,NA,Smallanthus,glabratus,NA,NA,NA,Smallanthus glabratus,(D.C) H. Rob
+42,EN PELIGRO CRITICO (CR),ASTERACEAE,Bishopanthus soliceps H.Rob.,NA,Bishopanthus,soliceps,NA,NA,NA,Bishopanthus soliceps,H.Rob.
+43,EN PELIGRO CRITICO (CR),BATIDACEAE,Batis maritima L.,NA,Batis,maritima,NA,NA,NA,Batis maritima,L.
+44,EN PELIGRO CRITICO (CR),BUDDLEJACEAE,Buddleja bullata Kunth,qolle,Buddleja,bullata,NA,NA,NA,Buddleja bullata,Kunth
+45,EN PELIGRO CRITICO (CR),BUDDLEJACEAE,Buddleja coriacea Remy,"quichihuayta, kishuar, qolle, safrán",Buddleja,coriacea,NA,NA,NA,Buddleja coriacea,Remy
+46,EN PELIGRO CRITICO (CR),BUDDLEJACEAE,Buddleja incana R. & P.,"Kishuar, colle",Buddleja,incana,NA,NA,NA,Buddleja incana,R. & P.
+47,EN PELIGRO CRITICO (CR),BUDDLEJACEAE,Buddleja longifolia H. B. K,Kishuar,Buddleja,longifolia,NA,NA,NA,Buddleja longifolia,H. B. K
+48,EN PELIGRO CRITICO (CR),BUDDLEJACEAE,Buddleja montana Britton,kishuar,Buddleja,montana,NA,NA,NA,Buddleja montana,Britton
+49,EN PELIGRO CRITICO (CR),BURSERACEAE,Bursera graveolens (Kunth) Triana & Planch.,"palo santo, huanckor",Bursera,graveolens,NA,NA,NA,Bursera graveolens,(Kunth) Triana & Planch.
+50,EN PELIGRO CRITICO (CR),CAPPARACEAE,Capparis eucalyptifolia Haught,NA,Capparis,eucalyptifolia,NA,NA,NA,Capparis eucalyptifolia,Haught
+51,EN PELIGRO CRITICO (CR),CAPPARACEAE,Capparis scabrida Kunth,sapote,Capparis,scabrida,NA,NA,NA,Capparis scabrida,Kunth
+52,EN PELIGRO CRITICO (CR),CARICACEAE,Carica candicans Gray,mito,Carica,candicans,NA,NA,NA,Carica candicans,Gray
+53,EN PELIGRO CRITICO (CR),CARICACEAE,Carica quercifolia (A.St.Hil) Hieron,calasacha,Carica,quercifolia,NA,NA,NA,Carica quercifolia,(A.St.Hil) Hieron
+54,EN PELIGRO CRITICO (CR),CARICACEAE,Carica stipulata V.M. Badillo,NA,Carica,stipulata,NA,NA,NA,Carica stipulata,V.M. Badillo
+55,EN PELIGRO CRITICO (CR),CUNONIACEAE,Weinmannia piurensis O. Schmidt,NA,Weinmannia,piurensis,NA,NA,NA,Weinmannia piurensis,O. Schmidt
+56,EN PELIGRO CRITICO (CR),EPHEDRACEAE,Ephedra breana Philippi,pinco-pinco,Ephedra,breana,NA,NA,NA,Ephedra breana,Philippi
+57,EN PELIGRO CRITICO (CR),EPHEDRACEAE,Ephedra rupestris Benth.,pinco-pinco,Ephedra,rupestris,NA,NA,NA,Ephedra rupestris,Benth.
+58,EN PELIGRO CRITICO (CR),EUPHORBIACEAE,Euphorbia apurimacensis Croizat,NA,Euphorbia,apurimacensis,NA,NA,NA,Euphorbia apurimacensis,Croizat
+59,EN PELIGRO CRITICO (CR),FABACEAE,Myroxylon peruiferum L.f,bálsamo,Myroxylon,peruiferum,NA,NA,NA,Myroxylon peruiferum,L.f
+60,EN PELIGRO CRITICO (CR),FABACEAE,Otholobium mexicanum (L.f) J.W Grimes,NA,Otholobium,mexicanum,NA,NA,NA,Otholobium mexicanum,(L.f) J.W Grimes
+61,EN PELIGRO CRITICO (CR),FABACEAE,Otholobium munyensis (J.F Macbride) J.W Grimes,NA,Otholobium,munyensis,NA,NA,NA,Otholobium munyensis,(J.F Macbride) J.W Grimes
+62,EN PELIGRO CRITICO (CR),FABACEAE,Weberbauerella brongniartioides Ulbich,NA,Weberbauerella,brongniartioides,NA,NA,NA,Weberbauerella brongniartioides,Ulbich
+63,EN PELIGRO CRITICO (CR),FABACEAE,Weberbauerella raimondiana Ferreyra,NA,Weberbauerella,raimondiana,NA,NA,NA,Weberbauerella raimondiana,Ferreyra
+64,EN PELIGRO CRITICO (CR),GENTIANACEAE,Gentianella alborosea (Gilg) Fabris,hercampuri,Gentianella,alborosea,NA,NA,NA,Gentianella alborosea,(Gilg) Fabris
+65,EN PELIGRO CRITICO (CR),LYTHRACEAE,"Lourtella resinosa Graham, Bass & Tobe",NA,Lourtella,resinosa,NA,NA,NA,Lourtella resinosa,"Graham, Bass & Tobe"
+66,EN PELIGRO CRITICO (CR),LYTHRACEAE,Poensia acuminata Lafoensia,NA,Poensia,acuminata,NA,NA,NA,Poensia acuminata,Lafoensia
+67,EN PELIGRO CRITICO (CR),MALVACEAE,Abutilon piurense Ulbrich,NA,Abutilon,piurense,NA,NA,NA,Abutilon piurense,Ulbrich
+68,EN PELIGRO CRITICO (CR),MALVACEAE,Gossypium raimondii Ulbrich,algodón silvestre,Gossypium,raimondii,NA,NA,NA,Gossypium raimondii,Ulbrich
+69,EN PELIGRO CRITICO (CR),MALVACEAE,Nototriche artemisioides Hill,NA,Nototriche,artemisioides,NA,NA,NA,Nototriche artemisioides,Hill
+70,EN PELIGRO CRITICO (CR),MALVACEAE,Nototriche longituba Burtt & Hill,NA,Nototriche,longituba,NA,NA,NA,Nototriche longituba,Burtt & Hill
+71,EN PELIGRO CRITICO (CR),MALVACEAE,Nototriche lopezii Krapovickas,NA,Nototriche,lopezii,NA,NA,NA,Nototriche lopezii,Krapovickas
+72,EN PELIGRO CRITICO (CR),MALVACEAE,Nototriche staffordiae Burtt & Hill,NA,Nototriche,staffordiae,NA,NA,NA,Nototriche staffordiae,Burtt & Hill
+73,EN PELIGRO CRITICO (CR),MALVACEAE,Palaua inconspicua I.M. Johnst.,NA,Palaua,inconspicua,NA,NA,NA,Palaua inconspicua,I.M. Johnst.
+74,EN PELIGRO CRITICO (CR),MALVACEAE,Tetrasida chachapoyensis (Baker) Fryxell & Fuertes,NA,Tetrasida,chachapoyensis,NA,NA,NA,Tetrasida chachapoyensis,(Baker) Fryxell & Fuertes
+75,EN PELIGRO CRITICO (CR),MALVACEAE,Tetrasida serrulata Fryxell & Fuertes,NA,Tetrasida,serrulata,NA,NA,NA,Tetrasida serrulata,Fryxell & Fuertes
+76,EN PELIGRO CRITICO (CR),MARTINIACEAE,Proboscidea altheaefolia (Benth) Decne,NA,Proboscidea,altheaefolia,NA,NA,NA,Proboscidea altheaefolia,(Benth) Decne
+77,EN PELIGRO CRITICO (CR),MYRTACEAE,Eugenia quebradensis Mc Vaugh,gashmin,Eugenia,quebradensis,NA,NA,NA,Eugenia quebradensis,Mc Vaugh
+78,EN PELIGRO CRITICO (CR),MYRTACEAE,Myrcia fallax (Rich) DC,NA,Myrcia,fallax,NA,NA,NA,Myrcia fallax,(Rich) DC
+79,EN PELIGRO CRITICO (CR),MYRTACEAE,Myrcianthes discolor (Kunth) Mc. Vaugh,NA,Myrcianthes,discolor,NA,NA,NA,Myrcianthes discolor,(Kunth) Mc. Vaugh
+80,EN PELIGRO CRITICO (CR),MYRTACEAE,Myrcianthes ferreyrae (Mc. Vaugh) Mc. Vaugh,NA,Myrcianthes,ferreyrae,NA,NA,NA,Myrcianthes ferreyrae,(Mc. Vaugh) Mc. Vaugh
+81,EN PELIGRO CRITICO (CR),PODOCARPACEAE,Podocarpus oleifolius D. Don ex Lamb.,"saucesillo, romerillo",Podocarpus,oleifolius,NA,NA,NA,Podocarpus oleifolius,D. Don ex Lamb.
+82,EN PELIGRO CRITICO (CR),PODOCARPACEAE,Podocarpus sprucei Parl.,NA,Podocarpus,sprucei,NA,NA,NA,Podocarpus sprucei,Parl.
+83,EN PELIGRO CRITICO (CR),PODOCARPACEAE,Prumnopitys harmsiana (Pilger) de Laubenfels,"romerillo hembra, diablo fuerte",Prumnopitys,harmsiana,NA,NA,NA,Prumnopitys harmsiana,(Pilger) de Laubenfels
+84,EN PELIGRO CRITICO (CR),POLEMONIACEAE,Huthia longiflora A. Brand,NA,Huthia,longiflora,NA,NA,NA,Huthia longiflora,A. Brand
+85,EN PELIGRO CRITICO (CR),RANUNCULACEAE,Laccopetalum giganteum (Wedd.) Ulbrich.,NA,Laccopetalum,giganteum,NA,NA,NA,Laccopetalum giganteum,(Wedd.) Ulbrich.
+86,EN PELIGRO CRITICO (CR),RANUNCULACEAE,Ranunculus macropetalus,NA,Ranunculus,macropetalus,NA,NA,NA,Ranunculus macropetalus,NA
+87,EN PELIGRO CRITICO (CR),ROSACEAE,Hesperomeles heterophylla,NA,Hesperomeles,heterophylla,NA,NA,NA,Hesperomeles heterophylla,NA
+88,EN PELIGRO CRITICO (CR),ROSACEAE,Kageneckia lanceolata Ruiz & Pav.,"lloque, quisi, rahuac, uritmicuna",Kageneckia,lanceolata,NA,NA,NA,Kageneckia lanceolata,Ruiz & Pav.
+89,EN PELIGRO CRITICO (CR),ROSACEAE,Polylepis incana Kunth,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,incana,NA,NA,NA,Polylepis incana,Kunth
+90,EN PELIGRO CRITICO (CR),ROSACEAE,Polylepis racemosa Ruiz & Pav.,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,racemosa,NA,NA,NA,Polylepis racemosa,Ruiz & Pav.
+91,EN PELIGRO CRITICO (CR),SOLANACEAE,Browallia acutiloba Sagastegui & D.D Carranza,NA,Browallia,acutiloba,NA,NA,NA,Browallia acutiloba,Sagastegui & D.D Carranza
+92,EN PELIGRO CRITICO (CR),SOLANACEAE,Browallia longitubulata S.Leiva,NA,Browallia,longitubulata,NA,NA,NA,Browallia longitubulata,S.Leiva
+93,EN PELIGRO CRITICO (CR),SOLANACEAE,Browallia mirabilis Leiva,NA,Browallia,mirabilis,NA,NA,NA,Browallia mirabilis,Leiva
+94,EN PELIGRO CRITICO (CR),SOLANACEAE,Iochroma schjellerupii S. Leiva & Quipuscoa,suburrión grande,Iochroma,schjellerupii,NA,NA,NA,Iochroma schjellerupii,S. Leiva & Quipuscoa
+95,EN PELIGRO CRITICO (CR),SOLANACEAE,Iochroma nitidum S. Leiva & Quipuscoa,chinchín,Iochroma,nitidum,NA,NA,NA,Iochroma nitidum,S. Leiva & Quipuscoa
+96,EN PELIGRO CRITICO (CR),SOLANACEAE,"Iochroma stenanthum S. Leiva, Quipuscoa & Sawyer",NA,Iochroma,stenanthum,NA,NA,NA,Iochroma stenanthum,"S. Leiva, Quipuscoa & Sawyer"
+97,EN PELIGRO CRITICO (CR),SOLANACEAE,"Jaltomata aypatensis S. Leiva, Mione & Quipuscoa",frutilla,Jaltomata,aypatensis,NA,NA,NA,Jaltomata aypatensis,"S. Leiva, Mione & Quipuscoa"
+98,EN PELIGRO CRITICO (CR),SOLANACEAE,Jaltomata bernardelloana S. Leiva & Mione,songorome,Jaltomata,bernardelloana,NA,NA,NA,Jaltomata bernardelloana,S. Leiva & Mione
+99,EN PELIGRO CRITICO (CR),SOLANACEAE,"Jaltomata cuyasensis S. Leiva, Quipuscoa & Sawyer","frutilla, uvilla, mortiño blanco",Jaltomata,cuyasensis,NA,NA,NA,Jaltomata cuyasensis,"S. Leiva, Quipuscoa & Sawyer"
+100,EN PELIGRO CRITICO (CR),SOLANACEAE,Jaltomata lezamae S. Leiva & Mione,NA,Jaltomata,lezamae,NA,NA,NA,Jaltomata lezamae,S. Leiva & Mione
+101,EN PELIGRO CRITICO (CR),SOLANACEAE,Jaltomata mioneii S. Leiva & Quipuscoa,NA,Jaltomata,mioneii,NA,NA,NA,Jaltomata mioneii,S. Leiva & Quipuscoa
+102,EN PELIGRO CRITICO (CR),SOLANACEAE,"Larnax dilloniana S. Leiva, Quipuscoa & Sawyer",NA,Larnax,dilloniana,NA,NA,NA,Larnax dilloniana,"S. Leiva, Quipuscoa & Sawyer"
+103,EN PELIGRO CRITICO (CR),SOLANACEAE,Larnax kann-rasmussenii S. Leiva & Quipuscoa,NA,Larnax,kann-rasmussenii,NA,NA,NA,Larnax kann-rasmussenii,S. Leiva & Quipuscoa
+104,EN PELIGRO CRITICO (CR),SOLANACEAE,Larnax macrocalix E. Rodr. & J. Campos,NA,Larnax,macrocalix,NA,NA,NA,Larnax macrocalix,E. Rodr. & J. Campos
+105,EN PELIGRO CRITICO (CR),SOLANACEAE,Larnax nieva S. Leiva & Lezama,NA,Larnax,nieva,NA,NA,NA,Larnax nieva,S. Leiva & Lezama
+106,EN PELIGRO CRITICO (CR),SOLANACEAE,Larnax purpurea S. Leiva,NA,Larnax,purpurea,NA,NA,NA,Larnax purpurea,S. Leiva
+107,EN PELIGRO CRITICO (CR),SOLANACEAE,"Larnax sagastegui S. Leiva, Quipuscoa & Sawyer",NA,Larnax,sagastegui,NA,NA,NA,Larnax sagastegui,"S. Leiva, Quipuscoa & Sawyer"
+108,EN PELIGRO CRITICO (CR),SOLANACEAE,Nolana urumbambae Vargas,NA,Nolana,urumbambae,NA,NA,NA,Nolana urumbambae,Vargas
+109,EN PELIGRO CRITICO (CR),SOLANACEAE,Nolana minor Ferreyra,NA,Nolana,minor,NA,NA,NA,Nolana minor,Ferreyra
+110,EN PELIGRO CRITICO (CR),SOLANACEAE,Solanum chuquidenum Ochoa,NA,Solanum,chuquidenum,NA,NA,NA,Solanum chuquidenum,Ochoa
+111,EN PELIGRO CRITICO (CR),SOLANACEAE,Solanum contumazaense Ochoa,papa silvestre,Solanum,contumazaense,NA,NA,NA,Solanum contumazaense,Ochoa
+112,EN PELIGRO CRITICO (CR),SOLANACEAE,Solanum guzmanguense Whalen & Sagast.,NA,Solanum,guzmanguense,NA,NA,NA,Solanum guzmanguense,Whalen & Sagast.
+113,EN PELIGRO CRITICO (CR),SOLANACEAE,Solanum jalcae Ochoa,papa de zorro,Solanum,jalcae,NA,NA,NA,Solanum jalcae,Ochoa
+114,EN PELIGRO CRITICO (CR),SOLANACEAE,Solanum mochiquense Ochoa,papa de zorro,Solanum,mochiquense,NA,NA,NA,Solanum mochiquense,Ochoa
+115,EN PELIGRO CRITICO (CR),SOLANACEAE,Solanum tarapotense Van Heurck & Müll. Arg.,NA,Solanum,tarapotense,NA,NA,NA,Solanum tarapotense,Van Heurck & Müll. Arg.
+116,EN PELIGRO CRITICO (CR),SOLANACEAE,Solanum trinitense Ochoa,NA,Solanum,trinitense,NA,NA,NA,Solanum trinitense,Ochoa
+117,EN PELIGRO CRITICO (CR),TILIACEAE,Lueheopsis duckeana Burret,NA,Lueheopsis,duckeana,NA,NA,NA,Lueheopsis duckeana,Burret
+118,EN PELIGRO CRITICO (CR),ULMACEAE,Celtis iguanaea (Jacq) Sarq.,NA,Celtis,iguanaea,NA,NA,NA,Celtis iguanaea,(Jacq) Sarq.
+119,EN PELIGRO CRITICO (CR),VALERIANACEAE,Stangea wandae Graebn,NA,Stangea,wandae,NA,NA,NA,Stangea wandae,Graebn
+120,EN PELIGRO CRITICO (CR),VALERIANACEAE,Valeriana cumbemayensis Eriksen,NA,Valeriana,cumbemayensis,NA,NA,NA,Valeriana cumbemayensis,Eriksen
+121,EN PELIGRO CRITICO (CR),VALERIANACEAE,Valeriana longifolia Kunth,NA,Valeriana,longifolia,NA,NA,NA,Valeriana longifolia,Kunth
+1,EN PELIGRO (EN),ARECACEAE,Manicaria saccifera Gaertn.,yarinilla,Manicaria,saccifera,NA,NA,NA,Manicaria saccifera,Gaertn.
+2,EN PELIGRO (EN),BEGONIACEAE,Begonia octopetala subsp. ovatoformis Irmscher,"achanqaray, begonia",Begonia,octopetala,subsp.,ovatoformis,NA,Begonia octopetala subsp. ovatoformis,Irmscher
+3,EN PELIGRO (EN),BEGONIACEAE,Begonia veitchii Hooker.f.,"achanqaray, begonia",Begonia,veitchii,NA,NA,NA,Begonia veitchii,Hooker.f.
+4,EN PELIGRO (EN),BIGNONACEAE,Tabebuia impetiginosa (Mart. ex DC.) Standl.,guayacán,Tabebuia,impetiginosa,NA,NA,NA,Tabebuia impetiginosa,(Mart. ex DC.) Standl.
+5,EN PELIGRO (EN),BIXACEAE,Cochlospermum vitifolium (Willd.) Spreng.,Polo-polo,Cochlospermum,vitifolium,NA,NA,NA,Cochlospermum vitifolium,(Willd.) Spreng.
+6,EN PELIGRO (EN),BORAGINACEAE,Tiquilia ferreyrae (I. M. Johnston) A. Richardson.,Flor de arena,Tiquilia,ferreyrae,NA,NA,NA,Tiquilia ferreyrae,(I. M. Johnston) A. Richardson.
+7,EN PELIGRO (EN),BROMELIACEAE,Puya raimondii Harms,"ckara, cunco, junco, llacuash, santón, tica-tica, titanca, q´ayara",Puya,raimondii,NA,NA,NA,Puya raimondii,Harms
+8,EN PELIGRO (EN),BROMELIACEAE,Tillandsia sagasteguii L.B. Sm.,NA,Tillandsia,sagasteguii,NA,NA,NA,Tillandsia sagasteguii,L.B. Sm.
+9,EN PELIGRO (EN),BROMELIACEAE,Tillandsia werdermannii Harms,NA,Tillandsia,werdermannii,NA,NA,NA,Tillandsia werdermannii,Harms
+10,EN PELIGRO (EN),BUXACEAE,Styloceras columnare Muell.Arg.,Limoncillo,Styloceras,columnare,NA,NA,NA,Styloceras columnare,Muell.Arg.
+11,EN PELIGRO (EN),BUXACEAE,Styloceras laurifolium (Willd.) Kunth,"curape, limoncito de cachos, naranjillo,sapanque",Styloceras,laurifolium,NA,NA,NA,Styloceras laurifolium,(Willd.) Kunth
+12,EN PELIGRO (EN),FABACEAE,Prosopis chilensis (Molina) Stuntz,"Algarrobo, huarango, tacco",Prosopis,chilensis,NA,NA,NA,Prosopis chilensis,(Molina) Stuntz
+13,EN PELIGRO (EN),FABACEAE,Prosopis juliflora (Sw.) DC.,"Algarrobo, huarango",Prosopis,juliflora,NA,NA,NA,Prosopis juliflora,(Sw.) DC.
+14,EN PELIGRO (EN),GERANIACEAE,Geranium ayavacense Willd. Ex Kunth,NA,Geranium,ayavacense,NA,NA,NA,Geranium ayavacense,Willd. Ex Kunth
+15,EN PELIGRO (EN),GERANIACEAE,Geranium dielsianum Knuth,"pasuchaca, pasochaca",Geranium,dielsianum,NA,NA,NA,Geranium dielsianum,Knuth
+16,EN PELIGRO (EN),KRAMERIACEAE,Krameria lappacea (Dombey) Burdet & B.B. Simpson,"antacushma,mapato,malapato,ractania,rataña,ratania,sanyo,chuquitanga",Krameria,lappacea,NA,NA,NA,Krameria lappacea,(Dombey) Burdet & B.B. Simpson
+17,EN PELIGRO (EN),MALVACEAE,Abutilon arequipense Ulbrich,NA,Abutilon,arequipense,NA,NA,NA,Abutilon arequipense,Ulbrich
+18,EN PELIGRO (EN),MALVACEAE,Abutilon peruvianum (Lam.) Kearney,NA,Abutilon,peruvianum,NA,NA,NA,Abutilon peruvianum,(Lam.) Kearney
+19,EN PELIGRO (EN),MALVACEAE,Acaulimalva alismatifolia (Schumann & Hieronymus) Krapovickas,NA,Acaulimalva,alismatifolia,NA,NA,NA,Acaulimalva alismatifolia,(Schumann & Hieronymus) Krapovickas
+20,EN PELIGRO (EN),MALVACEAE,Acaulimalva sulphurea Krapov.,NA,Acaulimalva,sulphurea,NA,NA,NA,Acaulimalva sulphurea,Krapov.
+21,EN PELIGRO (EN),MALVACEAE,Cienfuegosia hitchcockii (Ulbr.) O.J. Blanch.,NA,Cienfuegosia,hitchcockii,NA,NA,NA,Cienfuegosia hitchcockii,(Ulbr.) O.J. Blanch.
+22,EN PELIGRO (EN),MALVACEAE,Gaya atiquipana Krapov.,NA,Gaya,atiquipana,NA,NA,NA,Gaya atiquipana,Krapov.
+23,EN PELIGRO (EN),MALVACEAE,Nototriche pseudo-pichinchensis Hochr.,NA,Nototriche,pseudo-pichinchensis,NA,NA,NA,Nototriche pseudo-pichinchensis,Hochr.
+24,EN PELIGRO (EN),MALVACEAE,Nototriche salina Burtt & Hill,NA,Nototriche,salina,NA,NA,NA,Nototriche salina,Burtt & Hill
+25,EN PELIGRO (EN),MALVACEAE,Nototriche tovari Krapovickas,NA,Nototriche,tovari,NA,NA,NA,Nototriche tovari,Krapovickas
+26,EN PELIGRO (EN),MALVACEAE,Palaua camanensis Ferreyra & Chanco,NA,Palaua,camanensis,NA,NA,NA,Palaua camanensis,Ferreyra & Chanco
+27,EN PELIGRO (EN),MALVACEAE,Sidasodes jamesonii (Baker f. ) Fryxell & Fuertes,NA,Sidasodes,jamesonii,NA,NA,NA,Sidasodes jamesonii,(Baker f. ) Fryxell & Fuertes
+28,EN PELIGRO (EN),MALVACEAE,Tarasa machupicchensis Krapovickas,NA,Tarasa,machupicchensis,NA,NA,NA,Tarasa machupicchensis,Krapovickas
+29,EN PELIGRO (EN),MALVACEAE,Tarasa rhombifolia Krapovickas,NA,Tarasa,rhombifolia,NA,NA,NA,Tarasa rhombifolia,Krapovickas
+30,EN PELIGRO (EN),MELIACEAE,Cedrela lilloi C. DC.,"atoc cedro, cero, c. blanco, cedro de altura",Cedrela,lilloi,NA,NA,NA,Cedrela lilloi,C. DC.
+31,EN PELIGRO (EN),MELIACEAE,Ruagea glabra Triana & Planch.,NA,Ruagea,glabra,NA,NA,NA,Ruagea glabra,Triana & Planch.
+32,EN PELIGRO (EN),OLEACEAE,Chionanthus pubescens Kunth,NA,Chionanthus,pubescens,NA,NA,NA,Chionanthus pubescens,Kunth
+33,EN PELIGRO (EN),POACEAE,Munroa decumbens Philippi,NA,Munroa,decumbens,NA,NA,NA,Munroa decumbens,Philippi
+34,EN PELIGRO (EN),POACEAE,Trichoneura weberbaueri Pilg.,NA,Trichoneura,weberbaueri,NA,NA,NA,Trichoneura weberbaueri,Pilg.
+35,EN PELIGRO (EN),ROSACEAE,Polylepis microphylla (Wedd.) Bitter,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,microphylla,NA,NA,NA,Polylepis microphylla,(Wedd.) Bitter
+36,EN PELIGRO (EN),ROSACEAE,Polylepis multijuga Pilg.,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,multijuga,NA,NA,NA,Polylepis multijuga,Pilg.
+37,EN PELIGRO (EN),ROSACEAE,Polylepis subsericans J.F. Macbr.,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,subsericans,NA,NA,NA,Polylepis subsericans,J.F. Macbr.
+38,EN PELIGRO (EN),ROSACEAE,Polylepis tomentella Wedd.,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,tomentella,NA,NA,NA,Polylepis tomentella,Wedd.
+39,EN PELIGRO (EN),ROSACEAE,Prunus ruiziana Koehne,NA,Prunus,ruiziana,NA,NA,NA,Prunus ruiziana,Koehne
+40,EN PELIGRO (EN),RUTACEAE,Zanthoxylum mantaro (J.F. Macbr.) J.F. Macbr.,NA,Zanthoxylum,mantaro,NA,NA,NA,Zanthoxylum mantaro,(J.F. Macbr.) J.F. Macbr.
+41,EN PELIGRO (EN),SAPOTACEAE,Chrysophyllum contumacense Sagást. & M.O. Dillon,NA,Chrysophyllum,contumacense,NA,NA,NA,Chrysophyllum contumacense,Sagást. & M.O. Dillon
+42,EN PELIGRO (EN),VERBENACEAE,Citharexylum quercifolium Hayek,NA,Citharexylum,quercifolium,NA,NA,NA,Citharexylum quercifolium,Hayek
+1,VULNERABLE (Vu),AMARYLLIDACEAE,Hippeastrum cuzcoense (Vargas) Gereau & Brako,NA,Hippeastrum,cuzcoense,NA,NA,NA,Hippeastrum cuzcoense,(Vargas) Gereau & Brako
+2,VULNERABLE (Vu),AMARYLLIDACEAE,Hippeastrum machupijchense (Vargas) D.R. Hunt,NA,Hippeastrum,machupijchense,NA,NA,NA,Hippeastrum machupijchense,(Vargas) D.R. Hunt
+3,VULNERABLE (Vu),AMARYLLIDACEAE,Ismene amancaes (Ruiz Lopez & Pavon) Herbert,"amancaes, amancay",Ismene,amancaes,NA,NA,NA,Ismene amancaes,(Ruiz Lopez & Pavon) Herbert
+4,VULNERABLE (Vu),AMARYLLIDACEAE,Leptochiton helianthus (Ravenna) Gereau & Meerow,NA,Leptochiton,helianthus,NA,NA,NA,Leptochiton helianthus,(Ravenna) Gereau & Meerow
+5,VULNERABLE (Vu),AMARYLLIDACEAE,Stenomesson imasumacc Vargas,NA,Stenomesson,imasumacc,NA,NA,NA,Stenomesson imasumacc,Vargas
+6,VULNERABLE (Vu),AMARYLLIDACEAE,Stenomesson miniatum (Herb.) Ravenna,"caruay piña, ului piña",Stenomesson,miniatum,NA,NA,NA,Stenomesson miniatum,(Herb.) Ravenna
+7,VULNERABLE (Vu),ANACARDIACEAE,Mauria heterophylla H. B. & K.,"quimsa rapra, trinidad",Mauria,heterophylla,NA,NA,NA,Mauria heterophylla,H. B. & K.
+8,VULNERABLE (Vu),ANACARDIACEAE,Mauria killipii F. Barkley,NA,Mauria,killipii,NA,NA,NA,Mauria killipii,F. Barkley
+9,VULNERABLE (Vu),ANACARDIACEAE,Mauria simplicifolia H. B. & K.,NA,Mauria,simplicifolia,NA,NA,NA,Mauria simplicifolia,H. B. & K.
+10,VULNERABLE (Vu),ANACARDIACEAE,Schinus pearcei Engl.,"atojlloque, molle, mulli, china molle, orcco mulli",Schinus,pearcei,NA,NA,NA,Schinus pearcei,Engl.
+11,VULNERABLE (Vu),APIACEAE,Azorella compacta Phil.,"yareta,capo,waqay-yareta,orqo-yareta,puna-yareta,champayareta",Azorella,compacta,NA,NA,NA,Azorella compacta,Phil.
+12,VULNERABLE (Vu),APIACEAE,Azorella diapensioides A. Gray,"yareta, yarita, rayita, kkota",Azorella,diapensioides,NA,NA,NA,Azorella diapensioides,A. Gray
+13,VULNERABLE (Vu),APOCYNACEAE,Parahancornia peruviana Monachino,naranjo podrido,Parahancornia,peruviana,NA,NA,NA,Parahancornia peruviana,Monachino
+14,VULNERABLE (Vu),ARECACEAE,Aiphanes spicata F. Borsch. & R. Bernal,shica-shica,Aiphanes,spicata,NA,NA,NA,Aiphanes spicata,F. Borsch. & R. Bernal
+15,VULNERABLE (Vu),ARECACEAE,Ceroxylon crispum Burret,NA,Ceroxylon,crispum,NA,NA,NA,Ceroxylon crispum,Burret
+16,VULNERABLE (Vu),ARECACEAE,Dictyocaryum ptariense (Steyerm.) H.E. Moore & Steyerm.,pona colorada,Dictyocaryum,ptariense,NA,NA,NA,Dictyocaryum ptariense,(Steyerm.) H.E. Moore & Steyerm.
+17,VULNERABLE (Vu),ARECACEAE,Euterpe caatinga Wallace,NA,Euterpe,caatinga,NA,NA,NA,Euterpe caatinga,Wallace
+18,VULNERABLE (Vu),ARECACEAE,"Euterpe luminosa A.J. Hend., G. Galeano & E. Meza","palma palanca, guayaquil",Euterpe,luminosa,NA,NA,NA,Euterpe luminosa,"A.J. Hend., G. Galeano & E. Meza"
+19,VULNERABLE (Vu),ARECACEAE,Geonoma andicola Dammer ex Burret,Frutilla,Geonoma,andicola,NA,NA,NA,Geonoma andicola,Dammer ex Burret
+20,VULNERABLE (Vu),ARECACEAE,Geonoma densa H.A.Wendland,NA,Geonoma,densa,NA,NA,NA,Geonoma densa,H.A.Wendland
+21,VULNERABLE (Vu),ARECACEAE,Geonoma weberbaueri Dammer ex Burret,NA,Geonoma,weberbaueri,NA,NA,NA,Geonoma weberbaueri,Dammer ex Burret
+22,VULNERABLE (Vu),ARECACEAE,Mauritia carana Wallace,aguaje del varillal,Mauritia,carana,NA,NA,NA,Mauritia carana,Wallace
+23,VULNERABLE (Vu),ASTERACEAE,Aequatorium rimachianum (Cuatrec.) H. Rob. & Cuatrec.,NA,Aequatorium,rimachianum,NA,NA,NA,Aequatorium rimachianum,(Cuatrec.) H. Rob. & Cuatrec.
+24,VULNERABLE (Vu),ASTERACEAE,Cronquistianthus celendinensis King & Robinson,NA,Cronquistianthus,celendinensis,NA,NA,NA,Cronquistianthus celendinensis,King & Robinson
+25,VULNERABLE (Vu),ASTERACEAE,Gynoxys colanensis Dillon & Sagast.,NA,Gynoxys,colanensis,NA,NA,NA,Gynoxys colanensis,Dillon & Sagast.
+26,VULNERABLE (Vu),ASTERACEAE,Gynoxys cuzcoensis Cuatrecasas,q´oto quiswar,Gynoxys,cuzcoensis,NA,NA,NA,Gynoxys cuzcoensis,Cuatrecasas
+27,VULNERABLE (Vu),ASTERACEAE,Lepidophyllum quadrangulare (Jacq.) Benth. & Hook. F.,"pacha-taya, taya, tola, tuya",Lepidophyllum,quadrangulare,NA,NA,NA,Lepidophyllum quadrangulare,(Jacq.) Benth. & Hook. F.
+28,VULNERABLE (Vu),ASTERACEAE,Mutisia wurdacki Cabrera,NA,Mutisia,wurdacki,NA,NA,NA,Mutisia wurdacki,Cabrera
+29,VULNERABLE (Vu),ASTERACEAE,Pappobolus sanchezii Panero,NA,Pappobolus,sanchezii,NA,NA,NA,Pappobolus sanchezii,Panero
+30,VULNERABLE (Vu),ASTERACEAE,Parastrephia lepidophylla (Weddell) Cabrera,"taya, tola",Parastrephia,lepidophylla,NA,NA,NA,Parastrephia lepidophylla,(Weddell) Cabrera
+31,VULNERABLE (Vu),ASTERACEAE,Parastrephia phylicaeformis (Meyen) Cabrera,tola,Parastrephia,phylicaeformis,NA,NA,NA,Parastrephia phylicaeformis,(Meyen) Cabrera
+32,VULNERABLE (Vu),ASTERACEAE,Perezia coerulescens Weddell,"Sutuma, china valeriana, valeriana",Perezia,coerulescens,NA,NA,NA,Perezia coerulescens,Weddell
+33,VULNERABLE (Vu),ASTERACEAE,Perezia pinnatifida (Humb. & Bonpl.) Wedd.,contrayerba,Perezia,pinnatifida,NA,NA,NA,Perezia pinnatifida,(Humb. & Bonpl.) Wedd.
+34,VULNERABLE (Vu),ASTERACEAE,Senecio casapaltensis Ball,NA,Senecio,casapaltensis,NA,NA,NA,Senecio casapaltensis,Ball
+35,VULNERABLE (Vu),ASTERACEAE,Senecio pflanzii (Perkins) Cuatrec,NA,Senecio,pflanzii,NA,NA,NA,Senecio pflanzii,(Perkins) Cuatrec
+36,VULNERABLE (Vu),ASTERACEAE,Senecio nivalis (H.B.K.) Cuatrec.,NA,Senecio,nivalis,NA,NA,NA,Senecio nivalis,(H.B.K.) Cuatrec.
+37,VULNERABLE (Vu),ASTERACEAE,Senecio nutans Schultz - Bip,chachacuma,Senecio,nutans,NA,NA,NA,Senecio nutans,Schultz - Bip
+38,VULNERABLE (Vu),ASTERACEAE,Senecio rhizomatus Rusby,"hancahuasa,lanca-huasha,llnca-huasca,ticlla-huasa,ticllaywarmi",Senecio,rhizomatus,NA,NA,NA,Senecio rhizomatus,Rusby
+39,VULNERABLE (Vu),ASTERACEAE,Senecio torrehuasensis Cuatrec.,NA,Senecio,torrehuasensis,NA,NA,NA,Senecio torrehuasensis,Cuatrec.
+40,VULNERABLE (Vu),ASTERACEAE,Senecio violaefolius Cabrera,huamanrripa,Senecio,violaefolius,NA,NA,NA,Senecio violaefolius,Cabrera
+41,VULNERABLE (Vu),ASTERACEAE,Verbesina ancashensis Sagást. & Quipuscoa,NA,Verbesina,ancashensis,NA,NA,NA,Verbesina ancashensis,Sagást. & Quipuscoa
+42,VULNERABLE (Vu),ASTERACEAE,Verbesina crassicephala Sagást. & Quipuscoa,pukanilla,Verbesina,crassicephala,NA,NA,NA,Verbesina crassicephala,Sagást. & Quipuscoa
+43,VULNERABLE (Vu),ASTERACEAE,Verbesina leivae Sagást. & Quipuscoa,NA,Verbesina,leivae,NA,NA,NA,Verbesina leivae,Sagást. & Quipuscoa
+44,VULNERABLE (Vu),ASTERACEAE,Verbesina lopez-mirandae Sagást.,quilmor,Verbesina,lopez-mirandae,NA,NA,NA,Verbesina lopez-mirandae,Sagást.
+45,VULNERABLE (Vu),ASTERACEAE,Verbesina perlanata Sagást. & Quipuscoa,NA,Verbesina,perlanata,NA,NA,NA,Verbesina perlanata,Sagást. & Quipuscoa
+46,VULNERABLE (Vu),BETULACEAE,Alnus acuminata Kunth,"aliso, huayau, lambrán, lamra, ramram, ramrash",Alnus,acuminata,NA,NA,NA,Alnus acuminata,Kunth
+47,VULNERABLE (Vu),BIGNONIACEAE,Cybistax antisyphilitica (C.Martius) C. Martius ex A.DC.,"llangua, llangue, achichua-achihua",Cybistax,antisyphilitica,NA,NA,NA,Cybistax antisyphilitica,(C.Martius) C. Martius ex A.DC.
+48,VULNERABLE (Vu),BIGNONIACEAE,Jacaranda acutifolia Humb. & Bonpl.,"yarabisca,yaravisco,arabisca,jacarandá,jarahuichca,paravisco",Jacaranda,acutifolia,NA,NA,NA,Jacaranda acutifolia,Humb. & Bonpl.
+49,VULNERABLE (Vu),BIGNONIACEAE,Jacaranda mimosifolia D. Don,"jacarandá, yaravisco",Jacaranda,mimosifolia,NA,NA,NA,Jacaranda mimosifolia,D. Don
+50,VULNERABLE (Vu),BIGNONIACEAE,Tabebuia incana A. Gentry,tahuarí,Tabebuia,incana,NA,NA,NA,Tabebuia incana,A. Gentry
+51,VULNERABLE (Vu),BIGNONIACEAE,Tabebuia serratifolia (M.Vahl ) Nicholson,"tahuarí, asta de venado, chonta",Tabebuia,serratifolia,NA,NA,NA,Tabebuia serratifolia,(M.Vahl ) Nicholson
+52,VULNERABLE (Vu),BIGNONIACEAE,Tecoma arequipensis (Sprague) Sandwith,"cahuato, pichus",Tecoma,arequipensis,NA,NA,NA,Tecoma arequipensis,(Sprague) Sandwith
+53,VULNERABLE (Vu),BOMBACACEAE,Pachira brevipes (Robyns) Alverson,NA,Pachira,brevipes,NA,NA,NA,Pachira brevipes,(Robyns) Alverson
+54,VULNERABLE (Vu),BROMELIACEAE,Greigia leymebambana H. Luther,NA,Greigia,leymebambana,NA,NA,NA,Greigia leymebambana,H. Luther
+55,VULNERABLE (Vu),BROMELIACEAE,Puya herrerae Harms,ccjayara,Puya,herrerae,NA,NA,NA,Puya herrerae,Harms
+56,VULNERABLE (Vu),BROMELIACEAE,Puya iltisiana L.B.Smith,NA,Puya,iltisiana,NA,NA,NA,Puya iltisiana,L.B.Smith
+57,VULNERABLE (Vu),CLUSIACEAE,Caraipa utilis Vásquez,aceite caspi negro,Caraipa,utilis,NA,NA,NA,Caraipa utilis,Vásquez
+58,VULNERABLE (Vu),CLUSIACEAE,Haploclathra cordata R. Vásquez,NA,Haploclathra,cordata,NA,NA,NA,Haploclathra cordata,R. Vásquez
+59,VULNERABLE (Vu),CLUSIACEAE,Haploclathra paniculata (Mart.) Benth.,NA,Haploclathra,paniculata,NA,NA,NA,Haploclathra paniculata,(Mart.) Benth.
+60,VULNERABLE (Vu),COLUMELLIACEAE,Columellia weberbaueri Schlechter,NA,Columellia,weberbaueri,NA,NA,NA,Columellia weberbaueri,Schlechter
+61,VULNERABLE (Vu),CROMBRETACEAE,Laguncularia racemosa (L.) Gaertner f.,Mangle blanco,Laguncularia,racemosa,NA,NA,NA,Laguncularia racemosa,(L.) Gaertner f.
+62,VULNERABLE (Vu),CYATHEACEAE,Cyathea caracasana (Klotzsch) Domin,Helecho arbóreo,Cyathea,caracasana,NA,NA,NA,Cyathea caracasana,(Klotzsch) Domin
+63,VULNERABLE (Vu),CYATHEACEAE,Cyathea delgadii Sternb.,Helecho arbóreo,Cyathea,delgadii,NA,NA,NA,Cyathea delgadii,Sternb.
+64,VULNERABLE (Vu),CYCADACEAE,Zamia poeppigiana Mart. & Eichler,NA,Zamia,poeppigiana,NA,NA,NA,Zamia poeppigiana,Mart. & Eichler
+65,VULNERABLE (Vu),CYCADACEAE,Zamia ulei Dammer,NA,Zamia,ulei,NA,NA,NA,Zamia ulei,Dammer
+66,VULNERABLE (Vu),EUPHORBIACEAE,Cnidoscolus basiacanthus (Pax & K. Hoffm.) J.F. Macbr.,huanarpo hembra,Cnidoscolus,basiacanthus,NA,NA,NA,Cnidoscolus basiacanthus,(Pax & K. Hoffm.) J.F. Macbr.
+67,VULNERABLE (Vu),EUPHORBIACEAE,Jatropha humboldtiana McVaugh,NA,Jatropha,humboldtiana,NA,NA,NA,Jatropha humboldtiana,McVaugh
+68,VULNERABLE (Vu),EUPHORBIACEAE,Jatropha macrantha Müll. Arg.,"barbasco, huanarpo de Canta, huanarpo macho",Jatropha,macrantha,NA,NA,NA,Jatropha macrantha,Müll. Arg.
+69,VULNERABLE (Vu),FABACEAE,Amburana acreana (Ducke) A.C. Sm.,NA,Amburana,acreana,NA,NA,NA,Amburana acreana,(Ducke) A.C. Sm.
+70,VULNERABLE (Vu),FABACEAE,Amburana cearensis (Allemão) A.C. Sm.,"ishpingo, cumaro de cheiro",Amburana,cearensis,NA,NA,NA,Amburana cearensis,(Allemão) A.C. Sm.
+71,VULNERABLE (Vu),FABACEAE,Caesalpinia spinosa (Molina) Kuntze,"tara, taya",Caesalpinia,spinosa,NA,NA,NA,Caesalpinia spinosa,(Molina) Kuntze
+72,VULNERABLE (Vu),FABACEAE,Clitoria woytkowskii Fantz,NA,Clitoria,woytkowskii,NA,NA,NA,Clitoria woytkowskii,Fantz
+73,VULNERABLE (Vu),FABACEAE,Copaifera paupera (Herzog) Dwyer,copaiba,Copaifera,paupera,NA,NA,NA,Copaifera paupera,(Herzog) Dwyer
+74,VULNERABLE (Vu),FABACEAE,Cyathostegia mathewsii (Bentham) Schery,NA,Cyathostegia,mathewsii,NA,NA,NA,Cyathostegia mathewsii,(Bentham) Schery
+75,VULNERABLE (Vu),FABACEAE,Geoffroea decorticans (Gilles ex Hooker & Arnott) Burkart,NA,Geoffroea,decorticans,NA,NA,NA,Geoffroea decorticans,(Gilles ex Hooker & Arnott) Burkart
+76,VULNERABLE (Vu),FABACEAE,Pachyrrhizus tuberosus (Lammarck) Sprengel,"achipa, ajipa, jíquima",Pachyrrhizus,tuberosus,NA,NA,NA,Pachyrrhizus tuberosus,(Lammarck) Sprengel
+77,VULNERABLE (Vu),FABACEAE,Peltogyne altisima Ducke,NA,Peltogyne,altisima,NA,NA,NA,Peltogyne altisima,Ducke
+78,VULNERABLE (Vu),FABACEAE,Prosopis pallida (Humboldt & Bonpland ex Willdenow) Kunth,"algarrobo, huarango",Prosopis,pallida,NA,NA,NA,Prosopis pallida,(Humboldt & Bonpland ex Willdenow) Kunth
+79,VULNERABLE (Vu),GENTIANACEAE,Gentianella thyrsoidea (Hook.) Fabris,japan shacoc,Gentianella,thyrsoidea,NA,NA,NA,Gentianella thyrsoidea,(Hook.) Fabris
+80,VULNERABLE (Vu),GROSSULARIACEAE,Escallonia micrantha Mattf.,chachacoma(o),Escallonia,micrantha,NA,NA,NA,Escallonia micrantha,Mattf.
+81,VULNERABLE (Vu),GROSSULARIACEAE,Escallonia myrtilloides L. f. var. myrtilloides,"chachacoma(o), fassta tassta, tosta",Escallonia,myrtilloides,var.,myrtilloides,NA,Escallonia myrtilloides var. myrtilloides,L. f.
+82,VULNERABLE (Vu),GROSSULARIACEAE,Escallonia pendula (Ruiz & Pav.) Pers.,"chachacuma, pauca, pumachilca",Escallonia,pendula,NA,NA,NA,Escallonia pendula,(Ruiz & Pav.) Pers.
+83,VULNERABLE (Vu),GROSSULARIACEAE,Escallonia resinosa (R. & P. ) Persoon,"chachas, chachacoma, china ckenhua, tatás",Escallonia,resinosa,NA,NA,NA,Escallonia resinosa,(R. & P. ) Persoon
+84,VULNERABLE (Vu),GROSSULARIACEAE,Escallonia salicifolia Mattf.,NA,Escallonia,salicifolia,NA,NA,NA,Escallonia salicifolia,Mattf.
+85,VULNERABLE (Vu),LAURACEAE,Aniba rosaeodora Ducke,palo rosa,Aniba,rosaeodora,NA,NA,NA,Aniba rosaeodora,Ducke
+86,VULNERABLE (Vu),LAURACEAE,Mezilaurus ita-uba (Meissner) Taubert ex Mez,"itahuba, itauba, ita-uba",Mezilaurus,ita-uba,NA,NA,NA,Mezilaurus ita-uba,(Meissner) Taubert ex Mez
+87,VULNERABLE (Vu),MALESHERBIACEAE,Malesherbia scarlatiflora Gilg,NA,Malesherbia,scarlatiflora,NA,NA,NA,Malesherbia scarlatiflora,Gilg
+88,VULNERABLE (Vu),MALESHERBIACEAE,Malesherbia weberbaueri Gilg,NA,Malesherbia,weberbaueri,NA,NA,NA,Malesherbia weberbaueri,Gilg
+89,VULNERABLE (Vu),MALVACEAE,Acaulimalva parnassiaefolia (Hooker) Krapov.,NA,Acaulimalva,parnassiaefolia,NA,NA,NA,Acaulimalva parnassiaefolia,(Hooker) Krapov.
+90,VULNERABLE (Vu),MALVACEAE,Acaulimalva weberbaueri (Ulbrich) Krapovickas,NA,Acaulimalva,weberbaueri,NA,NA,NA,Acaulimalva weberbaueri,(Ulbrich) Krapovickas
+91,VULNERABLE (Vu),MALVACEAE,"Kosteletzkya depressa (L.) O.J. Blanch., Fryxell & D.M. Bates",NA,Kosteletzkya,depressa,NA,NA,NA,Kosteletzkya depressa,"(L.) O.J. Blanch., Fryxell & D.M. Bates"
+92,VULNERABLE (Vu),MALVACEAE,Peltaea riedelii (Gürke) Standl.,NA,Peltaea,riedelii,NA,NA,NA,Peltaea riedelii,(Gürke) Standl.
+93,VULNERABLE (Vu),MELIACEAE,Cedrela fissilis Vell.,"cedro, c. blanco, c. de altura",Cedrela,fissilis,NA,NA,NA,Cedrela fissilis,Vell.
+94,VULNERABLE (Vu),MELIACEAE,Cedrela montana Moritz ex Turcz.,cedro de monte,Cedrela,montana,NA,NA,NA,Cedrela montana,Moritz ex Turcz.
+95,VULNERABLE (Vu),MELIACEAE,Cedrela odorata L.,"cedro colorado, c. de altura, c. del bajo",Cedrela,odorata,NA,NA,NA,Cedrela odorata,L.
+96,VULNERABLE (Vu),MELIACEAE,Swietenia macrophylla King,caoba,Swietenia,macrophylla,NA,NA,NA,Swietenia macrophylla,King
+97,VULNERABLE (Vu),MYRTACEAE,Myrcianthes quinqueloba (McVaugh) McVaugh,guayabillo,Myrcianthes,quinqueloba,NA,NA,NA,Myrcianthes quinqueloba,(McVaugh) McVaugh
+98,VULNERABLE (Vu),MYRTACEAE,Psidium rutidocarpum R.&P.,"guayabo del monte, monte sahuinto",Psidium,rutidocarpum,NA,NA,NA,Psidium rutidocarpum,R.&P.
+99,VULNERABLE (Vu),PASSIFLORACEAE,Passiflora gracilens (A. Gray) Harms,"atoc tumbo, jukuchajamppajhuai, pichincho-jamppajhuai",Passiflora,gracilens,NA,NA,NA,Passiflora gracilens,(A. Gray) Harms
+100,VULNERABLE (Vu),PIPERACEAE,Piper ollantaitambanum Trel.,NA,Piper,ollantaitambanum,NA,NA,NA,Piper ollantaitambanum,Trel.
+101,VULNERABLE (Vu),POACEAE,Aulonemia queko Goudot,NA,Aulonemia,queko,NA,NA,NA,Aulonemia queko,Goudot
+102,VULNERABLE (Vu),POACEAE,Rhipidocladum harmonicum (Parodi) McClure,"mamac, mamaje",Rhipidocladum,harmonicum,NA,NA,NA,Rhipidocladum harmonicum,(Parodi) McClure
+103,VULNERABLE (Vu),POACEAE,Tovarochloa peruviana T.D. Macfarl. & But,NA,Tovarochloa,peruviana,NA,NA,NA,Tovarochloa peruviana,T.D. Macfarl. & But
+104,VULNERABLE (Vu),POACEAE,Tripsacum australe H.C. Cutler & E.S. Anderson var. australe,NA,Tripsacum,australe,var.,australe,NA,Tripsacum australe var. australe,H.C. Cutler & E.S. Anderson
+105,VULNERABLE (Vu),POACEAE,Tripsacum peruvianum de Wet & Timothy,NA,Tripsacum,peruvianum,NA,NA,NA,Tripsacum peruvianum,de Wet & Timothy
+106,VULNERABLE (Vu),POACEAE,Uniola peruviana Laegaard & Sánchez Vega,NA,Uniola,peruviana,NA,NA,NA,Uniola peruviana,Laegaard & Sánchez Vega
+107,VULNERABLE (Vu),PROTEACEAE,Lomatia hirsuta (Lam.) Diels,"andaga garo, garo, raral, shiapash, pal pal negro",Lomatia,hirsuta,NA,NA,NA,Lomatia hirsuta,(Lam.) Diels
+108,VULNERABLE (Vu),PTERIDACEAE,Argyrochosma nivea (Poir.) Windham,"cuti cuti, raqui raqui, doradilla",Argyrochosma,nivea,NA,NA,NA,Argyrochosma nivea,(Poir.) Windham
+109,VULNERABLE (Vu),RHIZOPHORACEAE,Rhizophora mangle L.,"mangle, mangle dulce",Rhizophora,mangle,NA,NA,NA,Rhizophora mangle,L.
+110,VULNERABLE (Vu),ROSACEAE,Polylepis besseri Hieron.,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,besseri,NA,NA,NA,Polylepis besseri,Hieron.
+111,VULNERABLE (Vu),ROSACEAE,Polylepis pepei B.B. Simpson,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,pepei,NA,NA,NA,Polylepis pepei,B.B. Simpson
+112,VULNERABLE (Vu),ROSACEAE,Polylepis rugulosa Bitter,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,rugulosa,NA,NA,NA,Polylepis rugulosa,Bitter
+113,VULNERABLE (Vu),ROSACEAE,Polylepis sericea Wedd.,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,sericea,NA,NA,NA,Polylepis sericea,Wedd.
+114,VULNERABLE (Vu),ROSACEAE,Polylepis tarapacana Phil.,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,tarapacana,NA,NA,NA,Polylepis tarapacana,Phil.
+115,VULNERABLE (Vu),ROSACEAE,Polylepis weberbaueri Pilg.,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,weberbaueri,NA,NA,NA,Polylepis weberbaueri,Pilg.
+116,VULNERABLE (Vu),RUBIACEAE,Cinchona calisaya Wedd.,cascarilla,Cinchona,calisaya,NA,NA,NA,Cinchona calisaya,Wedd.
+117,VULNERABLE (Vu),SAPOTACEAE,Manilkara bidentata (A.DC.) Chevalier subsp. bidentata,"árbol de la bola, quinilla roja, balata",Manilkara,bidentata,subsp.,bidentata,NA,Manilkara bidentata subsp. bidentata,(A.DC.) Chevalier
+118,VULNERABLE (Vu),SOLANACEAE,"Capsicum tovarii Eshbaugh, P.G.Sm. & Nickrent",mucuru-uchu,Capsicum,tovarii,NA,NA,NA,Capsicum tovarii,"Eshbaugh, P.G.Sm. & Nickrent"
+119,VULNERABLE (Vu),SOLANACEAE,Jaltomata biflora (Ruiz & Pav.) Benítez,NA,Jaltomata,biflora,NA,NA,NA,Jaltomata biflora,(Ruiz & Pav.) Benítez
+120,VULNERABLE (Vu),SOLANACEAE,Jaltomata cajamarca Mione,songorome,Jaltomata,cajamarca,NA,NA,NA,Jaltomata cajamarca,Mione
+121,VULNERABLE (Vu),SOLANACEAE,Jaltomata sagastegui Mione,songorome,Jaltomata,sagastegui,NA,NA,NA,Jaltomata sagastegui,Mione
+122,VULNERABLE (Vu),SOLANACEAE,Jaltomata ventricosa (Baker) Mione,songorome,Jaltomata,ventricosa,NA,NA,NA,Jaltomata ventricosa,(Baker) Mione
+123,VULNERABLE (Vu),SOLANACEAE,Jaltomata weberbaueri (Dammer)T. Mione & F.G. Coe,cunqui,Jaltomata,weberbaueri,NA,NA,NA,Jaltomata weberbaueri,(Dammer)T. Mione & F.G. Coe
+124,VULNERABLE (Vu),SOLANACEAE,"Lycopersicon chmielewskii C.M. Rick, E. Kesicki, J. F.Forbes, & M. Holle",NA,Lycopersicon,chmielewskii,NA,NA,NA,Lycopersicon chmielewskii,"C.M. Rick, E. Kesicki, J. F.Forbes, & M. Holle"
+125,VULNERABLE (Vu),SOLANACEAE,"Lycopersicon parviflorum C.M. Rick, E. Kesicki, J. F. Forbes, & M. Holle",NA,Lycopersicon,parviflorum,NA,NA,NA,Lycopersicon parviflorum,"C.M. Rick, E. Kesicki, J. F. Forbes, & M. Holle"
+126,VULNERABLE (Vu),SOLANACEAE,Physalis quillabambensis D. Medina,NA,Physalis,quillabambensis,NA,NA,NA,Physalis quillabambensis,D. Medina
+127,VULNERABLE (Vu),SOLANACEAE,Solanum buesii Vargas,NA,Solanum,buesii,NA,NA,NA,Solanum buesii,Vargas
+128,VULNERABLE (Vu),SOLANACEAE,Solanum bukasovii Rybin,NA,Solanum,bukasovii,NA,NA,NA,Solanum bukasovii,Rybin
+129,VULNERABLE (Vu),SOLANACEAE,Solanum coelestispetalum Vargas,NA,Solanum,coelestispetalum,NA,NA,NA,Solanum coelestispetalum,Vargas
+130,VULNERABLE (Vu),SOLANACEAE,Solanum huancabambese Ochoa,NA,Solanum,huancabambese,NA,NA,NA,Solanum huancabambese,Ochoa
+131,VULNERABLE (Vu),SOLANACEAE,Solanum hypacrarthrum Bitter,NA,Solanum,hypacrarthrum,NA,NA,NA,Solanum hypacrarthrum,Bitter
+132,VULNERABLE (Vu),SOLANACEAE,Solanum incahuasinum Ochoa,NA,Solanum,incahuasinum,NA,NA,NA,Solanum incahuasinum,Ochoa
+133,VULNERABLE (Vu),SOLANACEAE,Solanum ingaefolium Ochoa,NA,Solanum,ingaefolium,NA,NA,NA,Solanum ingaefolium,Ochoa
+134,VULNERABLE (Vu),SOLANACEAE,Solanum leptophyes Bitter,NA,Solanum,leptophyes,NA,NA,NA,Solanum leptophyes,Bitter
+135,VULNERABLE (Vu),SOLANACEAE,Solanum lignicaule Vargas,NA,Solanum,lignicaule,NA,NA,NA,Solanum lignicaule,Vargas
+136,VULNERABLE (Vu),SOLANACEAE,Solanum marinasense Vargas,NA,Solanum,marinasense,NA,NA,NA,Solanum marinasense,Vargas
+137,VULNERABLE (Vu),SOLANACEAE,Solanum megistacrolobum Bitter,NA,Solanum,megistacrolobum,NA,NA,NA,Solanum megistacrolobum,Bitter
+138,VULNERABLE (Vu),SOLANACEAE,Solanum olmosense Ochoa,NA,Solanum,olmosense,NA,NA,NA,Solanum olmosense,Ochoa
+139,VULNERABLE (Vu),SOLANACEAE,Solanum pillahuatense Vargas,NA,Solanum,pillahuatense,NA,NA,NA,Solanum pillahuatense,Vargas
+140,VULNERABLE (Vu),SOLANACEAE,Solanum plowmanii S. Knapp,NA,Solanum,plowmanii,NA,NA,NA,Solanum plowmanii,S. Knapp
+141,VULNERABLE (Vu),SOLANACEAE,Solanum rachialatum Ochoa,NA,Solanum,rachialatum,NA,NA,NA,Solanum rachialatum,Ochoa
+142,VULNERABLE (Vu),SOLANACEAE,Solanum raphanifolium Cardenas & Hawkes,NA,Solanum,raphanifolium,NA,NA,NA,Solanum raphanifolium,Cardenas & Hawkes
+143,VULNERABLE (Vu),SOLANACEAE,Solanum simplicissimum Ochoa,NA,Solanum,simplicissimum,NA,NA,NA,Solanum simplicissimum,Ochoa
+144,VULNERABLE (Vu),SOLANACEAE,Solanum sogarandinum Ochoa,NA,Solanum,sogarandinum,NA,NA,NA,Solanum sogarandinum,Ochoa
+145,VULNERABLE (Vu),SOLANACEAE,Solanum sparsipilum (Bitter) Vavilov,atockpa papan,Solanum,sparsipilum,NA,NA,NA,Solanum sparsipilum,(Bitter) Vavilov
+146,VULNERABLE (Vu),SOLANACEAE,Solanum taulisense Ochoa,NA,Solanum,taulisense,NA,NA,NA,Solanum taulisense,Ochoa
+147,VULNERABLE (Vu),SOLANACEAE,Solanum urubambae Juzepczuk,NA,Solanum,urubambae,NA,NA,NA,Solanum urubambae,Juzepczuk
+148,VULNERABLE (Vu),SOLANACEAE,Solanum wittmackii Bitter,NA,Solanum,wittmackii,NA,NA,NA,Solanum wittmackii,Bitter
+149,VULNERABLE (Vu),TROPAEOLACEAE,Tropaeolum ferreyrae Sparre,NA,Tropaeolum,ferreyrae,NA,NA,NA,Tropaeolum ferreyrae,Sparre
+150,VULNERABLE (Vu),TROPAEOLACEAE,Tropaeolum fintelmannii var. olmosense (Mansf.) Sparre,NA,Tropaeolum,fintelmannii,var.,olmosense,NA,Tropaeolum fintelmannii var. olmosense,(Mansf.) Sparre
+151,VULNERABLE (Vu),TROPAEOLACEAE,Tropaeolum seemannii Buchenau,kita añu,Tropaeolum,seemannii,NA,NA,NA,Tropaeolum seemannii,Buchenau
+152,VULNERABLE (Vu),VALERIANACEAE,Valeriana comosa B.Eriksen,NA,Valeriana,comosa,NA,NA,NA,Valeriana comosa,B.Eriksen
+153,VULNERABLE (Vu),VALERIANACEAE,Valeriana nivalis Wedd.,NA,Valeriana,nivalis,NA,NA,NA,Valeriana nivalis,Wedd.
+154,VULNERABLE (Vu),VERBENACEAE,Avicennia germinans (L.) L.,"jelí salado, mangle, mangle prieto",Avicennia,germinans,NA,NA,NA,Avicennia germinans,(L.) L.
+155,VULNERABLE (Vu),VERBENACEAE,Junellia arequipense (Botta) Botta,NA,Junellia,arequipense,NA,NA,NA,Junellia arequipense,(Botta) Botta
+1,CASI AMENAZADO (NT),AMARANTHACEAE,Iresine weberbaueri Suess,NA,Iresine,weberbaueri,NA,NA,NA,Iresine weberbaueri,Suess
+2,CASI AMENAZADO (NT),AMARYLLIDACEAE,Amaryllis condemaita Vargas & Perez,NA,Amaryllis,condemaita,NA,NA,NA,Amaryllis condemaita,Vargas & Perez
+3,CASI AMENAZADO (NT),AMARYLLIDACEAE,Stenomesson pearcei Baker,NA,Stenomesson,pearcei,NA,NA,NA,Stenomesson pearcei,Baker
+4,CASI AMENAZADO (NT),ANNONACEAE,Guatteria augusti Diels,NA,Guatteria,augusti,NA,NA,NA,Guatteria augusti,Diels
+5,CASI AMENAZADO (NT),APIACEAE,Eremocharis triradiata (H. Wolff) I.M. Johnst.,supay-ccarcco,Eremocharis,triradiata,NA,NA,NA,Eremocharis triradiata,(H. Wolff) I.M. Johnst.
+6,CASI AMENAZADO (NT),APOCYNACEAE,Thevetia peruviana (Pers.) K. Schum.,"bellaquillo, ischacapa, maichill, siàtica",Thevetia,peruviana,NA,NA,NA,Thevetia peruviana,(Pers.) K. Schum.
+7,CASI AMENAZADO (NT),ARACEAE,Dracontium amazonense G.H. Zhu,NA,Dracontium,amazonense,NA,NA,NA,Dracontium amazonense,G.H. Zhu
+8,CASI AMENAZADO (NT),ARACEAE,Dracontium angustispathum G.H. Zhu,NA,Dracontium,angustispathum,NA,NA,NA,Dracontium angustispathum,G.H. Zhu
+9,CASI AMENAZADO (NT),ARACEAE,Dracontium asperispathum G.H. Zhu,NA,Dracontium,asperispathum,NA,NA,NA,Dracontium asperispathum,G.H. Zhu
+10,CASI AMENAZADO (NT),ARACEAE,Dracontium grandispathum G.H. Zhu,NA,Dracontium,grandispathum,NA,NA,NA,Dracontium grandispathum,G.H. Zhu
+11,CASI AMENAZADO (NT),ARACEAE,Dracontium peruvianum G.H. Zhu,NA,Dracontium,peruvianum,NA,NA,NA,Dracontium peruvianum,G.H. Zhu
+12,CASI AMENAZADO (NT),ARACEAE,Dracontium plowmanii G.H. Zhu,NA,Dracontium,plowmanii,NA,NA,NA,Dracontium plowmanii,G.H. Zhu
+13,CASI AMENAZADO (NT),ARACEAE,Dracontium spruceanum (Schott) G.H. Zhu,NA,Dracontium,spruceanum,NA,NA,NA,Dracontium spruceanum,(Schott) G.H. Zhu
+14,CASI AMENAZADO (NT),ARECACEAE,Aiphanes deltoidea Burret,"aifana, chica-chica, chiqui-chiqui",Aiphanes,deltoidea,NA,NA,NA,Aiphanes deltoidea,Burret
+15,CASI AMENAZADO (NT),ARECACEAE,Astrocaryum carnosum F.Khan & B. Millán,huicungo,Astrocaryum,carnosum,NA,NA,NA,Astrocaryum carnosum,F.Khan & B. Millán
+16,CASI AMENAZADO (NT),ARECACEAE,Astrocaryum huicungo Dammer ex Burret,huicungo,Astrocaryum,huicungo,NA,NA,NA,Astrocaryum huicungo,Dammer ex Burret
+17,CASI AMENAZADO (NT),ARECACEAE,Ceroxylum verriculosum Burret,NA,Ceroxylum,verriculosum,NA,NA,NA,Ceroxylum verriculosum,Burret
+18,CASI AMENAZADO (NT),ARECACEAE,Geonoma marggraffia Engel,NA,Geonoma,marggraffia,NA,NA,NA,Geonoma marggraffia,Engel
+19,CASI AMENAZADO (NT),ARECACEAE,Geonoma undata Klotzsch,NA,Geonoma,undata,NA,NA,NA,Geonoma undata,Klotzsch
+20,CASI AMENAZADO (NT),ARISTOLOCHIACEAE,Aristolochia killipiana O. Schmidt,NA,Aristolochia,killipiana,NA,NA,NA,Aristolochia killipiana,O. Schmidt
+21,CASI AMENAZADO (NT),ARISTOLOCHIACEAE,Aristolochia andahuaylensis Ahumada,NA,Aristolochia,andahuaylensis,NA,NA,NA,Aristolochia andahuaylensis,Ahumada
+22,CASI AMENAZADO (NT),ARISTOLOCHIACEAE,Aristolochia chachapoyensis Ahumada,NA,Aristolochia,chachapoyensis,NA,NA,NA,Aristolochia chachapoyensis,Ahumada
+23,CASI AMENAZADO (NT),ASTERACEAE,Baccharis genistelloides (Lam.) Pers.,"callua callua, cuchu-cuchu, karkeja, quimsa-kuchu",Baccharis,genistelloides,NA,NA,NA,Baccharis genistelloides,(Lam.) Pers.
+24,CASI AMENAZADO (NT),ASTERACEAE,Chuquiraga jussieui J.F. Gmel.,NA,Chuquiraga,jussieui,NA,NA,NA,Chuquiraga jussieui,J.F. Gmel.
+25,CASI AMENAZADO (NT),ASTERACEAE,Chuquiraga rotundifolia Weddell.,NA,Chuquiraga,rotundifolia,NA,NA,NA,Chuquiraga rotundifolia,Weddell.
+26,CASI AMENAZADO (NT),ASTERACEAE,Chuquiraga spinosa Less.,"huamanpinta, huancaspita, jari-jaraj, laulinco, llaulli",Chuquiraga,spinosa,NA,NA,NA,Chuquiraga spinosa,Less.
+27,CASI AMENAZADO (NT),ASTERACEAE,Mikania guaco Humb. & Bonpl.,"guaco, huaco, huanchohuisacha",Mikania,guaco,NA,NA,NA,Mikania guaco,Humb. & Bonpl.
+28,CASI AMENAZADO (NT),ASTERACEAE,Monactis macbridei H. Rob.,churguis,Monactis,macbridei,NA,NA,NA,Monactis macbridei,H. Rob.
+29,CASI AMENAZADO (NT),ASTERACEAE,Munnozia sagasteguii H. Rob.,NA,Munnozia,sagasteguii,NA,NA,NA,Munnozia sagasteguii,H. Rob.
+30,CASI AMENAZADO (NT),ASTERACEAE,Mutisia acuminata var. hirsuta (Meyen) Cabrera,"chinchilcuma, chinchircuma",Mutisia,acuminata,var.,hirsuta,NA,Mutisia acuminata var. hirsuta,(Meyen) Cabrera
+31,CASI AMENAZADO (NT),ASTERACEAE,Viguiera weberbaueri S. F. Blake,NA,Viguiera,weberbaueri,NA,NA,NA,Viguiera weberbaueri,S. F. Blake
+32,CASI AMENAZADO (NT),BIGNONIACEAE,Mansoa alliacea (Lam.) A.H. Gentry,"ajosacha, ajo macho, sacha ajo",Mansoa,alliacea,NA,NA,NA,Mansoa alliacea,(Lam.) A.H. Gentry
+33,CASI AMENAZADO (NT),BIGNONIACEAE,Mansoa hymenaea (A. DC.) A.H. Gentry,"ajosacha, sacha ajo, vova",Mansoa,hymenaea,NA,NA,NA,Mansoa hymenaea,(A. DC.) A.H. Gentry
+34,CASI AMENAZADO (NT),BIGNONIACEAE,Mansoa standleyi (Steyerm.) A.H. Gentry,"ajosacha, ajo macho",Mansoa,standleyi,NA,NA,NA,Mansoa standleyi,(Steyerm.) A.H. Gentry
+35,CASI AMENAZADO (NT),BIGNONIACEAE,Martinella obovata (Kunth) Bureau & K. Schum.,yuquilla,Martinella,obovata,NA,NA,NA,Martinella obovata,(Kunth) Bureau & K. Schum.
+36,CASI AMENAZADO (NT),BIGNONIACEAE,Tecoma sambucifolia H.B.K.,"huaranhua, huaruma (o), huaranhui",Tecoma,sambucifolia,NA,NA,NA,Tecoma sambucifolia,H.B.K.
+37,CASI AMENAZADO (NT),BIGNONIACEAE,Tecoma stans subsp velutina A. D.C.,huaranhua,Tecoma,stans,NA,NA,NA,Tecoma stans,subsp velutina A. D.C.
+38,CASI AMENAZADO (NT),BOMBACAEAE,Ceiba pentandra (L) Gaertner,"ceiba, huimba, lupina, lupuna",Ceiba,pentandra,NA,NA,NA,Ceiba pentandra,(L) Gaertner
+39,CASI AMENAZADO (NT),BOMBACAEAE,Ceiba salmonea (Ulbrich) Bakhuisen,NA,Ceiba,salmonea,NA,NA,NA,Ceiba salmonea,(Ulbrich) Bakhuisen
+40,CASI AMENAZADO (NT),BOMBACAEAE,Chorisia integrifolia Ulbrich,"huimba colorada, lupuna",Chorisia,integrifolia,NA,NA,NA,Chorisia integrifolia,Ulbrich
+41,CASI AMENAZADO (NT),CELASTRACEAE,Maytenus macrocarpa (Ruiz & Pav.) Briq.,"chuchuhuasi(a), chocha huasha",Maytenus,macrocarpa,NA,NA,NA,Maytenus macrocarpa,(Ruiz & Pav.) Briq.
+42,CASI AMENAZADO (NT),COLUMELLIACEAE,Columellia oblonga Ruiz & Pav.,"ollus, ulux, ullux, usllus, vara",Columellia,oblonga,NA,NA,NA,Columellia oblonga,Ruiz & Pav.
+43,CASI AMENAZADO (NT),COLUMELLIACEAE,Columellia obovata Ruiz & Pav.,"ollus, ulux, ullux, usllus, vara",Columellia,obovata,NA,NA,NA,Columellia obovata,Ruiz & Pav.
+44,CASI AMENAZADO (NT),EPHEDRACEAE,Ephedra americana Humb. & Bonpl. Ex Willd.,"cola de caballo, pinco pinco, suelda con suelda",Ephedra,americana,NA,NA,NA,Ephedra americana,Humb. & Bonpl. Ex Willd.
+45,CASI AMENAZADO (NT),EUPHORBIACEAE,Croton draconoides Muell. Arg.,"sangre de drago, sangre de grado",Croton,draconoides,NA,NA,NA,Croton draconoides,Muell. Arg.
+46,CASI AMENAZADO (NT),EUPHORBIACEAE,Croton erythrochilus Muell. Arg.,"sangre de drago, sangre de grado",Croton,erythrochilus,NA,NA,NA,Croton erythrochilus,Muell. Arg.
+47,CASI AMENAZADO (NT),EUPHORBIACEAE,Croton palanostigma Klotzsch,"sangre de drago, sangre de grado",Croton,palanostigma,NA,NA,NA,Croton palanostigma,Klotzsch
+48,CASI AMENAZADO (NT),EUPHORBIACEAE,Croton perspeciosus Croizat,"sangre de drago, sangre de grado",Croton,perspeciosus,NA,NA,NA,Croton perspeciosus,Croizat
+49,CASI AMENAZADO (NT),EUPHORBIACEAE,Croton sampatik Muell. Arg.,"sangre de drago, sangre de grado",Croton,sampatik,NA,NA,NA,Croton sampatik,Muell. Arg.
+50,CASI AMENAZADO (NT),FABACEAE,Acacia farnesiana (L.) Willd.,"flor de aroma, huaranga (o), pashaco",Acacia,farnesiana,NA,NA,NA,Acacia farnesiana,(L.) Willd.
+51,CASI AMENAZADO (NT),FABACEAE,Acacia huarango Ruiz ex J.F. Macbr.,"huarango, guarango",Acacia,huarango,NA,NA,NA,Acacia huarango,Ruiz ex J.F. Macbr.
+52,CASI AMENAZADO (NT),FABACEAE,Acacia macracantha Humb. & Bonpl. Ex Willd.,"espina(o), faique, huarango, taque, huaranjay",Acacia,macracantha,NA,NA,NA,Acacia macracantha,Humb. & Bonpl. Ex Willd.
+53,CASI AMENAZADO (NT),FABACEAE,Apurimacia boliviana Britton (Lavin),NA,Apurimacia,boliviana,NA,NA,NA,Apurimacia boliviana,Britton (Lavin)
+54,CASI AMENAZADO (NT),FABACEAE,Desmodium molliculum (H. B. K) DC.,manayupa,Desmodium,molliculum,NA,NA,NA,Desmodium molliculum,(H. B. K) DC.
+55,CASI AMENAZADO (NT),FABACEAE,Lonchocarpus nicou (Aublet) DC.,"barbasco, cube, coñapi, kumu",Lonchocarpus,nicou,NA,NA,NA,Lonchocarpus nicou,(Aublet) DC.
+56,CASI AMENAZADO (NT),GROSSULARIACEAE,Escallonia herrerae Mattf.,"pauca, fauca, pfauca",Escallonia,herrerae,NA,NA,NA,Escallonia herrerae,Mattf.
+57,CASI AMENAZADO (NT),IRIDACEAE,Eleutherine bulbosa (Mill.) Urb.,"pacahuasten, yahuar piri-piri",Eleutherine,bulbosa,NA,NA,NA,Eleutherine bulbosa,(Mill.) Urb.
+58,CASI AMENAZADO (NT),IRIDACEAE,Hesperoxiphion niveum (Ravenna) Ravenna,NA,Hesperoxiphion,niveum,NA,NA,NA,Hesperoxiphion niveum,(Ravenna) Ravenna
+59,CASI AMENAZADO (NT),IRIDACEAE,Hesperoxiphion pardale (Ravenna) Ravenna,NA,Hesperoxiphion,pardale,NA,NA,NA,Hesperoxiphion pardale,(Ravenna) Ravenna
+60,CASI AMENAZADO (NT),IRIDACEAE,Tigridia pavonia (L. f.) DC.,NA,Tigridia,pavonia,NA,NA,NA,Tigridia pavonia,(L. f.) DC.
+61,CASI AMENAZADO (NT),JUGLANDACEAE,Juglans neotropica Diels,"nogal, nogal del país",Juglans,neotropica,NA,NA,NA,Juglans neotropica,Diels
+62,CASI AMENAZADO (NT),LAMIACEAE,Salvia dombeyi Epling,"cheuchelcoma, chinchircuma, llagas-ñujchchu",Salvia,dombeyi,NA,NA,NA,Salvia dombeyi,Epling
+63,CASI AMENAZADO (NT),LAMIACEAE,Salvia opossitiflora R . & P.,"chucchu, jentipa sujunan, ñucchu, ñupchu",Salvia,opossitiflora,NA,NA,NA,Salvia opossitiflora,R . & P.
+64,CASI AMENAZADO (NT),LOASACEAE,Mentzelia fendleriana Urban & Gilg,manca-ppaqui,Mentzelia,fendleriana,NA,NA,NA,Mentzelia fendleriana,Urban & Gilg
+65,CASI AMENAZADO (NT),MALPIGHIACEAE,Banisteriopsis caapi (Spruce ex Griseb.) Morton,"añushi-ayahuasca, ayahuasca, capi, caa-pi",Banisteriopsis,caapi,NA,NA,NA,Banisteriopsis caapi,(Spruce ex Griseb.) Morton
+66,CASI AMENAZADO (NT),MALVACEAE,Acaulimalva engleriana (Ulbrich) Krapovickas,raíz de altea,Acaulimalva,engleriana,NA,NA,NA,Acaulimalva engleriana,(Ulbrich) Krapovickas
+67,CASI AMENAZADO (NT),MENISPERMACEAE,Abuta grandifolia (Mart.) Sandwith,abuta,Abuta,grandifolia,NA,NA,NA,Abuta grandifolia,(Mart.) Sandwith
+68,CASI AMENAZADO (NT),MORACEAE,Clarisia biflora R. & P. subsp. biflora,"capinuri, chimicua, piamich, yasmich",Clarisia,biflora,subsp.,biflora,NA,Clarisia biflora subsp. biflora,R. & P.
+69,CASI AMENAZADO (NT),MORACEAE,Clarisia racemosa Ruiz & Pav.,"amarillo, atuntyo, capinuri, guariuba, mashonaste",Clarisia,racemosa,NA,NA,NA,Clarisia racemosa,Ruiz & Pav.
+70,CASI AMENAZADO (NT),MORACEAE,Ficus amazonica (Miquel) Miquel,NA,Ficus,amazonica,NA,NA,NA,Ficus amazonica,(Miquel) Miquel
+71,CASI AMENAZADO (NT),MYRTACEAE,Acca lanuginosa (Ruiz & Pav. Ex G. Don) McVaugh,pacra,Acca,lanuginosa,NA,NA,NA,Acca lanuginosa,(Ruiz & Pav. Ex G. Don) McVaugh
+72,CASI AMENAZADO (NT),MYRTACEAE,Myrcianthes oreophila (Diels) McVaugh,unka,Myrcianthes,oreophila,NA,NA,NA,Myrcianthes oreophila,(Diels) McVaugh
+73,CASI AMENAZADO (NT),NYCTAGINACEAE,Mirabilis expansa (Ruiz & Pav.) Standl.,"mauca, pega-pega, cushpe, arracacha del toro",Mirabilis,expansa,NA,NA,NA,Mirabilis expansa,(Ruiz & Pav.) Standl.
+74,CASI AMENAZADO (NT),OXALIDACEAE,Oxalis pickeringii A. Gray,NA,Oxalis,pickeringii,NA,NA,NA,Oxalis pickeringii,A. Gray
+75,CASI AMENAZADO (NT),PODOCARPACEAE,Nageia rospigliosii (Pilg.) Laubenf.,"diablo fuerte, romerillo, saucesito, utcumanu, romerillo macho",Nageia,rospigliosii,NA,NA,NA,Nageia rospigliosii,(Pilg.) Laubenf.
+76,CASI AMENAZADO (NT),PODOCARPACEAE,Podocarpus glomeratus D. Don,"diablo fuerte, huampo(u), intimpa, romerillo",Podocarpus,glomeratus,NA,NA,NA,Podocarpus glomeratus,D. Don
+77,CASI AMENAZADO (NT),PODOCARPACEAE,Podocarpus magnifolius J .Buchholz & N.E.Gray,cinquimase,Podocarpus,magnifolius,NA,NA,NA,Podocarpus magnifolius,J .Buchholz & N.E.Gray
+78,CASI AMENAZADO (NT),POLEMONIACEAE,Cantua buxifolia Juss.,"ccantu, ccantut, ccantutay, cantu, cantuta",Cantua,buxifolia,NA,NA,NA,Cantua buxifolia,Juss.
+79,CASI AMENAZADO (NT),POLEMONIACEAE,Cantua cuzcoensis Infantes,NA,Cantua,cuzcoensis,NA,NA,NA,Cantua cuzcoensis,Infantes
+80,CASI AMENAZADO (NT),POLEMONIACEAE,Cantua pyrifolia Juss. Ex Lam.,ccelmo,Cantua,pyrifolia,NA,NA,NA,Cantua pyrifolia,Juss. Ex Lam.
+81,CASI AMENAZADO (NT),POLEMONIACEAE,Cantua tomentosa Cav.,NA,Cantua,tomentosa,NA,NA,NA,Cantua tomentosa,Cav.
+82,CASI AMENAZADO (NT),RHAMNACEAE,Ziziphus weberbaueri Pilg.,NA,Ziziphus,weberbaueri,NA,NA,NA,Ziziphus weberbaueri,Pilg.
+83,CASI AMENAZADO (NT),ROSACEAE,Hesperomeles escalloniifolia (Schltdl.) C.K. Schneid.,toen,Hesperomeles,escalloniifolia,NA,NA,NA,Hesperomeles escalloniifolia,(Schltdl.) C.K. Schneid.
+84,CASI AMENAZADO (NT),ROSACEAE,Hesperomeles palcensis C.K. Schneid.,NA,Hesperomeles,palcensis,NA,NA,NA,Hesperomeles palcensis,C.K. Schneid.
+85,CASI AMENAZADO (NT),ROSACEAE,Polylepis pauta (Bitter) Hieron.,"q´eñoa, qeuña, queñoa, quiñuar, kcenhua, quinoa, keuña",Polylepis,pauta,NA,NA,NA,Polylepis pauta,(Bitter) Hieron.
+86,CASI AMENAZADO (NT),SOLANACEAE,Solanum acaule Bitter,"atoj-papa, atocka papan, añaspa-papan, aya papa",Solanum,acaule,NA,NA,NA,Solanum acaule,Bitter
+1,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Ada rolandoi D.E. Benn. & Christenson,NA,Ada,rolandoi,NA,NA,NA,Ada rolandoi,D.E. Benn. & Christenson
+2,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Cattleya maxima Lindley,golondrina,Cattleya,maxima,NA,NA,NA,Cattleya maxima,Lindley
+3,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Cattleya rex O´Brien,golondrina,Cattleya,rex,NA,NA,NA,Cattleya rex,O´Brien
+4,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Chloraea pavonii Lindley,NA,Chloraea,pavonii,NA,NA,NA,Chloraea pavonii,Lindley
+5,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Chysis bruennowiana Reinchenbach f.,caña caña,Chysis,bruennowiana,NA,NA,NA,Chysis bruennowiana,Reinchenbach f.
+6,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Cycnoches lehmannii Reichenbach f.,NA,Cycnoches,lehmannii,NA,NA,NA,Cycnoches lehmannii,Reichenbach f.
+7,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Cycnoches peruviana Rolfe,alacranes,Cycnoches,peruviana,NA,NA,NA,Cycnoches peruviana,Rolfe
+8,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Ligeophila spp. Garay1,NA,Ligeophila,NA,NA,NA,NA,Ligeophila,spp. Garay1
+9,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia amplexa Luer,NA,Masdevallia,amplexa,NA,NA,NA,Masdevallia amplexa,Luer
+10,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia audax W. Königer,NA,Masdevallia,audax,NA,NA,NA,Masdevallia audax,W. Königer
+11,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia aurorae Luer & M.W.Chase,NA,Masdevallia,aurorae,NA,NA,NA,Masdevallia aurorae,Luer & M.W.Chase
+12,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia ayabacana Luer,NA,Masdevallia,ayabacana,NA,NA,NA,Masdevallia ayabacana,Luer
+13,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia bennettii Luer,NA,Masdevallia,bennettii,NA,NA,NA,Masdevallia bennettii,Luer
+14,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia bryophila Luer,NA,Masdevallia,bryophila,NA,NA,NA,Masdevallia bryophila,Luer
+15,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia cardiantha W. Königer,NA,Masdevallia,cardiantha,NA,NA,NA,Masdevallia cardiantha,W. Königer
+16,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia carpishica Luer & Cloes,NA,Masdevallia,carpishica,NA,NA,NA,Masdevallia carpishica,Luer & Cloes
+17,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia civilis Rchb.F.& Warsz,NA,Masdevallia,civilis,NA,NA,NA,Masdevallia civilis,Rchb.F.& Warsz
+18,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia collantesii D.E.Benn. & Christenson,NA,Masdevallia,collantesii,NA,NA,NA,Masdevallia collantesii,D.E.Benn. & Christenson
+19,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia constricta Poepp. & Endl.,copitas,Masdevallia,constricta,NA,NA,NA,Masdevallia constricta,Poepp. & Endl.
+20,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia cosmia Koniger & Sijm,NA,Masdevallia,cosmia,NA,NA,NA,Masdevallia cosmia,Koniger & Sijm
+21,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia dudleyi Luer,NA,Masdevallia,dudleyi,NA,NA,NA,Masdevallia dudleyi,Luer
+22,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia elegans Luer & Escobar,NA,Masdevallia,elegans,NA,NA,NA,Masdevallia elegans,Luer & Escobar
+23,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia eumeces Luer,NA,Masdevallia,eumeces,NA,NA,NA,Masdevallia eumeces,Luer
+24,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia jarae Luer,NA,Masdevallia,jarae,NA,NA,NA,Masdevallia jarae,Luer
+25,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia juan-albertoi Luer & Arias,NA,Masdevallia,juan-albertoi,NA,NA,NA,Masdevallia juan-albertoi,Luer & Arias
+26,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia karineae Nauray ex Luer,NA,Masdevallia,karineae,NA,NA,NA,Masdevallia karineae,Nauray ex Luer
+27,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia leonii D.E.Benn. & Christenson,NA,Masdevallia,leonii,NA,NA,NA,Masdevallia leonii,D.E.Benn. & Christenson
+28,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia lilianae Luer,NA,Masdevallia,lilianae,NA,NA,NA,Masdevallia lilianae,Luer
+29,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia lineolata W. Königer,NA,Masdevallia,lineolata,NA,NA,NA,Masdevallia lineolata,W. Königer
+30,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia lucernula W. Königer,NA,Masdevallia,lucernula,NA,NA,NA,Masdevallia lucernula,W. Königer
+31,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia picea Luer,NA,Masdevallia,picea,NA,NA,NA,Masdevallia picea,Luer
+32,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia popowiana W. Königer & J. G. Weinm.,NA,Masdevallia,popowiana,NA,NA,NA,Masdevallia popowiana,W. Königer & J. G. Weinm.
+33,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia prolixa Luer,NA,Masdevallia,prolixa,NA,NA,NA,Masdevallia prolixa,Luer
+34,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia prosartema W. Königer,NA,Masdevallia,prosartema,NA,NA,NA,Masdevallia prosartema,W. Königer
+35,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia pyknosepala Luer & Cloes,NA,Masdevallia,pyknosepala,NA,NA,NA,Masdevallia pyknosepala,Luer & Cloes
+36,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia pyxis Luer,NA,Masdevallia,pyxis,NA,NA,NA,Masdevallia pyxis,Luer
+37,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia recurvata Luer & Dalstrom,NA,Masdevallia,recurvata,NA,NA,NA,Masdevallia recurvata,Luer & Dalstrom
+38,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia regina Luer,NA,Masdevallia,regina,NA,NA,NA,Masdevallia regina,Luer
+39,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia rigens Luer,NA,Masdevallia,rigens,NA,NA,NA,Masdevallia rigens,Luer
+40,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia rimarima-alba Luer,NA,Masdevallia,rimarima-alba,NA,NA,NA,Masdevallia rimarima-alba,Luer
+41,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia schizostigma Luer,NA,Masdevallia,schizostigma,NA,NA,NA,Masdevallia schizostigma,Luer
+42,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia scitula W. Königer,NA,Masdevallia,scitula,NA,NA,NA,Masdevallia scitula,W. Königer
+43,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia selenites W. Königer,NA,Masdevallia,selenites,NA,NA,NA,Masdevallia selenites,W. Königer
+44,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia spilantha W. Königer,NA,Masdevallia,spilantha,NA,NA,NA,Masdevallia spilantha,W. Königer
+45,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia uniflora Ruiz & Pavon,NA,Masdevallia,uniflora,NA,NA,NA,Masdevallia uniflora,Ruiz & Pavon
+46,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia vomeris Luer,NA,Masdevallia,vomeris,NA,NA,NA,Masdevallia vomeris,Luer
+47,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Masdevallia zebraceae Luer,NA,Masdevallia,zebraceae,NA,NA,NA,Masdevallia zebraceae,Luer
+48,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Phragmipedium besseae Dodson & J. Kuhn,zapatito,Phragmipedium,besseae,NA,NA,NA,Phragmipedium besseae,Dodson & J. Kuhn
+49,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Phragmipedium caudatum (Lindley) Rolfe,zapatito de la reyna,Phragmipedium,caudatum,NA,NA,NA,Phragmipedium caudatum,(Lindley) Rolfe
+50,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Phragmipedium hartwegii (Rchb. f.) L.O. Williams,NA,Phragmipedium,hartwegii,NA,NA,NA,Phragmipedium hartwegii,(Rchb. f.) L.O. Williams
+51,EN PELIGRO CRITICO (CR),ORCHIDACEAE,"Phragmipedium kovachii J.T. Atwood, Dalström & Ric. Fernandez",NA,Phragmipedium,kovachii,NA,NA,NA,Phragmipedium kovachii,"J.T. Atwood, Dalström & Ric. Fernandez"
+52,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Phragmipedium wallisii (Reichenbach f.) Garay,zapatito de la reyna,Phragmipedium,wallisii,NA,NA,NA,Phragmipedium wallisii,(Reichenbach f.) Garay
+53,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Psychopsis sanderae (Rolfe) Lückel & Braem,mariposa,Psychopsis,sanderae,NA,NA,NA,Psychopsis sanderae,(Rolfe) Lückel & Braem
+54,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Rusbyella suarezii D.E.Benn. & Christenson,NA,Rusbyella,suarezii,NA,NA,NA,Rusbyella suarezii,D.E.Benn. & Christenson
+55,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Sobralia altissima D.E.Benn. & Christenson,flor inquil,Sobralia,altissima,NA,NA,NA,Sobralia altissima,D.E.Benn. & Christenson
+56,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Telipogon alegria D.E.Benn. & Christenson,NA,Telipogon,alegria,NA,NA,NA,Telipogon alegria,D.E.Benn. & Christenson
+57,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Telipogon atropurpurea Bennett & Fernández,NA,Telipogon,atropurpurea,NA,NA,NA,Telipogon atropurpurea,Bennett & Fernández
+58,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Telipogon campoverdei Bennett & Fernández,NA,Telipogon,campoverdei,NA,NA,NA,Telipogon campoverdei,Bennett & Fernández
+59,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Telipogon suarezii D.E.Benn. & Christenson,NA,Telipogon,suarezii,NA,NA,NA,Telipogon suarezii,D.E.Benn. & Christenson
+60,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Telipogon tayacajaensis D.E.Benn. & Christenson,NA,Telipogon,tayacajaensis,NA,NA,NA,Telipogon tayacajaensis,D.E.Benn. & Christenson
+61,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Trichoceros hajekiorum D.E.Benn. & Christenson,abejita,Trichoceros,hajekiorum,NA,NA,NA,Trichoceros hajekiorum,D.E.Benn. & Christenson
+62,EN PELIGRO CRITICO (CR),ORCHIDACEAE,Zootrophion leonii D.E.Benn. & Christenson,NA,Zootrophion,leonii,NA,NA,NA,Zootrophion leonii,D.E.Benn. & Christenson
+1,EN PELIGRO (EN),ORCHIDACEAE,Ackermania jarae D.E. Benn. & Christenson,NA,Ackermania,jarae,NA,NA,NA,Ackermania jarae,D.E. Benn. & Christenson
+2,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia cinnamomea Reichenbach f.,NA,Masdevallia,cinnamomea,NA,NA,NA,Masdevallia cinnamomea,Reichenbach f.
+3,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia cleistogama Luer,NA,Masdevallia,cleistogama,NA,NA,NA,Masdevallia cleistogama,Luer
+4,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia colossus Luer,NA,Masdevallia,colossus,NA,NA,NA,Masdevallia colossus,Luer
+5,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia concinna W Königer,NA,Masdevallia,concinna,NA,NA,NA,Masdevallia concinna,W Königer
+6,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia echo Luer,NA,Masdevallia,echo,NA,NA,NA,Masdevallia echo,Luer
+7,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia glandulosa W. Königer,NA,Masdevallia,glandulosa,NA,NA,NA,Masdevallia glandulosa,W. Königer
+8,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia goliath Luer & Andreetta,NA,Masdevallia,goliath,NA,NA,NA,Masdevallia goliath,Luer & Andreetta
+9,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia hymenantha Reichenbach f.,NA,Masdevallia,hymenantha,NA,NA,NA,Masdevallia hymenantha,Reichenbach f.
+10,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia idae Luer & Arias,NA,Masdevallia,idae,NA,NA,NA,Masdevallia idae,Luer & Arias
+11,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia kuhniorum Luer,NA,Masdevallia,kuhniorum,NA,NA,NA,Masdevallia kuhniorum,Luer
+12,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia lamprotyria W. Königer,NA,Masdevallia,lamprotyria,NA,NA,NA,Masdevallia lamprotyria,W. Königer
+13,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia lintricula W. Königer,NA,Masdevallia,lintricula,NA,NA,NA,Masdevallia lintricula,W. Königer
+14,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia phoenix Luer,NA,Masdevallia,phoenix,NA,NA,NA,Masdevallia phoenix,Luer
+15,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia princeps Luer,NA,Masdevallia,princeps,NA,NA,NA,Masdevallia princeps,Luer
+16,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia richardsoniana Luer,NA,Masdevallia,richardsoniana,NA,NA,NA,Masdevallia richardsoniana,Luer
+17,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia semiteres Luer & Escobar,NA,Masdevallia,semiteres,NA,NA,NA,Masdevallia semiteres,Luer & Escobar
+18,EN PELIGRO (EN),ORCHIDACEAE,Masdevallia titan Luer,NA,Masdevallia,titan,NA,NA,NA,Masdevallia titan,Luer
+19,EN PELIGRO (EN),ORCHIDACEAE,Oncidium lanceanum Lindley,orejas de burro,Oncidium,lanceanum,NA,NA,NA,Oncidium lanceanum,Lindley
+1,VULNERABLE (Vu),ORCHIDACEAE,"Ada euodes (Reichb, f.)D.E. Benn. & Christenson",NA,Ada,euodes,NA,NA,NA,Ada euodes,"(Reichb, f.)D.E. Benn. & Christenson"
+2,VULNERABLE (Vu),ORCHIDACEAE,Ada ocanensis (Lindley) N.H. Williams,NA,Ada,ocanensis,NA,NA,NA,Ada ocanensis,(Lindley) N.H. Williams
+3,VULNERABLE (Vu),ORCHIDACEAE,Anguloa uniflora Ruiz & Pavon,tulipan,Anguloa,uniflora,NA,NA,NA,Anguloa uniflora,Ruiz & Pavon
+4,VULNERABLE (Vu),ORCHIDACEAE,Anguloa virginalis Lindley,tulipan,Anguloa,virginalis,NA,NA,NA,Anguloa virginalis,Lindley
+5,VULNERABLE (Vu),ORCHIDACEAE,Aspasia psitticina (Reichb. f.) Reichb.f.,NA,Aspasia,psitticina,NA,NA,NA,Aspasia psitticina,(Reichb. f.) Reichb.f.
+6,VULNERABLE (Vu),ORCHIDACEAE,Aspidogyne mystacina (Reichb. f.) Garay,NA,Aspidogyne,mystacina,NA,NA,NA,Aspidogyne mystacina,(Reichb. f.) Garay
+7,VULNERABLE (Vu),ORCHIDACEAE,Batemania peruviana Rolfe,NA,Batemania,peruviana,NA,NA,NA,Batemania peruviana,Rolfe
+8,VULNERABLE (Vu),ORCHIDACEAE,Bollea hirtzii Waldvogel,pavo blanco,Bollea,hirtzii,NA,NA,NA,Bollea hirtzii,Waldvogel
+9,VULNERABLE (Vu),ORCHIDACEAE,Brachionidium machupicchuense N. Salinas & Christenson,NA,Brachionidium,machupicchuense,NA,NA,NA,Brachionidium machupicchuense,N. Salinas & Christenson
+10,VULNERABLE (Vu),ORCHIDACEAE,Brassia arcuigera Reichenbach f.,NA,Brassia,arcuigera,NA,NA,NA,Brassia arcuigera,Reichenbach f.
+11,VULNERABLE (Vu),ORCHIDACEAE,Brassia aurorae Bennett,NA,Brassia,aurorae,NA,NA,NA,Brassia aurorae,Bennett
+12,VULNERABLE (Vu),ORCHIDACEAE,Brassia caudata (L.) Lindley,avispa,Brassia,caudata,NA,NA,NA,Brassia caudata,(L.) Lindley
+13,VULNERABLE (Vu),ORCHIDACEAE,Brassia forgetiana Lindley,NA,Brassia,forgetiana,NA,NA,NA,Brassia forgetiana,Lindley
+14,VULNERABLE (Vu),ORCHIDACEAE,Brassia lanceana Lindley,NA,Brassia,lanceana,NA,NA,NA,Brassia lanceana,Lindley
+15,VULNERABLE (Vu),ORCHIDACEAE,Brassia neglecta Reichenbach f.,NA,Brassia,neglecta,NA,NA,NA,Brassia neglecta,Reichenbach f.
+16,VULNERABLE (Vu),ORCHIDACEAE,Brassia pascoensis D.E.Benn. & Christenson,NA,Brassia,pascoensis,NA,NA,NA,Brassia pascoensis,D.E.Benn. & Christenson
+17,VULNERABLE (Vu),ORCHIDACEAE,Brassia peruviana Poeppig & Endlicher,avispa,Brassia,peruviana,NA,NA,NA,Brassia peruviana,Poeppig & Endlicher
+18,VULNERABLE (Vu),ORCHIDACEAE,Brassia villosa Lindley,avispa,Brassia,villosa,NA,NA,NA,Brassia villosa,Lindley
+19,VULNERABLE (Vu),ORCHIDACEAE,Brassia wageneri Reichenbach f.,NA,Brassia,wageneri,NA,NA,NA,Brassia wageneri,Reichenbach f.
+20,VULNERABLE (Vu),ORCHIDACEAE,Bulbophyllum machupicchuense D.E.Benn. & Christenson,NA,Bulbophyllum,machupicchuense,NA,NA,NA,Bulbophyllum machupicchuense,D.E.Benn. & Christenson
+21,VULNERABLE (Vu),ORCHIDACEAE,Catasetum adremedium D.E.Benn. & Christenson,NA,Catasetum,adremedium,NA,NA,NA,Catasetum adremedium,D.E.Benn. & Christenson
+22,VULNERABLE (Vu),ORCHIDACEAE,Catasetum barbatum Lindley,NA,Catasetum,barbatum,NA,NA,NA,Catasetum barbatum,Lindley
+23,VULNERABLE (Vu),ORCHIDACEAE,Catasetum cotylicheilum D.E.Benn. & Christenson,NA,Catasetum,cotylicheilum,NA,NA,NA,Catasetum cotylicheilum,D.E.Benn. & Christenson
+24,VULNERABLE (Vu),ORCHIDACEAE,Catasetum fernandezii D.E.Benn. & Christenson,NA,Catasetum,fernandezii,NA,NA,NA,Catasetum fernandezii,D.E.Benn. & Christenson
+25,VULNERABLE (Vu),ORCHIDACEAE,Catasetum macroglossum Reichenbach f.,arañas,Catasetum,macroglossum,NA,NA,NA,Catasetum macroglossum,Reichenbach f.
+26,VULNERABLE (Vu),ORCHIDACEAE,Catasetum monzonense D.E.Benn. & Christenson,NA,Catasetum,monzonense,NA,NA,NA,Catasetum monzonense,D.E.Benn. & Christenson
+27,VULNERABLE (Vu),ORCHIDACEAE,Catasetum schunkei Dodson & Bennett,arañas,Catasetum,schunkei,NA,NA,NA,Catasetum schunkei,Dodson & Bennett
+28,VULNERABLE (Vu),ORCHIDACEAE,Catasetum stevensonii Dodson,NA,Catasetum,stevensonii,NA,NA,NA,Catasetum stevensonii,Dodson
+29,VULNERABLE (Vu),ORCHIDACEAE,Catasetum tenebrosum Kraenzlin,arañas,Catasetum,tenebrosum,NA,NA,NA,Catasetum tenebrosum,Kraenzlin
+30,VULNERABLE (Vu),ORCHIDACEAE,Catasetum transversicallosum D.E.Benn. & Christenson,NA,Catasetum,transversicallosum,NA,NA,NA,Catasetum transversicallosum,D.E.Benn. & Christenson
+31,VULNERABLE (Vu),ORCHIDACEAE,Catasetum trautmannii Senghas,NA,Catasetum,trautmannii,NA,NA,NA,Catasetum trautmannii,Senghas
+32,VULNERABLE (Vu),ORCHIDACEAE,Cattleya intermedia Graham ex Hook,NA,Cattleya,intermedia,NA,NA,NA,Cattleya intermedia,Graham ex Hook
+33,VULNERABLE (Vu),ORCHIDACEAE,Cattleya iricolor Reichenbach f.,golondrinilla,Cattleya,iricolor,NA,NA,NA,Cattleya iricolor,Reichenbach f.
+34,VULNERABLE (Vu),ORCHIDACEAE,Cattleya luteola Lindley,golondrinilla,Cattleya,luteola,NA,NA,NA,Cattleya luteola,Lindley
+35,VULNERABLE (Vu),ORCHIDACEAE,"Cattleya mooreana Withner, Allison & Guenard",golondrinilla,Cattleya,mooreana,NA,NA,NA,Cattleya mooreana,"Withner, Allison & Guenard"
+36,VULNERABLE (Vu),ORCHIDACEAE,Cattleya violacea (H.B.K.) Rolfe,golondrinilla,Cattleya,violacea,NA,NA,NA,Cattleya violacea,(H.B.K.) Rolfe
+37,VULNERABLE (Vu),ORCHIDACEAE,Chaubardia heteroclita (Poeppig & Endlicher) Dodson & Bennett,avispilla,Chaubardia,heteroclita,NA,NA,NA,Chaubardia heteroclita,(Poeppig & Endlicher) Dodson & Bennett
+38,VULNERABLE (Vu),ORCHIDACEAE,Chaubardia klugii (C. Schweinfurth) Garay,NA,Chaubardia,klugii,NA,NA,NA,Chaubardia klugii,(C. Schweinfurth) Garay
+39,VULNERABLE (Vu),ORCHIDACEAE,Chaubardiella tigrina (Garay & Dunsterville) Garay,NA,Chaubardiella,tigrina,NA,NA,NA,Chaubardiella tigrina,(Garay & Dunsterville) Garay
+40,VULNERABLE (Vu),ORCHIDACEAE,Chloraea reticulata Schlechter,NA,Chloraea,reticulata,NA,NA,NA,Chloraea reticulata,Schlechter
+41,VULNERABLE (Vu),ORCHIDACEAE,Chloraea septentrionalis Correa,NA,Chloraea,septentrionalis,NA,NA,NA,Chloraea septentrionalis,Correa
+42,VULNERABLE (Vu),ORCHIDACEAE,Cochleanthes amazonica (Reinchbach f. & Warscewicz) R. Schltes & Garay,NA,Cochleanthes,amazonica,NA,NA,NA,Cochleanthes amazonica,(Reinchbach f. & Warscewicz) R. Schltes & Garay
+43,VULNERABLE (Vu),ORCHIDACEAE,Cochleanthes palatina Senghas,NA,Cochleanthes,palatina,NA,NA,NA,Cochleanthes palatina,Senghas
+44,VULNERABLE (Vu),ORCHIDACEAE,Cochlioda noezliana (Masters) Rolfe,NA,Cochlioda,noezliana,NA,NA,NA,Cochlioda noezliana,(Masters) Rolfe
+45,VULNERABLE (Vu),ORCHIDACEAE,Cochlioda vulcanica (Reichenbach f.) Bentham & Hooker f. ex Veitch,inguil,Cochlioda,vulcanica,NA,NA,NA,Cochlioda vulcanica,(Reichenbach f.) Bentham & Hooker f. ex Veitch
+46,VULNERABLE (Vu),ORCHIDACEAE,Comparettia coccinea Lindley,NA,Comparettia,coccinea,NA,NA,NA,Comparettia coccinea,Lindley
+47,VULNERABLE (Vu),ORCHIDACEAE,Comparettia falcata Poeppig & Endlicher,NA,Comparettia,falcata,NA,NA,NA,Comparettia falcata,Poeppig & Endlicher
+48,VULNERABLE (Vu),ORCHIDACEAE,Comparettia peruviana Schelchter,NA,Comparettia,peruviana,NA,NA,NA,Comparettia peruviana,Schelchter
+49,VULNERABLE (Vu),ORCHIDACEAE,Comparettia speciosa Reichenbach f.,NA,Comparettia,speciosa,NA,NA,NA,Comparettia speciosa,Reichenbach f.
+50,VULNERABLE (Vu),ORCHIDACEAE,Coryanthes alborosea C. Schweinfurth,cachorros,Coryanthes,alborosea,NA,NA,NA,Coryanthes alborosea,C. Schweinfurth
+51,VULNERABLE (Vu),ORCHIDACEAE,Coryanthes leucocorys Rolfe,cachorros,Coryanthes,leucocorys,NA,NA,NA,Coryanthes leucocorys,Rolfe
+52,VULNERABLE (Vu),ORCHIDACEAE,Coryanthes macrantha (Hooker) Hooker,cachorros,Coryanthes,macrantha,NA,NA,NA,Coryanthes macrantha,(Hooker) Hooker
+53,VULNERABLE (Vu),ORCHIDACEAE,Coryanthes macrocorys Rolfe,cachorros,Coryanthes,macrocorys,NA,NA,NA,Coryanthes macrocorys,Rolfe
+54,VULNERABLE (Vu),ORCHIDACEAE,Coryanthes verrucolineata Gunter Gerlach,NA,Coryanthes,verrucolineata,NA,NA,NA,Coryanthes verrucolineata,Gunter Gerlach
+55,VULNERABLE (Vu),ORCHIDACEAE,Cycnoches bennettii Dodson,NA,Cycnoches,bennettii,NA,NA,NA,Cycnoches bennettii,Dodson
+56,VULNERABLE (Vu),ORCHIDACEAE,Cycnoches christensonii D.E. Benn.,NA,Cycnoches,christensonii,NA,NA,NA,Cycnoches christensonii,D.E. Benn.
+57,VULNERABLE (Vu),ORCHIDACEAE,Cycnoches cooperi Rolfe,alacranes,Cycnoches,cooperi,NA,NA,NA,Cycnoches cooperi,Rolfe
+58,VULNERABLE (Vu),ORCHIDACEAE,Cycnoches jarae Dodson & Bennett,alacranes,Cycnoches,jarae,NA,NA,NA,Cycnoches jarae,Dodson & Bennett
+59,VULNERABLE (Vu),ORCHIDACEAE,Cycnoches pentadactylon Lindley,alacranes,Cycnoches,pentadactylon,NA,NA,NA,Cycnoches pentadactylon,Lindley
+60,VULNERABLE (Vu),ORCHIDACEAE,Cycnoches schmidtianum Christenson & G.F. Carr,NA,Cycnoches,schmidtianum,NA,NA,NA,Cycnoches schmidtianum,Christenson & G.F. Carr
+61,VULNERABLE (Vu),ORCHIDACEAE,Cyrtidiorchis rhomboglossa (F. Lehm. & Kraenzl.) Rauschert,NA,Cyrtidiorchis,rhomboglossa,NA,NA,NA,Cyrtidiorchis rhomboglossa,(F. Lehm. & Kraenzl.) Rauschert
+62,VULNERABLE (Vu),ORCHIDACEAE,Cyrtidiorchis stumpflei (Garay) Rauschter,NA,Cyrtidiorchis,stumpflei,NA,NA,NA,Cyrtidiorchis stumpflei,(Garay) Rauschter
+63,VULNERABLE (Vu),ORCHIDACEAE,Cyrtopodium punctatum (L.) Lindley,NA,Cyrtopodium,punctatum,NA,NA,NA,Cyrtopodium punctatum,(L.) Lindley
+64,VULNERABLE (Vu),ORCHIDACEAE,Dressleria bennettii H.G. Hills & Christenson,NA,Dressleria,bennettii,NA,NA,NA,Dressleria bennettii,H.G. Hills & Christenson
+65,VULNERABLE (Vu),ORCHIDACEAE,Dryadella zebrina (Porsch) Luer,NA,Dryadella,zebrina,NA,NA,NA,Dryadella zebrina,(Porsch) Luer
+66,VULNERABLE (Vu),ORCHIDACEAE,Epidendrum birostratum C. Schweinfurth,NA,Epidendrum,birostratum,NA,NA,NA,Epidendrum birostratum,C. Schweinfurth
+67,VULNERABLE (Vu),ORCHIDACEAE,Epidendrum criniferum Reichenbach f.,NA,Epidendrum,criniferum,NA,NA,NA,Epidendrum criniferum,Reichenbach f.
+68,VULNERABLE (Vu),ORCHIDACEAE,Epidendrum cristatum Ruiz & Pavon,NA,Epidendrum,cristatum,NA,NA,NA,Epidendrum cristatum,Ruiz & Pavon
+69,VULNERABLE (Vu),ORCHIDACEAE,Epidendrum excelsum C. Schweinfurth,NA,Epidendrum,excelsum,NA,NA,NA,Epidendrum excelsum,C. Schweinfurth
+70,VULNERABLE (Vu),ORCHIDACEAE,Epidendrum melanoporphyreum Hágsater,NA,Epidendrum,melanoporphyreum,NA,NA,NA,Epidendrum melanoporphyreum,Hágsater
+71,VULNERABLE (Vu),ORCHIDACEAE,Epidendrum micro-cattleya (Kraenzlin) Schlechter,NA,Epidendrum,micro-cattleya,NA,NA,NA,Epidendrum micro-cattleya,(Kraenzlin) Schlechter
+72,VULNERABLE (Vu),ORCHIDACEAE,Epidendrum pardothyrsus,NA,Epidendrum,pardothyrsus,NA,NA,NA,Epidendrum pardothyrsus,NA
+73,VULNERABLE (Vu),ORCHIDACEAE,Epidendrum scutella Lindley,NA,Epidendrum,scutella,NA,NA,NA,Epidendrum scutella,Lindley
+74,VULNERABLE (Vu),ORCHIDACEAE,Epidendrum tridens Poeppig & Endlicher,NA,Epidendrum,tridens,NA,NA,NA,Epidendrum tridens,Poeppig & Endlicher
+75,VULNERABLE (Vu),ORCHIDACEAE,Epistephium duckei Huber,NA,Epistephium,duckei,NA,NA,NA,Epistephium duckei,Huber
+76,VULNERABLE (Vu),ORCHIDACEAE,Epistephium parviflorum Ruiz & Pav.,NA,Epistephium,parviflorum,NA,NA,NA,Epistephium parviflorum,Ruiz & Pav.
+77,VULNERABLE (Vu),ORCHIDACEAE,Fernandezia ionanthera (Reichenbach f. & Warscewicz) Schelchter,NA,Fernandezia,ionanthera,NA,NA,NA,Fernandezia ionanthera,(Reichenbach f. & Warscewicz) Schelchter
+78,VULNERABLE (Vu),ORCHIDACEAE,Fernandezia subbiflora Ruiz & Pavon,NA,Fernandezia,subbiflora,NA,NA,NA,Fernandezia subbiflora,Ruiz & Pavon
+79,VULNERABLE (Vu),ORCHIDACEAE,Galeandra biloba Garay,NA,Galeandra,biloba,NA,NA,NA,Galeandra biloba,Garay
+80,VULNERABLE (Vu),ORCHIDACEAE,Gongora atropurpurea Hooker,zancudo,Gongora,atropurpurea,NA,NA,NA,Gongora atropurpurea,Hooker
+81,VULNERABLE (Vu),ORCHIDACEAE,Gongora latisepala Rolfe,NA,Gongora,latisepala,NA,NA,NA,Gongora latisepala,Rolfe
+82,VULNERABLE (Vu),ORCHIDACEAE,Gongora pleiochroma Reichenbach f.,NA,Gongora,pleiochroma,NA,NA,NA,Gongora pleiochroma,Reichenbach f.
+83,VULNERABLE (Vu),ORCHIDACEAE,Gongora portentosa Reichenbach. f.,NA,Gongora,portentosa,NA,NA,NA,Gongora portentosa,Reichenbach. f.
+84,VULNERABLE (Vu),ORCHIDACEAE,Gongora pseudoatropurpurea Jenny,NA,Gongora,pseudoatropurpurea,NA,NA,NA,Gongora pseudoatropurpurea,Jenny
+85,VULNERABLE (Vu),ORCHIDACEAE,Gongora quinquinervis R. & P.,NA,Gongora,quinquinervis,NA,NA,NA,Gongora quinquinervis,R. & P.
+86,VULNERABLE (Vu),ORCHIDACEAE,Gongora rufescens Jenny,NA,Gongora,rufescens,NA,NA,NA,Gongora rufescens,Jenny
+87,VULNERABLE (Vu),ORCHIDACEAE,Gongora sanderiana Kraenzlin,chocolate,Gongora,sanderiana,NA,NA,NA,Gongora sanderiana,Kraenzlin
+88,VULNERABLE (Vu),ORCHIDACEAE,Hexisea bidentata Lindley,NA,Hexisea,bidentata,NA,NA,NA,Hexisea bidentata,Lindley
+89,VULNERABLE (Vu),ORCHIDACEAE,Homalopetalum pumilio (Rchb. f.) Schltr.,NA,Homalopetalum,pumilio,NA,NA,NA,Homalopetalum pumilio,(Rchb. f.) Schltr.
+90,VULNERABLE (Vu),ORCHIDACEAE,Houlletia sanderi Rolfe,NA,Houlletia,sanderi,NA,NA,NA,Houlletia sanderi,Rolfe
+91,VULNERABLE (Vu),ORCHIDACEAE,Houlletia wallisii Linden & Reichenbach f.,NA,Houlletia,wallisii,NA,NA,NA,Houlletia wallisii,Linden & Reichenbach f.
+92,VULNERABLE (Vu),ORCHIDACEAE,Huntleya burtii (Endres & Rchb.f.) Rolfe,NA,Huntleya,burtii,NA,NA,NA,Huntleya burtii,(Endres & Rchb.f.) Rolfe
+93,VULNERABLE (Vu),ORCHIDACEAE,Huntleya vargasii Dodson & Bennett,NA,Huntleya,vargasii,NA,NA,NA,Huntleya vargasii,Dodson & Bennett
+94,VULNERABLE (Vu),ORCHIDACEAE,Kefersteinia mystacina Reichenbach f.,palomitas,Kefersteinia,mystacina,NA,NA,NA,Kefersteinia mystacina,Reichenbach f.
+95,VULNERABLE (Vu),ORCHIDACEAE,Kefersteinia sanguinolenta Reichenbach f.,palomitas,Kefersteinia,sanguinolenta,NA,NA,NA,Kefersteinia sanguinolenta,Reichenbach f.
+96,VULNERABLE (Vu),ORCHIDACEAE,Kefersteinia villenae D.E.Benn. & Christenson,palomitas,Kefersteinia,villenae,NA,NA,NA,Kefersteinia villenae,D.E.Benn. & Christenson
+97,VULNERABLE (Vu),ORCHIDACEAE,Lepanthes caprimulgus Luer,NA,Lepanthes,caprimulgus,NA,NA,NA,Lepanthes caprimulgus,Luer
+98,VULNERABLE (Vu),ORCHIDACEAE,Lepanthes cordeliae Luer,NA,Lepanthes,cordeliae,NA,NA,NA,Lepanthes cordeliae,Luer
+99,VULNERABLE (Vu),ORCHIDACEAE,Lepanthes dalessandroi Luer,NA,Lepanthes,dalessandroi,NA,NA,NA,Lepanthes dalessandroi,Luer
+100,VULNERABLE (Vu),ORCHIDACEAE,Lycaste ciliata (R. & P.) Lindley ex Reichenbach f.,lengüitas,Lycaste,ciliata,NA,NA,NA,Lycaste ciliata,(R. & P.) Lindley ex Reichenbach f.
+101,VULNERABLE (Vu),ORCHIDACEAE,Lycaste denningiana Reichenbach f.,lengüitas,Lycaste,denningiana,NA,NA,NA,Lycaste denningiana,Reichenbach f.
+102,VULNERABLE (Vu),ORCHIDACEAE,Lycaste dyeriana Sander ex Rolfe,lengüitas,Lycaste,dyeriana,NA,NA,NA,Lycaste dyeriana,Sander ex Rolfe
+103,VULNERABLE (Vu),ORCHIDACEAE,Lycaste fimbriata (Poeppig & Endlicher) Cogniaux,lengüitas,Lycaste,fimbriata,NA,NA,NA,Lycaste fimbriata,(Poeppig & Endlicher) Cogniaux
+104,VULNERABLE (Vu),ORCHIDACEAE,Lycaste gigantea Lindley,NA,Lycaste,gigantea,NA,NA,NA,Lycaste gigantea,Lindley
+105,VULNERABLE (Vu),ORCHIDACEAE,Lycaste jarae D.E.Benn. & Christenson,NA,Lycaste,jarae,NA,NA,NA,Lycaste jarae,D.E.Benn. & Christenson
+106,VULNERABLE (Vu),ORCHIDACEAE,Lycaste locusta Reichenbach f.,lengüitas,Lycaste,locusta,NA,NA,NA,Lycaste locusta,Reichenbach f.
+107,VULNERABLE (Vu),ORCHIDACEAE,Lycaste longipetala (R. & P.) Garay,NA,Lycaste,longipetala,NA,NA,NA,Lycaste longipetala,(R. & P.) Garay
+108,VULNERABLE (Vu),ORCHIDACEAE,Lycaste longiscapa Masters,lengüitas,Lycaste,longiscapa,NA,NA,NA,Lycaste longiscapa,Masters
+109,VULNERABLE (Vu),ORCHIDACEAE,Lycaste macrophylla (Poeppig & Endlicher) Lindley,lengüitas,Lycaste,macrophylla,NA,NA,NA,Lycaste macrophylla,(Poeppig & Endlicher) Lindley
+110,VULNERABLE (Vu),ORCHIDACEAE,Lycaste mathiasiae Kennedy,NA,Lycaste,mathiasiae,NA,NA,NA,Lycaste mathiasiae,Kennedy
+111,VULNERABLE (Vu),ORCHIDACEAE,Lycaste mezae D.E.Benn. & Oakeley,lengüitas,Lycaste,mezae,NA,NA,NA,Lycaste mezae,D.E.Benn. & Oakeley
+112,VULNERABLE (Vu),ORCHIDACEAE,Lycaste reichenbachii Gireoud ex Reichenbach,lengüitas,Lycaste,reichenbachii,NA,NA,NA,Lycaste reichenbachii,Gireoud ex Reichenbach
+113,VULNERABLE (Vu),ORCHIDACEAE,Lycomormium elatum C Schweinfurth,NA,Lycomormium,elatum,NA,NA,NA,Lycomormium elatum,C Schweinfurth
+114,VULNERABLE (Vu),ORCHIDACEAE,Lycomormium squalidum (Poeppig & Endlicher) Reichenbach f.,NA,Lycomormium,squalidum,NA,NA,NA,Lycomormium squalidum,(Poeppig & Endlicher) Reichenbach f.
+115,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia amabilis Reichenbach f. & Warscewicz,NA,Masdevallia,amabilis,NA,NA,NA,Masdevallia amabilis,Reichenbach f. & Warscewicz
+116,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia amaluzae Luer & Malo,NA,Masdevallia,amaluzae,NA,NA,NA,Masdevallia amaluzae,Luer & Malo
+117,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia andreettaeana Luer,NA,Masdevallia,andreettaeana,NA,NA,NA,Masdevallia andreettaeana,Luer
+118,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia ariasii Luer,copitas,Masdevallia,ariasii,NA,NA,NA,Masdevallia ariasii,Luer
+119,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia atahualpa Luer,NA,Masdevallia,atahualpa,NA,NA,NA,Masdevallia atahualpa,Luer
+120,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia auropurpurea Reichenbach f. & Warscewicz,NA,Masdevallia,auropurpurea,NA,NA,NA,Masdevallia auropurpurea,Reichenbach f. & Warscewicz
+121,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia barlaeana Reichenbach f.,NA,Masdevallia,barlaeana,NA,NA,NA,Masdevallia barlaeana,Reichenbach f.
+122,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia catapheres W. Königer,NA,Masdevallia,catapheres,NA,NA,NA,Masdevallia catapheres,W. Königer
+123,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia cranion Luer,NA,Masdevallia,cranion,NA,NA,NA,Masdevallia cranion,Luer
+124,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia cyclotega W. Königer,NA,Masdevallia,cyclotega,NA,NA,NA,Masdevallia cyclotega,W. Königer
+125,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia davisii Reichenbach f.,NA,Masdevallia,davisii,NA,NA,NA,Masdevallia davisii,Reichenbach f.
+126,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia decumana W. Königer,copitas,Masdevallia,decumana,NA,NA,NA,Masdevallia decumana,W. Königer
+127,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia eumeliae Luer,NA,Masdevallia,eumeliae,NA,NA,NA,Masdevallia eumeliae,Luer
+128,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia grandiflora C. Schweinfurth,NA,Masdevallia,grandiflora,NA,NA,NA,Masdevallia grandiflora,C. Schweinfurth
+129,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia harlequina Luer,NA,Masdevallia,harlequina,NA,NA,NA,Masdevallia harlequina,Luer
+130,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia icterina Koeniger,NA,Masdevallia,icterina,NA,NA,NA,Masdevallia icterina,Koeniger
+131,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia instar Luer & Andreetta,NA,Masdevallia,instar,NA,NA,NA,Masdevallia instar,Luer & Andreetta
+132,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia maculata Klotzsch & Karsten,NA,Masdevallia,maculata,NA,NA,NA,Masdevallia maculata,Klotzsch & Karsten
+133,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia manchinazae Luer & Andreetta,NA,Masdevallia,manchinazae,NA,NA,NA,Masdevallia manchinazae,Luer & Andreetta
+134,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia marizae Luer & Rolando,NA,Masdevallia,marizae,NA,NA,NA,Masdevallia marizae,Luer & Rolando
+135,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia mezae Luer,copitas,Masdevallia,mezae,NA,NA,NA,Masdevallia mezae,Luer
+136,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia murex Luer,NA,Masdevallia,murex,NA,NA,NA,Masdevallia murex,Luer
+137,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia prodigiosa W. Königer,copitas,Masdevallia,prodigiosa,NA,NA,NA,Masdevallia prodigiosa,W. Königer
+138,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia replicata W. Königer,NA,Masdevallia,replicata,NA,NA,NA,Masdevallia replicata,W. Königer
+139,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia rodolfoi (Braas) Luer,NA,Masdevallia,rodolfoi,NA,NA,NA,Masdevallia rodolfoi,(Braas) Luer
+140,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia schroederiana Sander,NA,Masdevallia,schroederiana,NA,NA,NA,Masdevallia schroederiana,Sander
+141,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia setacea Luer & Malo,NA,Masdevallia,setacea,NA,NA,NA,Masdevallia setacea,Luer & Malo
+142,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia strobelii H.R.Sweet & Garay,NA,Masdevallia,strobelii,NA,NA,NA,Masdevallia strobelii,H.R.Sweet & Garay
+143,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia stumpflei Braas,NA,Masdevallia,stumpflei,NA,NA,NA,Masdevallia stumpflei,Braas
+144,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia veitchiana Reichenbach f.,waqanqui,Masdevallia,veitchiana,NA,NA,NA,Masdevallia veitchiana,Reichenbach f.
+145,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia weberbaueri Schltr,copitas,Masdevallia,weberbaueri,NA,NA,NA,Masdevallia weberbaueri,Schltr
+146,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia welischii Luer,NA,Masdevallia,welischii,NA,NA,NA,Masdevallia welischii,Luer
+147,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia wurdackii C. Schweinfurth,copitas,Masdevallia,wurdackii,NA,NA,NA,Masdevallia wurdackii,C. Schweinfurth
+148,VULNERABLE (Vu),ORCHIDACEAE,Masdevallia xanthina Reichenbach f.,NA,Masdevallia,xanthina,NA,NA,NA,Masdevallia xanthina,Reichenbach f.
+149,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria callichroma Rolfe,estrellas,Maxillaria,callichroma,NA,NA,NA,Maxillaria callichroma,Rolfe
+150,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria desvauxiana Reichenbach f.,estrellas,Maxillaria,desvauxiana,NA,NA,NA,Maxillaria desvauxiana,Reichenbach f.
+151,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria dillonii D.E.Benn. & Christenson,NA,Maxillaria,dillonii,NA,NA,NA,Maxillaria dillonii,D.E.Benn. & Christenson
+152,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria fletcheriana Rolfe,NA,Maxillaria,fletcheriana,NA,NA,NA,Maxillaria fletcheriana,Rolfe
+153,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria haemathodes (R. & P.) Garay,NA,Maxillaria,haemathodes,NA,NA,NA,Maxillaria haemathodes,(R. & P.) Garay
+154,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria lepidota Lindley,estrellas,Maxillaria,lepidota,NA,NA,NA,Maxillaria lepidota,Lindley
+155,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria pyhalae D.E.Benn. & Christenson,NA,Maxillaria,pyhalae,NA,NA,NA,Maxillaria pyhalae,D.E.Benn. & Christenson
+156,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria rotumdilabia C. Schweinfurth,NA,Maxillaria,rotumdilabia,NA,NA,NA,Maxillaria rotumdilabia,C. Schweinfurth
+157,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria sanderiana Reichenbach f. ex Sander,estrellas,Maxillaria,sanderiana,NA,NA,NA,Maxillaria sanderiana,Reichenbach f. ex Sander
+158,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria scandens D.E.Benn. & Christenson,NA,Maxillaria,scandens,NA,NA,NA,Maxillaria scandens,D.E.Benn. & Christenson
+159,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria setigera Lindl,estrellas,Maxillaria,setigera,NA,NA,NA,Maxillaria setigera,Lindl
+160,VULNERABLE (Vu),ORCHIDACEAE,Maxillaria tuerosii D. E. Benn. & Christenson,NA,Maxillaria,tuerosii,NA,NA,NA,Maxillaria tuerosii,D. E. Benn. & Christenson
+161,VULNERABLE (Vu),ORCHIDACEAE,Miltoniopsis bismarkii Dodson & Bennett,angelitos,Miltoniopsis,bismarkii,NA,NA,NA,Miltoniopsis bismarkii,Dodson & Bennett
+162,VULNERABLE (Vu),ORCHIDACEAE,Mormodes revolutum Rolfe,arañas,Mormodes,revolutum,NA,NA,NA,Mormodes revolutum,Rolfe
+163,VULNERABLE (Vu),ORCHIDACEAE,Mormodes rolfeanum Rolfe,arañas,Mormodes,rolfeanum,NA,NA,NA,Mormodes rolfeanum,Rolfe
+164,VULNERABLE (Vu),ORCHIDACEAE,Mormodes warszewiczii Klotzsch,arañas,Mormodes,warszewiczii,NA,NA,NA,Mormodes warszewiczii,Klotzsch
+165,VULNERABLE (Vu),ORCHIDACEAE,Odontoglossum cristatum Lindley,NA,Odontoglossum,cristatum,NA,NA,NA,Odontoglossum cristatum,Lindley
+166,VULNERABLE (Vu),ORCHIDACEAE,Odontoglossum digitatum C. Schweinfurth,NA,Odontoglossum,digitatum,NA,NA,NA,Odontoglossum digitatum,C. Schweinfurth
+167,VULNERABLE (Vu),ORCHIDACEAE,Odontoglossum machupicchuense D.E.Benn. & Christenson,NA,Odontoglossum,machupicchuense,NA,NA,NA,Odontoglossum machupicchuense,D.E.Benn. & Christenson
+168,VULNERABLE (Vu),ORCHIDACEAE,Odontoglossum praestans Reichenbach f. & Warscewicz,angelitos,Odontoglossum,praestans,NA,NA,NA,Odontoglossum praestans,Reichenbach f. & Warscewicz
+169,VULNERABLE (Vu),ORCHIDACEAE,Odontoglossum ringens Reichenbach f.,NA,Odontoglossum,ringens,NA,NA,NA,Odontoglossum ringens,Reichenbach f.
+170,VULNERABLE (Vu),ORCHIDACEAE,Odontoglossum tetraplasium Reichenbach f.,NA,Odontoglossum,tetraplasium,NA,NA,NA,Odontoglossum tetraplasium,Reichenbach f.
+171,VULNERABLE (Vu),ORCHIDACEAE,Odontoglossum wyattianum G. Wilson,angelitos,Odontoglossum,wyattianum,NA,NA,NA,Odontoglossum wyattianum,G. Wilson
+172,VULNERABLE (Vu),ORCHIDACEAE,Oncidium excavatum Lindley,NA,Oncidium,excavatum,NA,NA,NA,Oncidium excavatum,Lindley
+173,VULNERABLE (Vu),ORCHIDACEAE,Oncidium fuscatum Reichenbach f.,angelitos,Oncidium,fuscatum,NA,NA,NA,Oncidium fuscatum,Reichenbach f.
+174,VULNERABLE (Vu),ORCHIDACEAE,Oncidium ionodon Reichenbach f.,NA,Oncidium,ionodon,NA,NA,NA,Oncidium ionodon,Reichenbach f.
+175,VULNERABLE (Vu),ORCHIDACEAE,Oncidium macranthum Lindley,angelitos,Oncidium,macranthum,NA,NA,NA,Oncidium macranthum,Lindley
+176,VULNERABLE (Vu),ORCHIDACEAE,Oncidium nanum Lindley,orejas de burro,Oncidium,nanum,NA,NA,NA,Oncidium nanum,Lindley
+177,VULNERABLE (Vu),ORCHIDACEAE,Oncidium serratum Lindley,NA,Oncidium,serratum,NA,NA,NA,Oncidium serratum,Lindley
+178,VULNERABLE (Vu),ORCHIDACEAE,Oncidium sprucei Lindley,angelitos,Oncidium,sprucei,NA,NA,NA,Oncidium sprucei,Lindley
+179,VULNERABLE (Vu),ORCHIDACEAE,Oncidium stacyi Garay,NA,Oncidium,stacyi,NA,NA,NA,Oncidium stacyi,Garay
+180,VULNERABLE (Vu),ORCHIDACEAE,Oncidium trilobum (Schlechter) Garay & Stacy,NA,Oncidium,trilobum,NA,NA,NA,Oncidium trilobum,(Schlechter) Garay & Stacy
+181,VULNERABLE (Vu),ORCHIDACEAE,Otoglossum brevifolium (Lindley) Garay & Dunsterville,NA,Otoglossum,brevifolium,NA,NA,NA,Otoglossum brevifolium,(Lindley) Garay & Dunsterville
+182,VULNERABLE (Vu),ORCHIDACEAE,Otoglossum weberbauerianum (Kraenzlin) Garay & Dunsterville,NA,Otoglossum,weberbauerianum,NA,NA,NA,Otoglossum weberbauerianum,(Kraenzlin) Garay & Dunsterville
+183,VULNERABLE (Vu),ORCHIDACEAE,Paphinia cristata (Lindl.) Lindl.,NA,Paphinia,cristata,NA,NA,NA,Paphinia cristata,(Lindl.) Lindl.
+184,VULNERABLE (Vu),ORCHIDACEAE,Paphinia neudeckeri Jenny,NA,Paphinia,neudeckeri,NA,NA,NA,Paphinia neudeckeri,Jenny
+185,VULNERABLE (Vu),ORCHIDACEAE,Peristeria guttata Knowles & Westcott,NA,Peristeria,guttata,NA,NA,NA,Peristeria guttata,Knowles & Westcott
+186,VULNERABLE (Vu),ORCHIDACEAE,Pleurothallis pristis F. Lehm. & Kraenzl.,NA,Pleurothallis,pristis,NA,NA,NA,Pleurothallis pristis,F. Lehm. & Kraenzl.
+187,VULNERABLE (Vu),ORCHIDACEAE,Ponthieva mandonii Reichenbach f.,NA,Ponthieva,mandonii,NA,NA,NA,Ponthieva mandonii,Reichenbach f.
+188,VULNERABLE (Vu),ORCHIDACEAE,Prosthechea cyperifolia,cebollita,Prosthechea,cyperifolia,NA,NA,NA,Prosthechea cyperifolia,NA
+189,VULNERABLE (Vu),ORCHIDACEAE,Prosthechea fusca (Schlt.) D.E.Benn. & Christenson,NA,Prosthechea,fusca,NA,NA,NA,Prosthechea fusca,(Schlt.) D.E.Benn. & Christenson
+190,VULNERABLE (Vu),ORCHIDACEAE,Psychopsis versteegianum (Pulle) Lückel & Braem,mariposa,Psychopsis,versteegianum,NA,NA,NA,Psychopsis versteegianum,(Pulle) Lückel & Braem
+191,VULNERABLE (Vu),ORCHIDACEAE,Restrepia maculata Lindley,NA,Restrepia,maculata,NA,NA,NA,Restrepia maculata,Lindley
+192,VULNERABLE (Vu),ORCHIDACEAE,Rodriguezia batemanii Poeppig & Endlicher,madrigueras,Rodriguezia,batemanii,NA,NA,NA,Rodriguezia batemanii,Poeppig & Endlicher
+193,VULNERABLE (Vu),ORCHIDACEAE,Rodriguezia bockii D. Benn. & Christenson,NA,Rodriguezia,bockii,NA,NA,NA,Rodriguezia bockii,D. Benn. & Christenson
+194,VULNERABLE (Vu),ORCHIDACEAE,Rodriguezia caloplectron Rchb. f.,NA,Rodriguezia,caloplectron,NA,NA,NA,Rodriguezia caloplectron,Rchb. f.
+195,VULNERABLE (Vu),ORCHIDACEAE,Rodriguezia delcastilloi D. Benn. & Christenson,NA,Rodriguezia,delcastilloi,NA,NA,NA,Rodriguezia delcastilloi,D. Benn. & Christenson
+196,VULNERABLE (Vu),ORCHIDACEAE,Rodriguezia satipoana Dodson & Bennett,NA,Rodriguezia,satipoana,NA,NA,NA,Rodriguezia satipoana,Dodson & Bennett
+197,VULNERABLE (Vu),ORCHIDACEAE,Sobralia virginalis Peeters & Cogn,NA,Sobralia,virginalis,NA,NA,NA,Sobralia virginalis,Peeters & Cogn
+198,VULNERABLE (Vu),ORCHIDACEAE,Stanhopea anfracta Rolfe,NA,Stanhopea,anfracta,NA,NA,NA,Stanhopea anfracta,Rolfe
+199,VULNERABLE (Vu),ORCHIDACEAE,Stanhopea candida Barbosa Rodrigues,torosisa,Stanhopea,candida,NA,NA,NA,Stanhopea candida,Barbosa Rodrigues
+200,VULNERABLE (Vu),ORCHIDACEAE,Stanhopea deltoidea Lemaire,NA,Stanhopea,deltoidea,NA,NA,NA,Stanhopea deltoidea,Lemaire
+201,VULNERABLE (Vu),ORCHIDACEAE,Stanhopea florida Reichenbach f.,NA,Stanhopea,florida,NA,NA,NA,Stanhopea florida,Reichenbach f.
+202,VULNERABLE (Vu),ORCHIDACEAE,Stanhopea haselowiana Reichenbach f.,torosisa,Stanhopea,haselowiana,NA,NA,NA,Stanhopea haselowiana,Reichenbach f.
+203,VULNERABLE (Vu),ORCHIDACEAE,Stanhopea jenishiana Kramer ex Reichenbach f.,NA,Stanhopea,jenishiana,NA,NA,NA,Stanhopea jenishiana,Kramer ex Reichenbach f.
+204,VULNERABLE (Vu),ORCHIDACEAE,Stanhopea nigripes Rolfe,torosisa,Stanhopea,nigripes,NA,NA,NA,Stanhopea nigripes,Rolfe
+205,VULNERABLE (Vu),ORCHIDACEAE,Stanhopea peruviana Rolfe,NA,Stanhopea,peruviana,NA,NA,NA,Stanhopea peruviana,Rolfe
+206,VULNERABLE (Vu),ORCHIDACEAE,Stanhopea wardii Loddiges ex Lindley,NA,Stanhopea,wardii,NA,NA,NA,Stanhopea wardii,Loddiges ex Lindley
+207,VULNERABLE (Vu),ORCHIDACEAE,Stenia calceolaris (Garay) Dodson & Bennett,NA,Stenia,calceolaris,NA,NA,NA,Stenia calceolaris,(Garay) Dodson & Bennett
+208,VULNERABLE (Vu),ORCHIDACEAE,Stenia guttata Reichenbach f.,NA,Stenia,guttata,NA,NA,NA,Stenia guttata,Reichenbach f.
+209,VULNERABLE (Vu),ORCHIDACEAE,Stenia lillianae Jenny ex D.E.Benn. & Christenson,NA,Stenia,lillianae,NA,NA,NA,Stenia lillianae,Jenny ex D.E.Benn. & Christenson
+210,VULNERABLE (Vu),ORCHIDACEAE,Telipogon collantesii D.E.Benn. & Christenson,NA,Telipogon,collantesii,NA,NA,NA,Telipogon collantesii,D.E.Benn. & Christenson
+211,VULNERABLE (Vu),ORCHIDACEAE,Telipogon papilio Reichenbach f.,NA,Telipogon,papilio,NA,NA,NA,Telipogon papilio,Reichenbach f.
+212,VULNERABLE (Vu),ORCHIDACEAE,Telipogon tesselatus Lindley,NA,Telipogon,tesselatus,NA,NA,NA,Telipogon tesselatus,Lindley
+213,VULNERABLE (Vu),ORCHIDACEAE,Trichocentrum pulchrum Poeppig & Endlicher,lengüitas,Trichocentrum,pulchrum,NA,NA,NA,Trichocentrum pulchrum,Poeppig & Endlicher
+214,VULNERABLE (Vu),ORCHIDACEAE,Trichocentrum tigrinum Linden & Reicehnbach f.,lengüitas,Trichocentrum,tigrinum,NA,NA,NA,Trichocentrum tigrinum,Linden & Reicehnbach f.
+215,VULNERABLE (Vu),ORCHIDACEAE,Trichoceros platyceros Reichenbach f.,abejita,Trichoceros,platyceros,NA,NA,NA,Trichoceros platyceros,Reichenbach f.
+216,VULNERABLE (Vu),ORCHIDACEAE,Trichopilia fragans Lindley,jaboncillo,Trichopilia,fragans,NA,NA,NA,Trichopilia fragans,Lindley
+217,VULNERABLE (Vu),ORCHIDACEAE,Trichopilia gracilis C. Schweinfurth,NA,Trichopilia,gracilis,NA,NA,NA,Trichopilia gracilis,C. Schweinfurth
+218,VULNERABLE (Vu),ORCHIDACEAE,Trichopilia juninense C. Schweinfurth,jaboncillo,Trichopilia,juninense,NA,NA,NA,Trichopilia juninense,C. Schweinfurth
+219,VULNERABLE (Vu),ORCHIDACEAE,Zygopetalum intermedium Loddiges ex Lindley,NA,Zygopetalum,intermedium,NA,NA,NA,Zygopetalum intermedium,Loddiges ex Lindley
+220,VULNERABLE (Vu),ORCHIDACEAE,Zygopetalum labiosum (Rich.) L.O. Williams,NA,Zygopetalum,labiosum,NA,NA,NA,Zygopetalum labiosum,(Rich.) L.O. Williams
+1,CASI AMENAZADO (NT),ORCHIDACEAE,Bletia mandonii Schlecter,NA,Bletia,mandonii,NA,NA,NA,Bletia mandonii,Schlecter
+2,CASI AMENAZADO (NT),ORCHIDACEAE,Brassia koehlerorum Schltr.,NA,Brassia,koehlerorum,NA,NA,NA,Brassia koehlerorum,Schltr.
+3,CASI AMENAZADO (NT),ORCHIDACEAE,Brassia thyrsodes Reichenbach f.,NA,Brassia,thyrsodes,NA,NA,NA,Brassia thyrsodes,Reichenbach f.
+4,CASI AMENAZADO (NT),ORCHIDACEAE,Bulbophyllum meridense Reichenbach f.,NA,Bulbophyllum,meridense,NA,NA,NA,Bulbophyllum meridense,Reichenbach f.
+5,CASI AMENAZADO (NT),ORCHIDACEAE,Catasetum tuberculatum Dodson,NA,Catasetum,tuberculatum,NA,NA,NA,Catasetum tuberculatum,Dodson
+6,CASI AMENAZADO (NT),ORCHIDACEAE,Chaubardia surinamensis Reichenbach f.,NA,Chaubardia,surinamensis,NA,NA,NA,Chaubardia surinamensis,Reichenbach f.
+7,CASI AMENAZADO (NT),ORCHIDACEAE,Cycnoches quatuorcristis D.Bennett,NA,Cycnoches,quatuorcristis,NA,NA,NA,Cycnoches quatuorcristis,D.Bennett
+8,CASI AMENAZADO (NT),ORCHIDACEAE,Cyrtopodium cristatum Lindley,NA,Cyrtopodium,cristatum,NA,NA,NA,Cyrtopodium cristatum,Lindley
+9,CASI AMENAZADO (NT),ORCHIDACEAE,Draconanthes aberrans (Schltr.) Luer,NA,Draconanthes,aberrans,NA,NA,NA,Draconanthes aberrans,(Schltr.) Luer
+10,CASI AMENAZADO (NT),ORCHIDACEAE,Dryadella simula (Reichenbach f.) Luer,NA,Dryadella,simula,NA,NA,NA,Dryadella simula,(Reichenbach f.) Luer
+11,CASI AMENAZADO (NT),ORCHIDACEAE,Encyclia randii (Barb.Rodr.) Porto & Brade,NA,Encyclia,randii,NA,NA,NA,Encyclia randii,(Barb.Rodr.) Porto & Brade
+12,CASI AMENAZADO (NT),ORCHIDACEAE,Epidendrum ciliare L.,sachagolondrina,Epidendrum,ciliare,NA,NA,NA,Epidendrum ciliare,L.
+13,CASI AMENAZADO (NT),ORCHIDACEAE,Galeandra stangeana Reichb.F.,NA,Galeandra,stangeana,NA,NA,NA,Galeandra stangeana,Reichb.F.
+14,CASI AMENAZADO (NT),ORCHIDACEAE,Gongora gracilis Jenny,NA,Gongora,gracilis,NA,NA,NA,Gongora gracilis,Jenny
+15,CASI AMENAZADO (NT),ORCHIDACEAE,Gongora nigropunctata Schltr.,NA,Gongora,nigropunctata,NA,NA,NA,Gongora nigropunctata,Schltr.
+16,CASI AMENAZADO (NT),ORCHIDACEAE,Gongora scaphephorus Reichenbach f. & Warscewicz,avispa,Gongora,scaphephorus,NA,NA,NA,Gongora scaphephorus,Reichenbach f. & Warscewicz
+17,CASI AMENAZADO (NT),ORCHIDACEAE,Habenaria sartor Lindley,NA,Habenaria,sartor,NA,NA,NA,Habenaria sartor,Lindley
+18,CASI AMENAZADO (NT),ORCHIDACEAE,Helcia sanguinolenta Lindley,NA,Helcia,sanguinolenta,NA,NA,NA,Helcia sanguinolenta,Lindley
+19,CASI AMENAZADO (NT),ORCHIDACEAE,Hexisea imbricata (Lindley) Reichenbach f.,NA,Hexisea,imbricata,NA,NA,NA,Hexisea imbricata,(Lindley) Reichenbach f.
+20,CASI AMENAZADO (NT),ORCHIDACEAE,Kefersteinia pusilla (C. Schweinf.) C. Schweinf.,NA,Kefersteinia,pusilla,NA,NA,NA,Kefersteinia pusilla,(C. Schweinf.) C. Schweinf.
+21,CASI AMENAZADO (NT),ORCHIDACEAE,Lepanthes minutipetala C. Schweinfurth,NA,Lepanthes,minutipetala,NA,NA,NA,Lepanthes minutipetala,C. Schweinfurth
+22,CASI AMENAZADO (NT),ORCHIDACEAE,Masdevallia agaster Luer,NA,Masdevallia,agaster,NA,NA,NA,Masdevallia agaster,Luer
+23,CASI AMENAZADO (NT),ORCHIDACEAE,Myrosmodes nubigenum Reichenbach f.,NA,Myrosmodes,nubigenum,NA,NA,NA,Myrosmodes nubigenum,Reichenbach f.
+24,CASI AMENAZADO (NT),ORCHIDACEAE,Myrosmodes paludosum (Reichenbach f.) Garay,NA,Myrosmodes,paludosum,NA,NA,NA,Myrosmodes paludosum,(Reichenbach f.) Garay
+25,CASI AMENAZADO (NT),ORCHIDACEAE,Phragmipedium boissierianum (Rchb. F.)Rolfe,zapatito del rey,Phragmipedium,boissierianum,NA,NA,NA,Phragmipedium boissierianum,(Rchb. F.)Rolfe
+26,CASI AMENAZADO (NT),ORCHIDACEAE,Phragmipedium caricinum (Lindl. & Paxton) Rolfe,zapatito del niño,Phragmipedium,caricinum,NA,NA,NA,Phragmipedium caricinum,(Lindl. & Paxton) Rolfe
+27,CASI AMENAZADO (NT),ORCHIDACEAE,Phragmipedium pearcei (Rchb. f.) Rauh & Senghas,zapatito del bebé,Phragmipedium,pearcei,NA,NA,NA,Phragmipedium pearcei,(Rchb. f.) Rauh & Senghas
+28,CASI AMENAZADO (NT),ORCHIDACEAE,Phragmipedium reticulatum (Rchb. F.) Garay,NA,Phragmipedium,reticulatum,NA,NA,NA,Phragmipedium reticulatum,(Rchb. F.) Garay
+29,CASI AMENAZADO (NT),ORCHIDACEAE,Rudolfiella saxicola (Schlecter) Hoehne,NA,Rudolfiella,saxicola,NA,NA,NA,Rudolfiella saxicola,(Schlecter) Hoehne
+30,CASI AMENAZADO (NT),ORCHIDACEAE,Sobralia weberbaueriana Kraenzlin,NA,Sobralia,weberbaueriana,NA,NA,NA,Sobralia weberbaueriana,Kraenzlin
+31,CASI AMENAZADO (NT),ORCHIDACEAE,Telipogon vargasii C. Schweinfurth,NA,Telipogon,vargasii,NA,NA,NA,Telipogon vargasii,C. Schweinfurth
+1,EN PELIGRO CRITICO (CR),CACTACEAE,Cleistocactus clavispinus (Rauh & Backeberg) Ostolaza,NA,Cleistocactus,clavispinus,NA,NA,NA,Cleistocactus clavispinus,(Rauh & Backeberg) Ostolaza
+2,EN PELIGRO CRITICO (CR),CACTACEAE,Cleistocactus hystrix (Rauh & Backeberg) Ostolaza,NA,Cleistocactus,hystrix,NA,NA,NA,Cleistocactus hystrix,(Rauh & Backeberg) Ostolaza
+3,EN PELIGRO CRITICO (CR),CACTACEAE,Cleistocactus xylorhizus (Ritter) Ostolaza,NA,Cleistocactus,xylorhizus,NA,NA,NA,Cleistocactus xylorhizus,(Ritter) Ostolaza
+4,EN PELIGRO CRITICO (CR),CACTACEAE,Corryocactus megarhizus Ritter,NA,Corryocactus,megarhizus,NA,NA,NA,Corryocactus megarhizus,Ritter
+5,EN PELIGRO CRITICO (CR),CACTACEAE,Haageocereus acranthus subsp. olowinskianus forma clavispinus (Rauh & Backeberg) Ostolaza,NA,Haageocereus,acranthus,subsp.,olowinskianus,clavispinus,Haageocereus acranthus subsp. olowinskianus forma clavispinus,(Rauh & Backeberg) Ostolaza
+6,EN PELIGRO CRITICO (CR),CACTACEAE,Haageocereus acranthus subsp. olowinskianus forma repandus (Rauh & Backeberg) Ostolaza,NA,Haageocereus,acranthus,subsp.,olowinskianus,repandus,Haageocereus acranthus subsp. olowinskianus forma repandus,(Rauh & Backeberg) Ostolaza
+7,EN PELIGRO CRITICO (CR),CACTACEAE,Haageocereus acranthus subsp. olowinskianus forma rubriflorior (Rauh & Backeberg) Ostolaza,NA,Haageocereus,acranthus,subsp.,olowinskianus,rubriflorior,Haageocereus acranthus subsp. olowinskianus forma rubriflorior,(Rauh & Backeberg) Ostolaza
+8,EN PELIGRO CRITICO (CR),CACTACEAE,Haageocereus pacalaensis subsp. repens (Rauh & Backeberg) Ostolaza,NA,Haageocereus,pacalaensis,subsp.,repens,NA,Haageocereus pacalaensis subsp. repens,(Rauh & Backeberg) Ostolaza
+9,EN PELIGRO CRITICO (CR),CACTACEAE,Haageocereus pseudomelanostele subsp. setosus (Akers) Ostolaza,NA,Haageocereus,pseudomelanostele,subsp.,setosus,NA,Haageocereus pseudomelanostele subsp. setosus,(Akers) Ostolaza
+10,EN PELIGRO CRITICO (CR),CACTACEAE,Haageocereus pseudomelanostele subsp. setosus forma longicomus (Akers) Ostolaza,NA,Haageocereus,pseudomelanostele,subsp.,setosus,longicomus,Haageocereus pseudomelanostele subsp. setosus forma longicomus,(Akers) Ostolaza
+11,EN PELIGRO CRITICO (CR),CACTACEAE,Haageocereus tenuis (Ritter) Rauh & Ostolaza,NA,Haageocereus,tenuis,NA,NA,NA,Haageocereus tenuis,(Ritter) Rauh & Ostolaza
+1,EN PELIGRO (EN),CACTACEAE,Cleistocactus acanthurus subsp. acanthurus (Vaupel) Hunt,NA,Cleistocactus,acanthurus,subsp.,acanthurus,NA,Cleistocactus acanthurus subsp. acanthurus,(Vaupel) Hunt
+2,EN PELIGRO (EN),CACTACEAE,Cleistocactus acanthurus subsp. faustianus (Backeberg) Ostolaza,NA,Cleistocactus,acanthurus,subsp.,faustianus,NA,Cleistocactus acanthurus subsp. faustianus,(Backeberg) Ostolaza
+3,EN PELIGRO (EN),CACTACEAE,Cleistocactus acanthurus subsp. pullatus (Rauh & Backeberg) Ostolaza,NA,Cleistocactus,acanthurus,subsp.,pullatus,NA,Cleistocactus acanthurus subsp. pullatus,(Rauh & Backeberg) Ostolaza
+4,EN PELIGRO (EN),CACTACEAE,Cleistocactus peculiaris (Rauh & Backeberg) Ostolaza,NA,Cleistocactus,peculiaris,NA,NA,NA,Cleistocactus peculiaris,(Rauh & Backeberg) Ostolaza
+5,EN PELIGRO (EN),CACTACEAE,Corryocactus quadrangularis (Rauh & Backeberg) Ritter,NA,Corryocactus,quadrangularis,NA,NA,NA,Corryocactus quadrangularis,(Rauh & Backeberg) Ritter
+6,EN PELIGRO (EN),CACTACEAE,Haageocereus pseudomelanostele subsp. aureispinus (Rauh & Backeberg) Ostolaza,NA,Haageocereus,pseudomelanostele,subsp.,aureispinus,NA,Haageocereus pseudomelanostele subsp. aureispinus,(Rauh & Backeberg) Ostolaza
+7,EN PELIGRO (EN),CACTACEAE,Haageocereus pseudomelanostele subsp. pseudomelanostele (Werdermann & Backeberg) Backebe,rg,Haageocereus,pseudomelanostele,subsp.,pseudomelanostele,NA,Haageocereus pseudomelanostele subsp. pseudomelanostele,(Werdermann & Backeberg) Backebe
+8,EN PELIGRO (EN),CACTACEAE,Haageocereus pseudomelanostele subsp. turbidus (Rauh & Backeberg) Ostolaza,NA,Haageocereus,pseudomelanostele,subsp.,turbidus,NA,Haageocereus pseudomelanostele subsp. turbidus,(Rauh & Backeberg) Ostolaza
+9,EN PELIGRO (EN),CACTACEAE,Mila caespitosa subsp. caespitosa Britton & Rose,NA,Mila,caespitosa,subsp.,caespitosa,NA,Mila caespitosa subsp. caespitosa,Britton & Rose
+10,EN PELIGRO (EN),CACTACEAE,Mila caespitosa subsp. densiseta (Rauh & Backeberg) Ostolaza,NA,Mila,caespitosa,subsp.,densiseta,NA,Mila caespitosa subsp. densiseta,(Rauh & Backeberg) Ostolaza
+11,EN PELIGRO (EN),CACTACEAE,Mila nealeana Backeberg,NA,Mila,nealeana,NA,NA,NA,Mila nealeana,Backeberg
+12,EN PELIGRO (EN),CACTACEAE,Opuntia pubescens Wendland ex Pfeiffer,NA,Opuntia,pubescens,NA,NA,NA,Opuntia pubescens,Wendland ex Pfeiffer
+1,VULNERABLE (Vu),CACTACEAE,Browningia candelaris (Meyen) Britton & Rose,"chullachaqui, chunay",Browningia,candelaris,NA,NA,NA,Browningia candelaris,(Meyen) Britton & Rose
+2,VULNERABLE (Vu),CACTACEAE,Cleistocactus pachycladus (Rauh & Backeberg) Ostolaza,NA,Cleistocactus,pachycladus,NA,NA,NA,Cleistocactus pachycladus,(Rauh & Backeberg) Ostolaza
+3,VULNERABLE (Vu),CACTACEAE,Corryocactus brevistylus subsp. puquiensis (Rauh & Backeberg) Ostolaza,"sanqui, sanque, tuno",Corryocactus,brevistylus,subsp.,puquiensis,NA,Corryocactus brevistylus subsp. puquiensis,(Rauh & Backeberg) Ostolaza
+4,VULNERABLE (Vu),CACTACEAE,Cumulopuntia sphaericus (Foerster) Backeberg,NA,Cumulopuntia,sphaericus,NA,NA,NA,Cumulopuntia sphaericus,(Foerster) Backeberg
+5,VULNERABLE (Vu),CACTACEAE,Echinopsis backebergii Werdermann,NA,Echinopsis,backebergii,NA,NA,NA,Echinopsis backebergii,Werdermann
+6,VULNERABLE (Vu),CACTACEAE,Echinopsis cuzcoensis (Britton & Rose) Friedrich & G. Rowley,NA,Echinopsis,cuzcoensis,NA,NA,NA,Echinopsis cuzcoensis,(Britton & Rose) Friedrich & G. Rowley
+7,VULNERABLE (Vu),CACTACEAE,Echinopsis maximilliana var. corbula,NA,Echinopsis,maximilliana,var.,corbula,NA,Echinopsis maximilliana var. corbula,NA
+8,VULNERABLE (Vu),CACTACEAE,Echinopsis peruviana subsp. puquiensis (Rauh & Backeberg) Ostolaza,sanqui,Echinopsis,peruviana,subsp.,puquiensis,NA,Echinopsis peruviana subsp. puquiensis,(Rauh & Backeberg) Ostolaza
+9,VULNERABLE (Vu),CACTACEAE,Eriosyce omasensis (Ostolaza & Mischler) Ostolaza,NA,Eriosyce,omasensis,NA,NA,NA,Eriosyce omasensis,(Ostolaza & Mischler) Ostolaza
+10,VULNERABLE (Vu),CACTACEAE,Haageocereus acranthus subsp. acranthus (Vaupel) Backeberg,NA,Haageocereus,acranthus,subsp.,acranthus,NA,Haageocereus acranthus subsp. acranthus,(Vaupel) Backeberg
+11,VULNERABLE (Vu),CACTACEAE,Haageocereus acranthus subsp. olowinskianus (Backeberg) Ostolaza,NA,Haageocereus,acranthus,subsp.,olowinskianus,NA,Haageocereus acranthus subsp. olowinskianus,(Backeberg) Ostolaza
+12,VULNERABLE (Vu),CACTACEAE,Haageocereus pseudomelanostele subsp. carminiflorus (Rauh & Backeberg) Ostolaza,NA,Haageocereus,pseudomelanostele,subsp.,carminiflorus,NA,Haageocereus pseudomelanostele subsp. carminiflorus,(Rauh & Backeberg) Ostolaza
+13,VULNERABLE (Vu),CACTACEAE,Matucana haynei (Otto) Britton & Rose,NA,Matucana,haynei,NA,NA,NA,Matucana haynei,(Otto) Britton & Rose
+14,VULNERABLE (Vu),CACTACEAE,Melocactus peruvianus Vaupel,NA,Melocactus,peruvianus,NA,NA,NA,Melocactus peruvianus,Vaupel
+15,VULNERABLE (Vu),CACTACEAE,Oreocereus hendriksenianus (Backeberg) Backeberg,NA,Oreocereus,hendriksenianus,NA,NA,NA,Oreocereus hendriksenianus,(Backeberg) Backeberg
+16,VULNERABLE (Vu),CACTACEAE,Weberbauerocereus rauhii Backeberg,chuillo,Weberbauerocereus,rauhii,NA,NA,NA,Weberbauerocereus rauhii,Backeberg
+1,CASI AMENAZADO (NT),CACTACEAE,Armatocereus matucanensis Backeberg,jacano,Armatocereus,matucanensis,NA,NA,NA,Armatocereus matucanensis,Backeberg
+2,CASI AMENAZADO (NT),CACTACEAE,Espostoa melanostele (Vaupel) Borg,NA,Espostoa,melanostele,NA,NA,NA,Espostoa melanostele,(Vaupel) Borg

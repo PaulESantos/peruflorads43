@@ -6,3 +6,6 @@
 data/data_ds043_2006.xlsx
 docs
 docs/
+^deprecated
+data-raw
+ds_043_2006_092025_f1.xlsx
