@@ -14,7 +14,9 @@ status](https://www.r-pkg.org/badges/version/peruflorads43)](https://CRAN.R-proj
 coverage](https://codecov.io/gh/PaulESantos/peruflorads43/branch/master/graph/badge.svg)](https://app.codecov.io/gh/PaulESantos/peruflorads43?branch=master)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/peruflorads43?color=green)](https://cran.r-project.org/package=peruflorads43)
 [![](http://cranlogs.r-pkg.org/badges/last-week/peruflorads43?color=green)](https://cran.r-project.org/package=peruflorads43)
-<!-- badges: end --> \## Overview
+<!-- badges: end -->
+
+## Overview
 
 **peruflorads43** provides comprehensive tools for working with Peru’s
 official threatened plant species list as established by Supreme Decree

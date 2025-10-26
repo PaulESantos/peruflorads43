@@ -1,7 +1,7 @@
 Package: peruflorads43
 Type: Package
 Title: Check Threatened Plant Species Status Against Peru's DS 043-2006-AG
-Version: 0.1.1
+Version: 0.2.0
 Authors@R: 
     c(person(given = "Paul E.",
              family = "Santos Andrade",
