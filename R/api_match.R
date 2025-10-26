@@ -285,6 +285,13 @@ is_ds043_2006_ag <- function(splist,
   # ========================================================================
 
   if (return_details) {
+
+    for (att in names(attributes(res_original))) {
+      if (startsWith(att, "ambiguous_")) {
+        attr(consolidated, att) <- attr(res_original, att)
+      }
+    }
+
     return(consolidated)
   } else {
     return(consolidated$Consolidated.Status)
@@ -593,6 +600,12 @@ is_threatened_peru <- function(splist, source = "original", return_details = FAL
         matched = tidyr::replace_na(matched, FALSE)
       ) |>
       dplyr::relocate(Original.Index, .before = 1)
+    ###
+    for (att in names(attributes(match_df))) {
+      if (startsWith(att, "ambiguous_")) {
+        attr(detailed_result, att) <- attr(match_df, att)
+      }
+    }
 
     return(detailed_result)
 
