@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# peruflorads43
+# peruflorads43 <img src="man/figures/logo.png" align="right" height="200" />
 
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
@@ -81,7 +81,8 @@ species_list <- c(
 )
 
 # Check threat status
-is_threatened_peru(species_list)
+tibble::tibble(splist = species_list) |> 
+  dplyr::mutate(ds43 = is_threatened_peru(splist))
 
 ```
 
@@ -112,8 +113,9 @@ species <- c(
 )
 
 # Consolidated search across both databases
-status <- is_ds043_2006_ag(species)
-status
+tibble::tibble(species) |> 
+dplyr::mutate(status = is_ds043_2006_ag(species))
+
 
 
 # Detailed reconciliation
@@ -232,11 +234,14 @@ Date: July 13, 2006
 # Species list from field survey
 field_species <- c("Achyrocline saturejoides", "Bouteloua simplex", "Jarava ichu", "Cenchrus clandestinus", "Grindelia boliviana", "Tagetes filifolia", "Bidens pilosa", "Cumulopuntia boliviana", "Ageratina sternbergiana", "Roca", "Nassella inconspicua", "Dalea sp", "Baccharis tricuneata", "Lepechinia meyenii", "Erodium cicutarium", "Suelo", "Ephedra rupestris", "Achyrocline saturejoides", "Ageratina sternbergiana", "Astragalus garbancillo", "Baccharis tola", "Bidens pilosa", "Bouteloua simplex", "Cenchrus clandestinus", "Cumulopuntia boliviana", "Jarava ichu")
 
+tibble::tibble(field_species) |> 
+  dplyr::mutate(status = is_ds043_2006_ag(field_species)) |> 
+  dplyr::filter(status != "Not threatened")
 
 # Check DS 043 protection status
 results <- is_ds043_2006_ag(field_species, return_details = TRUE)
 
-result
+results
 
 # Generate report 
 results |>
