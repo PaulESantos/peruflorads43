@@ -452,16 +452,20 @@ If you use **peruflorads43** in your research, please cite:
 
 ``` r
 citation("peruflorads43")
-```
-
-``` bibtex
-@Manual{peruflorads432025,
-  title = {peruflorads43: Check Threatened Plant Species Status Against Peru's DS 043-2006-AG},
-  author = {Paul E. Santos Andrade},
-  year = {2025},
-  note = {R package version 0.1.1},
-  url = {https://github.com/PaulESantos/peruflorads43},
-}
+#> To cite peruflorads43 in publications use:
+#> 
+#>   Santos-Andrade P.E. (2023). peruflorads43: Reviewed Official
+#>   Classification of Endangered Wild Flora Species in Peru. R package
+#>   version 0.1.1
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {peruflorads43: Reviewed Official Classification of Endangered Wild Flora Species in Peru},
+#>     author = {Paul E. Santos Andrade},
+#>     year = {2023},
+#>     url = {https://github.com/PaulESantos/peruflorads43},
+#>   }
 ```
 
 **Legal reference:**
@@ -469,24 +473,6 @@ citation("peruflorads43")
 Ministerio de Agricultura. (2006). Decreto Supremo N° 043-2006-AG:
 Aprueban Categorización de Especies Amenazadas de Flora Silvestre. El
 Peruano, July 13, 2006.
-
-## Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md)
-for guidelines.
-
-### Reporting Issues
-
-- **Taxonomic issues**: Report incorrect matches or missing species
-- **Bug reports**: Use GitHub Issues with reproducible examples
-- **Feature requests**: Suggest new functionality
-- **Documentation**: Help improve examples and vignettes
-
-## Acknowledgments
-
-- **SERFOR** (Servicio Nacional Forestal y de Fauna Silvestre) for the
-  original DS 043-2006-AG data
-- **Royal Botanic Gardens, Kew** for WCVP and POWO taxonomic resources
 
 ------------------------------------------------------------------------
 
