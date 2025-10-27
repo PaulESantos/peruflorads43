@@ -36,7 +36,6 @@ La base de datos threatenedperu incluida en el paquete `peruflorads43` contiene 
 ```{r}
 threatenedperu <- get_threatened_database(type = "original")
 
-threatenedperu |> glimpse()
 ```
 
 El objeto threatenedperu es un tibble con 776 registros y 13 columnas, estructurado de la siguiente manera:
@@ -44,9 +43,8 @@ El objeto threatenedperu es un tibble con 776 registros y 13 columnas, estructur
 
 | Tipo de columna                       | Variables principales                                                          | Descripción                                                                |
 | ------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
-| **Datos originales (DS 043-2006-AG)** | `scientific_name`, `author`, `family`, `tag`, `infraspecies_2`                 | Información original del listado de especies amenazadas publicado en 2006. |
+| **Datos originales (DS 043-2006-AG)** | `scientific_name`, `author`, `family`, `threat_category`, `genus`, `species`, `infraspecies`, `tag`, `infraspecies_2` | Información original del listado de especies amenazadas publicado en 2006. |
 | **Datos actualizados (POWO)**         | `accepted_name`, `accepted_name_author`, `accepted_family`, `taxonomic_status` | Información validada con taxonomía actualizada según POWO.                 |
-| **Información complementaria**        | `threat_category`, `genus`, `species`, `infraspecies`                          | Categoría de amenaza e identificación jerárquica del nombre científico.    |
 
 
 
@@ -124,17 +122,42 @@ slice_head(n = 5)
 ```{r}
 status_summary <- threatenedperu |>
 count(taxonomic_status) |>
-mutate(pct = round(100 * n / sum(n), 1))
+mutate(pct = round(100 * n / sum(n), 1), 
+       label = paste0(pct, "% (", n, ")"))
 
+gt::gt(status_summary)
+```
 
-status_summary
-
-
-ggplot(status_summary, aes(x = taxonomic_status, y = pct, fill = taxonomic_status)) +
-geom_col(show.legend = FALSE) +
-geom_text(aes(label = paste0(pct, "%")), vjust = -0.5) +
-labs(title = "Proporción de nombres por estado taxonómico",
-x = "Estatus taxonómico", y = "Porcentaje (%)") 
+```{r fig.width=20, fig.height=10, out.width='90%', fig.align='center'}
+ggplot(status_summary, aes(
+  x = reorder(taxonomic_status, -pct),
+  y = pct,
+  fill = taxonomic_status
+)) +
+  geom_col(width = 0.7, show.legend = FALSE) +
+  geom_text(aes(label = label), vjust = -0.4, size = 10, fontface = "bold") +
+  scale_fill_manual(
+    values = c(
+      "Accepted" = "#4CAF50",   # verde para nombres válidos
+      "Synonym" = "#2196F3",    # azul para sinónimos
+      "No opinion" = "#FFC107"  # amarillo para indeterminados
+    )
+  ) +
+  labs(
+    title = "Proporción de nombres por estado taxonómico",
+    x = "Estatus taxonómico",
+    y = "Porcentaje (%)"
+  ) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +
+  theme_bw() +
+  theme(
+    plot.title = element_text(size = 28, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 22, margin = margin(t = 10)),
+    axis.title.y = element_text(size = 22,margin = margin(r = 10)),
+    axis.text = element_text(size = 22, color = "black"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
 ```
 
 
@@ -142,18 +165,42 @@ x = "Estatus taxonómico", y = "Porcentaje (%)")
 
 ```{r}
 category_summary <- threatenedperu |>
-count(threat_category) |>
-mutate(pct = round(100 * n / sum(n), 1))
+count(threat_category, .drop = FALSE) |>
+mutate(
+    threat_category = factor(threat_category, levels = c("CR","EN","VU","NT")),
+    pct   = round(100 * n / sum(n), 1),
+    label = paste0(n, " (", pct, "%)")
+  )
 
+gt::gt(category_summary)
 
-category_summary
+```
 
-
-ggplot(category_summary, aes(x = threat_category, y = n, fill = threat_category)) +
-geom_col(show.legend = FALSE) +
-geom_text(aes(label = paste0(n, " (", pct, "%)")), vjust = -0.5) +
-labs(title = "Distribución de especies por categoría de amenaza",
-x = "Categoría IUCN", y = "Número de especies") 
+```{r fig.width=20, fig.height=10, out.width='90%', fig.align='center'}
+ggplot(category_summary,
+       aes(x = forcats::fct_reorder(threat_category, n),
+                                    y = n,
+           fill = threat_category)) +
+  geom_col(width = 0.7, show.legend = FALSE) +
+  geom_text(aes(label = label), vjust = -0.35, size = 10, fontface = "bold") +
+  scale_fill_manual(values = c(
+    "CR" = "#D32F2F",        
+    "EN" = "#F57C00",        
+    "VU" = "#FBC02D",        
+    "NT" = "#388E3C"        
+  )) +
+  labs(
+    title = "Distribución de especies por categoría de amenaza (IUCN)",
+    x = "Categoría IUCN", y = "Número de especies"
+  ) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.10))) +
+  theme_bw() +
+  theme(
+    plot.title = element_text(size = 28, face = "bold", hjust = 0.5),
+    axis.text  = element_text(size = 22, color = "black"),
+    axis.title = element_text(size = 22, color = "black"),
+    panel.grid.major.x = element_blank()
+  )
 ```
 
 ## Ejemplos de cambios taxonómicos relevantes
