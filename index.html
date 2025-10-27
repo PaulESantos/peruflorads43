@@ -33,6 +33,12 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
+<li><a class="dropdown-item" href="articles/threatenedperu_overview.html">Exploración de la Base de Datos `threatenedperu`</a></li>
+  </ul>
+</li>
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><form class="form-inline" role="search">
@@ -354,11 +360,20 @@ Date: July 13, 2006</p>
 <h2 id="use-cases">Use Cases<a class="anchor" aria-label="anchor" href="#use-cases"></a>
 </h2>
 <div class="section level3">
-<h3 id="id_1-environmental-impact-assessment-eia">1. Environmental Impact Assessment (EIA)<a class="anchor" aria-label="anchor" href="#id_1-environmental-impact-assessment-eia"></a>
+<h3 id="id_1-environmental-assessment">1. Environmental Assessment<a class="anchor" aria-label="anchor" href="#id_1-environmental-assessment"></a>
 </h3>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Species list from field survey</span></span>
-<span><span class="va">field_species</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Achyrocline saturejoides"</span>, <span class="st">"Bouteloua simplex"</span>, <span class="st">"Jarava ichu"</span>, <span class="st">"Cenchrus clandestinus"</span>, <span class="st">"Grindelia boliviana"</span>, <span class="st">"Tagetes filifolia"</span>, <span class="st">"Bidens pilosa"</span>, <span class="st">"Cumulopuntia boliviana"</span>, <span class="st">"Ageratina sternbergiana"</span>, <span class="st">"Roca"</span>, <span class="st">"Nassella inconspicua"</span>, <span class="st">"Dalea sp"</span>, <span class="st">"Baccharis tricuneata"</span>, <span class="st">"Lepechinia meyenii"</span>, <span class="st">"Erodium cicutarium"</span>, <span class="st">"Suelo"</span>, <span class="st">"Ephedra rupestris"</span>, <span class="st">"Achyrocline saturejoides"</span>, <span class="st">"Ageratina sternbergiana"</span>, <span class="st">"Astragalus garbancillo"</span>, <span class="st">"Baccharis tola"</span>, <span class="st">"Bidens pilosa"</span>, <span class="st">"Bouteloua simplex"</span>, <span class="st">"Cenchrus clandestinus"</span>, <span class="st">"Cumulopuntia boliviana"</span>, <span class="st">"Jarava ichu"</span><span class="op">)</span></span>
+<span><span class="va">field_species</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Achyrocline saturejoides"</span>, <span class="st">"Bouteloua simplex"</span>, </span>
+<span>                   <span class="st">"Jarava ichu"</span>, <span class="st">"Cenchrus clandestinus"</span>, <span class="st">"Grindelia boliviana"</span>,</span>
+<span>                   <span class="st">"Tagetes filifolia"</span>, <span class="st">"Bidens pilosa"</span>, <span class="st">"Cumulopuntia boliviana"</span>,</span>
+<span>                   <span class="st">"Ageratina sternbergiana"</span>, <span class="st">"Roca"</span>, <span class="st">"Nassella inconspicua"</span>, </span>
+<span>                   <span class="st">"Dalea sp"</span>, <span class="st">"Baccharis tricuneata"</span>, <span class="st">"Lepechinia meyenii"</span>, </span>
+<span>                   <span class="st">"Erodium cicutarium"</span>, <span class="st">"Suelo"</span>, <span class="st">"Ephedra rupestris"</span>, </span>
+<span>                   <span class="st">"Achyrocline saturejoides"</span>, <span class="st">"Ageratina sternbergiana"</span>, </span>
+<span>                   <span class="st">"Astragalus garbancillo"</span>, <span class="st">"Baccharis tola"</span>, <span class="st">"Bidens pilosa"</span>,</span>
+<span>                   <span class="st">"Bouteloua simplex"</span>, <span class="st">"Cenchrus clandestinus"</span>, </span>
+<span>                   <span class="st">"Cumulopuntia boliviana"</span>, <span class="st">"Jarava ichu"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span><span class="va">field_species</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>status <span class="op">=</span> <span class="fu"><a href="reference/is_ds043_2006_ag.html">is_ds043_2006_ag</a></span><span class="op">(</span><span class="va">field_species</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
@@ -405,7 +420,7 @@ Date: July 13, 2006</p>
 <span><span class="co">#&gt; 1 Ephedra rupestris CR                  DS 043-2006-AG (original)</span></span></code></pre></div>
 </div>
 <div class="section level3">
-<h3 id="id_1-research-and-monitoring">1. Research and Monitoring<a class="anchor" aria-label="anchor" href="#id_1-research-and-monitoring"></a>
+<h3 id="id_2-research-and-monitoring">2. Research and Monitoring<a class="anchor" aria-label="anchor" href="#id_2-research-and-monitoring"></a>
 </h3>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Historical species records</span></span>
@@ -549,16 +564,15 @@ Date: July 13, 2006</p>
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"peruflorads43"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; To cite peruflorads43 in publications use:</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;   Santos-Andrade P.E. (2023). peruflorads43: Reviewed Official</span></span>
-<span><span class="co">#&gt;   Classification of Endangered Wild Flora Species in Peru. R package</span></span>
-<span><span class="co">#&gt;   version 0.1.1</span></span>
+<span><span class="co">#&gt;   Santos-Andrade P.E. (2025). peruflorads43: Check Threatened Plant</span></span>
+<span><span class="co">#&gt;   Species Status Against Peru's DS 043-2006-AG</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt;   @Manual{,</span></span>
-<span><span class="co">#&gt;     title = {peruflorads43: Reviewed Official Classification of Endangered Wild Flora Species in Peru},</span></span>
+<span><span class="co">#&gt;     title = {peruflorads43: Check Threatened Plant Species Status Against Peru's DS 043-2006-AG},</span></span>
 <span><span class="co">#&gt;     author = {Paul E. Santos Andrade},</span></span>
-<span><span class="co">#&gt;     year = {2023},</span></span>
+<span><span class="co">#&gt;     year = {2025},</span></span>
 <span><span class="co">#&gt;     url = {https://github.com/PaulESantos/peruflorads43},</span></span>
 <span><span class="co">#&gt;   }</span></span></code></pre></div>
 <p><strong>Legal reference:</strong></p>

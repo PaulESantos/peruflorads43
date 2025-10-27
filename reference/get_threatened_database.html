@@ -18,6 +18,10 @@ provides controlled access to the internal datasets used by the package."><meta 
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><a class="dropdown-item" href="../articles/threatenedperu_overview.html">Exploración de la Base de Datos `threatenedperu`</a></li>
+  </ul></li>
       </ul><ul class="navbar-nav"><li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json"></form></li>
 <li class="nav-item"><a class="external-link nav-link" href="https://github.com/PaulESantos/peruflorads43/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
@@ -139,12 +143,10 @@ wild flora species in Peru.</p>
 <span class="r-in"><span><span class="co"># Get updated database</span></span></span>
 <span class="r-in"><span><span class="va">db_updated</span> <span class="op">&lt;-</span> <span class="fu">get_threatened_database</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"updated"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">db_updated</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> tibble [179 × 14] (S3: tbl_df/tbl/data.frame)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tibble [179 × 12] (S3: tbl_df/tbl/data.frame)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ scientific_name     : chr [1:179] "Pucara leucantha" "Ceroxylon weberbaueri" "Dyssodia lopez-mirandae" "Senecio mollendoensis" ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ author              : chr [1:179] "Ravenna" "Burret" "Cabrera" "Cabrera" ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ family              : chr [1:179] "Amaryllidaceae" "Arecaceae" "Asteraceae" "Asteraceae" ...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  $ tag                 : chr [1:179] NA NA NA NA ...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  $ form                : chr [1:179] NA NA NA NA ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ accepted_name       : chr [1:179] "Stenomesson leucanthum" "Ceroxylon pityrophyllum" "Schizotrichia lopez-mirandae" "Lomanthus mollendoensis" ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ accepted_name_author: chr [1:179] "(Ravenna) Meerow &amp; van der Werff" "(Mart.) Mart. ex H.Wendl." "(Cabrera) Molinari" "(Cabrera) B.Nord." ...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  $ accepted_family     : chr [1:179] "Amaryllidaceae" "Arecaceae" "Asteraceae" "Asteraceae" ...</span>
