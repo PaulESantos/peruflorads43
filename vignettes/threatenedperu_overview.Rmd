@@ -1,0 +1,210 @@
+---
+title: "Exploración de la Base de Datos `threatenedperu`"
+author: "Paul E. Santos Andrade"
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown::html_vignette:
+    toc: true
+    toc_depth: 3
+vignette: >
+  %\VignetteIndexEntry{Exploración de la Base de Datos threatenedperu}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(peruflorads43)
+library(dplyr)
+library(tibble)
+library(ggplot2)
+library(scales)
+library(gt)
+```
+
+
+# Introducción
+
+La base de datos threatenedperu incluida en el paquete `peruflorads43` contiene la lista oficial de especies de plantas amenazadas del Perú según el **Decreto Supremo N° 043-2006-AG** y su actualización taxonómica utilizando la información de **Plants of the World Online (POWO)** del Royal Botanic Gardens, Kew.
+
+
+## Carga del conjunto de datos
+
+```{r}
+threatenedperu <- get_threatened_database(type = "original")
+
+threatenedperu |> glimpse()
+```
+
+El objeto threatenedperu es un tibble con 776 registros y 13 columnas, estructurado de la siguiente manera:
+
+
+| Tipo de columna                       | Variables principales                                                          | Descripción                                                                |
+| ------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| **Datos originales (DS 043-2006-AG)** | `scientific_name`, `author`, `family`, `tag`, `infraspecies_2`                 | Información original del listado de especies amenazadas publicado en 2006. |
+| **Datos actualizados (POWO)**         | `accepted_name`, `accepted_name_author`, `accepted_family`, `taxonomic_status` | Información validada con taxonomía actualizada según POWO.                 |
+| **Información complementaria**        | `threat_category`, `genus`, `species`, `infraspecies`                          | Categoría de amenaza e identificación jerárquica del nombre científico.    |
+
+
+
+## Revisión de escritura y normalización
+
+Durante la depuración se realizaron las siguientes acciones:
+
+- Corrección de errores tipográficos en nombres científicos y autores.
+
+- Homogeneización de abreviaturas de autores.
+
+- Normalización de mayúsculas en géneros y epítetos.
+
+- Eliminación de espacios dobles y caracteres especiales.
+
+Ejemplo comparativo de los de errores tipográficos en nombres científicos:
+
+
+```{r}
+
+threatenedperu |>
+  dplyr::mutate(compara = scientific_name != accepted_name) |> 
+  dplyr::mutate(
+    # Calcula la distancia solo cuando los nombres difieren
+    string_distance = ifelse(
+      compara,
+      stringdist::stringdist(scientific_name, accepted_name, method = "lv"), # 'lv' = Levenshtein
+      0
+    )
+  ) |>
+  dplyr::filter(string_distance > 0 & string_distance < 3) |> 
+  dplyr::select(scientific_name, accepted_name, string_distance) |> 
+  gt::gt()
+```
+
+
+
+## Variable taxonomic_status
+
+Esta variable describe la relación entre el nombre original y su estado taxonómico según POWO:
+
+- **"Accepted"**  El nombre original se mantiene vigente.
+
+- **"Synonym"** El nombre original fue reemplazado por otro aceptado.
+
+- **"No opinion"** No se dispone de información actual o existe ambigüedad taxonómica.
+
+Ejemplos de cada categoría:
+
+```{r}
+# Nombres aceptados
+threatenedperu |>
+filter(taxonomic_status == "Accepted") |>
+select(scientific_name, accepted_name) |>
+slice_head(n = 5)
+
+#Nombres sinónimos
+
+threatenedperu |>
+filter(taxonomic_status == "Synonym") |>
+select(scientific_name, accepted_name) |>
+slice_head(n = 5)
+
+#Casos sin opinión
+
+threatenedperu |>
+filter(taxonomic_status == "No opinion") |>
+select(scientific_name, accepted_name) |>
+slice_head(n = 5)
+```
+
+## Análisis cuantitativo de la actualización taxonómica
+
+1. Proporción de especies según su estatus taxonómico
+```{r}
+status_summary <- threatenedperu |>
+count(taxonomic_status) |>
+mutate(pct = round(100 * n / sum(n), 1))
+
+
+status_summary
+
+
+ggplot(status_summary, aes(x = taxonomic_status, y = pct, fill = taxonomic_status)) +
+geom_col(show.legend = FALSE) +
+geom_text(aes(label = paste0(pct, "%")), vjust = -0.5) +
+labs(title = "Proporción de nombres por estado taxonómico",
+x = "Estatus taxonómico", y = "Porcentaje (%)") 
+```
+
+
+2. Distribución de especies por categoría de amenaza
+
+```{r}
+category_summary <- threatenedperu |>
+count(threat_category) |>
+mutate(pct = round(100 * n / sum(n), 1))
+
+
+category_summary
+
+
+ggplot(category_summary, aes(x = threat_category, y = n, fill = threat_category)) +
+geom_col(show.legend = FALSE) +
+geom_text(aes(label = paste0(n, " (", pct, "%)")), vjust = -0.5) +
+labs(title = "Distribución de especies por categoría de amenaza",
+x = "Categoría IUCN", y = "Número de especies") 
+```
+
+## Ejemplos de cambios taxonómicos relevantes
+
+Algunos casos de sinónimos actualizados con sus equivalentes aceptados:
+
+```{r}
+threatenedperu |>
+filter(taxonomic_status == "Synonym") |>
+select(scientific_name, accepted_name, accepted_family, threat_category) |>
+  head(n=20) |> 
+  gt::gt()
+```
+
+Estos ejemplos muestran cómo especies registradas originalmente bajo un nombre hoy obsoleto fueron actualizadas conforme a la nomenclatura moderna (por ejemplo, Pucara leucantha ~ Stenomesson leucanthum).
+
+## Evaluación de coincidencias entre nombres originales y aceptados
+
+El siguiente código calcula la proporción de coincidencia directa entre scientific_name y accepted_name:
+
+```{r}
+threatenedperu |>
+summarise(
+total = n(),
+iguales = sum(scientific_name == accepted_name, na.rm = TRUE),
+porcentaje_iguales = round(100 * iguales / total, 1)
+)
+```
+
+Esto permite cuantificar el grado de estabilidad nomenclatural en el decreto original frente a la taxonomía actual.
+
+## Conclusiones
+
+- La base de datos `threatenedperu` integra información oficial del **DS 043-2006-AG** con nomenclatura validada por **POWO**, permitiendo análisis actualizados sobre especies protegidas.
+
+- La variable `taxonomic_status` es clave para identificar cambios taxonómicos: alrededor de 23.1% de los nombres originales corresponden a sinónimos.
+
+```{r}
+threatenedperu |>
+  dplyr::count(taxonomic_status) |>
+  dplyr::mutate(porcentaje = scales::percent(n / sum(n), accuracy = 0.1)) |> 
+  gt::gt()
+  
+```
+
+
+- La homogeneización de la escritura y la normalización de abreviaturas garantizan la interoperabilidad con otras bases de datos botánicas.
+
+- Este recurso constituye una herramienta util para la investigación, conservación y gestión de la flora amenazada del Perú.
+
+Referencias
+Ministerio de Agricultura del Perú (2006). Decreto Supremo N° 043-2006-AG: Listado de especies de flora amenazada del Perú.
+
+Plants of the World Online (POWO). Royal Botanic Gardens, Kew. https://powo.science.kew.org

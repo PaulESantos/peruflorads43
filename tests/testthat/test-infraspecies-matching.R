@@ -64,3 +64,4 @@ test_that("Empty infraspecies_2 in updated database is handled", {
   expect_true(is.na(result$Matched.Infraspecies_2))
 })
 
+

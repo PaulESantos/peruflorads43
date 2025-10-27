@@ -9,3 +9,5 @@ docs/
 ^deprecated
 data-raw
 ds_043_2006_092025_f1.xlsx
+inst/doc
+threatened_peru_db.xlsx

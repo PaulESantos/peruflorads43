@@ -231,10 +231,19 @@ Date: July 13, 2006
 
 ## Use Cases
 
-### 1. Environmental Impact Assessment (EIA)
+### 1. Environmental Assessment 
 ```{r}
 # Species list from field survey
-field_species <- c("Achyrocline saturejoides", "Bouteloua simplex", "Jarava ichu", "Cenchrus clandestinus", "Grindelia boliviana", "Tagetes filifolia", "Bidens pilosa", "Cumulopuntia boliviana", "Ageratina sternbergiana", "Roca", "Nassella inconspicua", "Dalea sp", "Baccharis tricuneata", "Lepechinia meyenii", "Erodium cicutarium", "Suelo", "Ephedra rupestris", "Achyrocline saturejoides", "Ageratina sternbergiana", "Astragalus garbancillo", "Baccharis tola", "Bidens pilosa", "Bouteloua simplex", "Cenchrus clandestinus", "Cumulopuntia boliviana", "Jarava ichu")
+field_species <- c("Achyrocline saturejoides", "Bouteloua simplex", 
+                   "Jarava ichu", "Cenchrus clandestinus", "Grindelia boliviana",
+                   "Tagetes filifolia", "Bidens pilosa", "Cumulopuntia boliviana",
+                   "Ageratina sternbergiana", "Roca", "Nassella inconspicua", 
+                   "Dalea sp", "Baccharis tricuneata", "Lepechinia meyenii", 
+                   "Erodium cicutarium", "Suelo", "Ephedra rupestris", 
+                   "Achyrocline saturejoides", "Ageratina sternbergiana", 
+                   "Astragalus garbancillo", "Baccharis tola", "Bidens pilosa",
+                   "Bouteloua simplex", "Cenchrus clandestinus", 
+                   "Cumulopuntia boliviana", "Jarava ichu")
 
 tibble::tibble(field_species) |> 
   dplyr::mutate(status = is_ds043_2006_ag(field_species)) |> 
@@ -254,7 +263,7 @@ results |>
 ```
 
 
-### 1. Research and Monitoring
+### 2. Research and Monitoring
 ```{r}
 # Historical species records
 historical_names <- c(

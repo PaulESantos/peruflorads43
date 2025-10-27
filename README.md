@@ -277,11 +277,20 @@ Date: July 13, 2006
 
 ## Use Cases
 
-### 1. Environmental Impact Assessment (EIA)
+### 1. Environmental Assessment
 
 ``` r
 # Species list from field survey
-field_species <- c("Achyrocline saturejoides", "Bouteloua simplex", "Jarava ichu", "Cenchrus clandestinus", "Grindelia boliviana", "Tagetes filifolia", "Bidens pilosa", "Cumulopuntia boliviana", "Ageratina sternbergiana", "Roca", "Nassella inconspicua", "Dalea sp", "Baccharis tricuneata", "Lepechinia meyenii", "Erodium cicutarium", "Suelo", "Ephedra rupestris", "Achyrocline saturejoides", "Ageratina sternbergiana", "Astragalus garbancillo", "Baccharis tola", "Bidens pilosa", "Bouteloua simplex", "Cenchrus clandestinus", "Cumulopuntia boliviana", "Jarava ichu")
+field_species <- c("Achyrocline saturejoides", "Bouteloua simplex", 
+                   "Jarava ichu", "Cenchrus clandestinus", "Grindelia boliviana",
+                   "Tagetes filifolia", "Bidens pilosa", "Cumulopuntia boliviana",
+                   "Ageratina sternbergiana", "Roca", "Nassella inconspicua", 
+                   "Dalea sp", "Baccharis tricuneata", "Lepechinia meyenii", 
+                   "Erodium cicutarium", "Suelo", "Ephedra rupestris", 
+                   "Achyrocline saturejoides", "Ageratina sternbergiana", 
+                   "Astragalus garbancillo", "Baccharis tola", "Bidens pilosa",
+                   "Bouteloua simplex", "Cenchrus clandestinus", 
+                   "Cumulopuntia boliviana", "Jarava ichu")
 
 tibble::tibble(field_species) |> 
   dplyr::mutate(status = is_ds043_2006_ag(field_species)) |> 
@@ -328,7 +337,7 @@ results |>
 #> 1 Ephedra rupestris CR                  DS 043-2006-AG (original)
 ```
 
-### 1. Research and Monitoring
+### 2. Research and Monitoring
 
 ``` r
 # Historical species records
@@ -454,16 +463,15 @@ If you use **peruflorads43** in your research, please cite:
 citation("peruflorads43")
 #> To cite peruflorads43 in publications use:
 #> 
-#>   Santos-Andrade P.E. (2023). peruflorads43: Reviewed Official
-#>   Classification of Endangered Wild Flora Species in Peru. R package
-#>   version 0.1.1
+#>   Santos-Andrade P.E. (2025). peruflorads43: Check Threatened Plant
+#>   Species Status Against Peru's DS 043-2006-AG
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {peruflorads43: Reviewed Official Classification of Endangered Wild Flora Species in Peru},
+#>     title = {peruflorads43: Check Threatened Plant Species Status Against Peru's DS 043-2006-AG},
 #>     author = {Paul E. Santos Andrade},
-#>     year = {2023},
+#>     year = {2025},
 #>     url = {https://github.com/PaulESantos/peruflorads43},
 #>   }
 ```
