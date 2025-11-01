@@ -39,6 +39,7 @@ Suggests:
     scales,
     stringdist,
     ggplot2,
+    forcats,
     covr,
     knitr,
     rmarkdown,
@@ -46,7 +47,6 @@ Suggests:
     withr (>= 2.5.0)
 VignetteBuilder: knitr
 Language: en-US
-LazyData: true
 RoxygenNote: 7.3.3
 Config/testthat/edition: 3
 License: MIT + file LICENSE

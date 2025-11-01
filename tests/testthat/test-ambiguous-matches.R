@@ -3,8 +3,6 @@
 # =============================================================================
 
 test_that("get_ambiguous_matches returns NULL when no ambiguous matches", {
-  skip_on_cran()
-
   # Use species that match unambiguously
   species_list <- c("Cattleya maxima", "Polylepis incana")
   matching_threatenedperu(species_list)
@@ -46,7 +44,7 @@ test_that("get_ambiguous_matches handles invalid type parameter", {
 
 
 test_that("get_ambiguous_matches handles missing output directory", {
-  skip_on_cran()
+  #skip_on_cran()
 
   species_list <- c("Cattleya maxima")
   result <- is_threatened_peru(species_list, return_details = TRUE)
