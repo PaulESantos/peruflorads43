@@ -121,6 +121,5 @@ NULL
 #' \code{\link{comparison_table_ds043}} to compare nomenclatural changes
 #'
 #' @keywords internal
-#' @name internal-datasets
 #' @noRd
 NULL

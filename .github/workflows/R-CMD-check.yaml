@@ -60,7 +60,7 @@ jobs:
         with:
           upload-snapshots: true
           build_args: 'c("--no-manual","--compact-vignettes=gs+qpdf")'
-      comment: false
+          comment: false
       - name: Upload coverage reports to Codecov
          uses: codecov/codecov-action@v5
          with:
