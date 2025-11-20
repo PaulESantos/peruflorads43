@@ -1,7 +1,7 @@
 Package: peruflorads43
 Type: Package
 Title: Check Threatened Plant Species Status Against Peru's DS 043-2006-AG
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: 
     c(person(given = "Paul E.",
              family = "Santos Andrade",
@@ -16,7 +16,7 @@ Description: Provides tools to match plant species names against the official
     Supports both the original 2006 nomenclature and updated taxonomic names,
     allowing users to check protection status regardless of nomenclatural changes
     since the decree's publication. Threat categories follow IUCN standards 
-    (CR, EN, VU, NT).
+    (Critically Endangered, Endangered, Vulnerable, Near Threatened).
 Encoding: UTF-8
 URL: https://github.com/PaulESantos/peruflorads43,
     https://paulesantos.github.io/peruflorads43/
