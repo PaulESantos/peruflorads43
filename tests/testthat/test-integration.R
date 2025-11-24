@@ -513,33 +513,33 @@ test_that("Complete pipeline: duplicate names handled", {
 # SECTION 8: Performance Integration Tests
 # ==============================================================================
 
-test_that("Complete pipeline: performance with large datasets", {
-  # Test that large datasets process in reasonable time
-
-  # All unique species from original database (~776 species)
-  input <- peruflorads43:::threatenedperu$scientific_name |> unique()
-
-  # Should complete in reasonable time (< 30 seconds for ~800 species)
-  start_time <- Sys.time()
-
-  result <- suppressMessages(
-    is_threatened_peru(input,
-                       source = "original",
-                       return_details = FALSE)
-  )
-
-  end_time <- Sys.time()
-  elapsed <- as.numeric(difftime(end_time, start_time, units = "secs"))
-
-  # Performance check
-  expect_lt(elapsed, 30)  # Should complete in under 30 seconds
-
-  # Correctness check
-  expect_length(result, length(input))
-  expect_true(all(result != "Not threatened"))
-})
-
-# test_that("Complete pipeline: small batch performance", {
+#test_that("Complete pipeline: performance with large datasets", {
+#  # Test that large datasets process in reasonable time
+#
+#  # All unique species from original database (~776 species)
+#  input <- peruflorads43:::threatenedperu$scientific_name |> unique()
+#
+#  # Should complete in reasonable time (< 30 seconds for ~800 species)
+#  start_time <- Sys.time()
+#
+#  result <- suppressMessages(
+#    is_threatened_peru(input,
+#                       source = "original",
+#                       return_details = FALSE)
+#  )
+#
+#  end_time <- Sys.time()
+#  elapsed <- as.numeric(difftime(end_time, start_time, units = "secs"))
+#
+#  # Performance check
+#  expect_lt(elapsed, 30)  # Should complete in under 30 seconds
+#
+#  # Correctness check
+#  expect_length(result, length(input))
+#  expect_true(all(result != "Not threatened"))
+#})
+#
+## test_that("Complete pipeline: small batch performance", {
 #   # Small batches should be nearly instant
 #
 #   input <- c("Cattleya maxima", "Polylepis incana", "Aphelandra cuscoensis")

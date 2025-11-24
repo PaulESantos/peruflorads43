@@ -10,12 +10,12 @@ Authors@R:
              comment = c(ORCID = "0000-0002-6635-0375")))
 Maintainer: Paul E. Santos Andrade <paulefrens@gmail.com>
 Description: Provides tools to match plant species names against the official 
-    threatened species list of Peru (Supreme Decree DS 043-2006-AG, 2006).
+    threatened species list of Peru (Supreme Decree 043-2006-AG, 2006).
     Implements a hierarchical matching pipeline with exact, fuzzy, and suffix 
-    matching algorithms to handle nomenclatural variations and taxonomic changes.
+    matching algorithms to handle naming variations and taxonomic changes.
     Supports both the original 2006 nomenclature and updated taxonomic names,
     allowing users to check protection status regardless of nomenclatural changes
-    since the decree's publication. Threat categories follow IUCN standards 
+    since the decree's publication. Threat categories follow International Union for Conservation of Nature standards 
     (Critically Endangered, Endangered, Vulnerable, Near Threatened).
 Encoding: UTF-8
 URL: https://github.com/PaulESantos/peruflorads43,
