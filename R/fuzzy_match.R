@@ -544,7 +544,8 @@ fuzzy_match_infraspecies_within_species_helper <- function(df,
           dplyr::rename(Matched.Infraspecies = infraspecies#,
                         #Matched.Infraspecies_2_example = infraspecies_2
                         ),
-        by = "Matched.Infraspecies"
+        by = "Matched.Infraspecies",
+        relationship = "many-to-many"
       ) |>
       dplyr::arrange(Orig.Genus, Orig.Species, Orig.Infraspecies,
                      fuzzy_infraspecies_dist, Matched.Infraspecies) |>

@@ -64,11 +64,11 @@ test_that("Threat categories are valid", {
 })
 
 test_that("Taxonomic status values are valid", {
-  valid_status <- c("Accepted", "Synonym", NA)
+  valid_status <- c("Accepted", "Synonym", "No opinion")
 
   data_orig <- peruflorads43:::threatenedperu
 
-  expect_false(all(data_orig$taxonomic_status %in% valid_status))
+  expect_true(all(data_orig$taxonomic_status %in% valid_status))
 })
 
 test_that("Infraspecific ranks are properly formatted", {

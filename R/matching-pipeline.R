@@ -362,17 +362,17 @@
           valid_rank = (.data$Rank == .data$Matched.Rank.Calculated)
         )
 
-      # FIX: Capturar atributo ANTES de filtrar
+      # FIX: Capture attribute before filtering.
       ambig_infrasp2 <- attr(n7, "ambiguous_infraspecies_2")
 
       n7_true  <- dplyr::filter(n7, .data$valid_rank, .data$fuzzy_match_infraspecies_2) |>
         dplyr::mutate(Matched.Infra.Rank_2 = "F.")
       n7_false <- dplyr::filter(n7, !.data$valid_rank | !.data$fuzzy_match_infraspecies_2)
     } else {
-      # FIX: CRÍTICO - Definir ambig_infrasp2 cuando n7_in está vacío
+      # FIX: Critical - define ambig_infrasp2 when n7_in is empty.
       n7_true  <- n6b_false[0, ]
       n7_false <- n6b_false[0, ]
-      ambig_infrasp2 <- NULL  # ← Esta línea faltaba
+      ambig_infrasp2 <- NULL
     }
 
     matched_f   <- dplyr::bind_rows(lists$matched, n6b_true, n7_true)
@@ -502,9 +502,10 @@
                        )
   )
   if (!use_infraspecies_2 && any(out$Matched.Rank == 4L, na.rm = TRUE)) {
+    rank4_idx <- which(out$Matched.Rank == 4L)
     warning("Rank 4 matches detected with a dataset that does not support infraspecies_2; correcting to NA.", call. = FALSE)
-    out$Matched.Rank[out$Matched.Rank == 4L] <- NA_integer_
-    out$Matched.Infraspecies_2[which(out$Matched.Rank == 4L)] <- NA_character_
+    out$Matched.Rank[rank4_idx] <- NA_integer_
+    out$Matched.Infraspecies_2[rank4_idx] <- NA_character_
   }
   out |>
     dplyr::mutate(

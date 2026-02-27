@@ -102,3 +102,44 @@ test_that("comparison_table_ds043 returns correct structure", {
   expect_true(all(result$protected_by_ds_043 %in% c("YES", "NO")))
 })
 
+test_that("is_ds043_2006_ag returns structured empty tibble for empty input", {
+  result <- suppressWarnings(
+    is_ds043_2006_ag(character(0), return_details = TRUE)
+  )
+
+  expect_s3_class(result, "data.frame")
+  expect_equal(nrow(result), 0)
+  expect_true(all(c(
+    "Input.Name",
+    "Consolidated.Name",
+    "Consolidated.Status",
+    "Consolidated.Category",
+    "Protected.DS043",
+    "Is.Synonym",
+    "Accepted.Name",
+    "Final.Source",
+    "Match.Scenario",
+    "Nomenclature.Status",
+    "Original.Matched",
+    "Original.Status",
+    "Updated.Matched",
+    "Updated.Status"
+  ) %in% colnames(result)))
+})
+
+test_that("comparison_table_ds043 handles empty input", {
+  result <- suppressWarnings(comparison_table_ds043(character(0)))
+
+  expect_s3_class(result, "data.frame")
+  expect_equal(nrow(result), 0)
+  expect_true(all(c(
+    "input_species",
+    "match_2006_list",
+    "status_original",
+    "match_updated_name",
+    "status_updated",
+    "protected_ds_043",
+    "nomenclature_status",
+    "protected_by_ds_043"
+  ) %in% colnames(result)))
+})

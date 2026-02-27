@@ -246,14 +246,14 @@ test_that("Complete pipeline: rank mismatch message is informative", {
 test_that("Complete pipeline: infraspecies level 2 only in original database", {
   input <- "Haageocereus acranthus subsp. olowinskianus f. deflexispinus"
 
-  # La llamada en 'original' emite un warning por ambigüedad de infraspecies.
+  # The original database call should emit an infraspecies ambiguity warning.
   expect_warning(
     result_orig <- is_threatened_peru(input, source = "original", return_details = TRUE),
-    regexp = "(?i)multiple fuzzy matches.*infraspecies", # case-insensitive y flexible
+    regexp = "(?i)multiple fuzzy matches.*infraspecies", # case-insensitive and flexible
     fixed  = FALSE
   )
 
-  # Asserts sobre el resultado
+  # Result assertions
   expect_false(result_orig$matched)
   expect_equal(result_orig$Rank, 4L)
   expect_equal(result_orig$Matched.Rank, 3L)
@@ -607,4 +607,3 @@ test_that("Complete pipeline: detailed output has all required columns", {
 
   expect_true(all(critical_cols %in% colnames(result)))
 })
-

@@ -1,34 +1,34 @@
 #' @keywords internal
 .names_standardize <- function(splist) {
 
-  # Identificar NAs desde el inicio
+  # Identify NAs from the start.
   na_positions <- is.na(splist)
 
-  # Trabajar solo con valores no-NA
+  # Work only with non-NA values.
   splist_clean <- splist[!na_positions]
 
-  # Si todo es NA, retornar el vector original
+  # If all values are NA, return the original vector.
   if (length(splist_clean) == 0) {
     return(splist)
   }
 
-  # Convertir todo a mayúsculas
+  # Convert to uppercase.
   fixed1 <- toupper(splist_clean)
 
-  # Eliminar 'CF.' y 'AFF.'
+  # Remove 'CF.' and 'AFF.'.
   fixed2 <- gsub("CF\\.", "", fixed1)
   fixed3 <- gsub("AFF\\.", "", fixed2)
 
-  # Eliminar espacios en blanco al inicio y al final
+  # Trim leading and trailing whitespace.
   fixed4 <- trimws(fixed3)
 
-  # Cambiar guiones bajos por espacios
+  # Replace underscores with spaces.
   fixed5 <- gsub("_", " ", fixed4)
 
-  # Estandarizar categorías infraespecíficas
+  # Standardize infraspecific categories.
   # 1. VAR y VAR.
   fixed6 <- gsub(" VAR ", " VAR. ", fixed5)
-  fixed6 <- gsub(" VAR\\. ", " VAR. ", fixed6)  # Asegurar solo un punto
+  fixed6 <- gsub(" VAR\\. ", " VAR. ", fixed6)  # Ensure only one period.
 
   # 2. FORMA, F, F.
   fixed7 <- gsub(" (F|FO|FO\\.|FORM|FORM\\.|FORMA|FORMA\\.) ", " F. ", fixed6)
@@ -36,19 +36,19 @@
   # 3. SUBSP, SSP, SPP, etc.
   fixed8 <- gsub(" (SSP|SSP\\.|SPP|SPP\\.|SUBSP|SUBSP\\.|SP|SP\\.) ", " SUBSP. ", fixed7)
 
-  # 4. SUBVAR y SUBVAR. (IMPORTANTE: debe ir después de VAR)
+  # 4. SUBVAR and SUBVAR. (important: must run after VAR).
   fixed9 <- gsub(" SUBVAR ", " SUBVAR. ", fixed8)
-  fixed9 <- gsub(" SUBVAR\\. ", " SUBVAR. ", fixed9)  # Asegurar solo un punto
+  fixed9 <- gsub(" SUBVAR\\. ", " SUBVAR. ", fixed9)  # Ensure only one period.
 
-  # 5. SUBF y SUBF. (IMPORTANTE: debe ir después de F)
+  # 5. SUBF and SUBF. (important: must run after F).
   fixed9 <- gsub(" SUBF ", " SUBF. ", fixed9)
-  fixed9 <- gsub(" SUBF\\. ", " SUBF. ", fixed9)  # Asegurar solo un punto
+  fixed9 <- gsub(" SUBF\\. ", " SUBF. ", fixed9)  # Ensure only one period.
 
-  # Manejar híbridos (eliminar 'X' y '\u00d7')
+  # Handle hybrids (remove 'X' and '\u00d7').
   fixed10 <- gsub("(^X )|( X$)|( X )|(^\u00d7 )|( \u00d7$)|( \u00d7 )", " ", fixed9)
   hybrids <- fixed9 == fixed10
 
-  # Verificar híbridos (excluyendo NAs en la comparación)
+  # Check hybrids (excluding NAs in the comparison).
   if (!all(hybrids, na.rm = TRUE)) {
     sp_hybrids <- splist_clean[!hybrids]
     warning(paste("The 'X' sign indicating hybrids have been removed in the",
@@ -57,22 +57,22 @@
             immediate. = TRUE, call. = FALSE)
   }
 
-  # Eliminar múltiples espacios
+  # Remove multiple spaces.
   fixed11 <- gsub(" +", " ", fixed10)
 
-  # Eliminar símbolos no alfabéticos al inicio (CORREGIDO: usar fixed11 en ambos lados)
+  # Remove non-alphabetic leading symbols.
   for(j in 1:100) {
     whichs <- which(grepl("^[^A-Z]", fixed11))
     if(length(whichs) > 0)
-      fixed11[whichs] <- gsub("^[^A-Z]", "", fixed11[whichs])  # CORREGIDO
+      fixed11[whichs] <- gsub("^[^A-Z]", "", fixed11[whichs])  # Keep normalized source vector.
     whichs <- which(grepl("^[^A-Z]", fixed11))
     if(length(whichs) == 0) break
   }
 
-  # Reconstruir el vector completo manteniendo NAs en sus posiciones originales
+  # Rebuild full vector while preserving original NA positions.
   result <- character(length(splist))
   result[na_positions] <- NA_character_
-  result[!na_positions] <- fixed11  # CORREGIDO: usar fixed11
+  result[!na_positions] <- fixed11  # Use fully normalized values.
 
   return(result)
 }
@@ -99,7 +99,7 @@
   # Split names
   x_split <- strsplit(x, " ")
 
-  # Aply the algorithm
+  # Apply the algorithm.
   result <- lapply(x_split,
                    .classify_algo,
                    Infrasp_cat_reg)
@@ -192,7 +192,7 @@
 
 # ---------------------------------------------------------------
 #' @keywords internal
-# Definir la función para transformar el data frame
+# Define helper to transform the classified data frame.
 .transform_split_classify <- function(df) {
   df <- as.data.frame(df)
   df$sorter <- 1:nrow(df)
@@ -200,7 +200,7 @@
   infra_cols <- c("Subspecies", "Variety", "Subvariety", "Forma", "Subforma")
   infra_ranks <- c("SUBSP.", "VAR.", "SUBVAR.", "F.", "SUBF.")
 
-  # Siempre inicializar ambos niveles
+  # Always initialize both infraspecific levels.
   df$Orig.Infraspecies <- NA_character_
   df$Orig.Infra.Rank <- NA_character_
   df$Orig.Infraspecies_2 <- NA_character_
@@ -222,33 +222,34 @@
     }
   }
 
-  # Calcular Rank de forma clara y explícita
-  # Rank 1: Solo género
-  # Rank 2: Género + especie (binomial)
-  # Rank 3: Género + especie + infraspecies nivel 1 (trinomial)
-  # Rank 4: Género + especie + infraspecies nivel 1 + nivel 2 (cuatrinomial)
+  # Compute Rank explicitly.
+  # Rank 1: genus only.
+  # Rank 2: genus + species (binomial).
+  # Rank 3: genus + species + first infraspecies level (trinomial).
+  # Rank 4: genus + species + first and second infraspecies levels (quadrinomial).
 
   df$Rank <- dplyr::case_when(
-    # Rank 1: Solo género válido, sin especie
+    # Rank 1: valid genus with no species.
     !is.na(df$Orig.Genus) & is.na(df$Orig.Species) ~ 1L,
 
-    # Rank 2: Género + especie, sin infraspecies
+    # Rank 2: genus + species, no infraspecies.
     !is.na(df$Orig.Genus) & !is.na(df$Orig.Species) &
       is.na(df$Orig.Infraspecies) ~ 2L,
 
-    # Rank 3: Género + especie + infraspecies nivel 1, sin nivel 2
+    # Rank 3: genus + species + first infraspecies level, no second level.
     !is.na(df$Orig.Genus) & !is.na(df$Orig.Species) & !is.na(df$Orig.Infra.Rank) &
       !is.na(df$Orig.Infraspecies) & is.na(df$Orig.Infraspecies_2) ~ 3L,
 
-    # Rank 4: Género + especie + infraspecies nivel 1 + nivel 2
-    !is.na(df$Orig.Genus) & !is.na(df$Orig.Species) & !is.na(df$Orig.Infra.Rank_2) &
-      !is.na(df$Orig.Infraspecies) & !is.na(df$Orig.Infra.Rank_2) & !is.na(df$Orig.Infraspecies_2) ~ 4L,
+    # Rank 4: genus + species + both infraspecies levels.
+    !is.na(df$Orig.Genus) & !is.na(df$Orig.Species) &
+      !is.na(df$Orig.Infra.Rank) & !is.na(df$Orig.Infraspecies) &
+      !is.na(df$Orig.Infra.Rank_2) & !is.na(df$Orig.Infraspecies_2) ~ 4L,
 
-    # Casos inválidos
+    # Invalid cases.
     TRUE ~ NA_integer_
   )
 
-  # Validar que no haya NAs inesperados en Rank
+  # Validate there are no unexpected NAs in Rank.
   if (any(is.na(df$Rank))) {
     na_ranks <- sum(is.na(df$Rank))
     warning(
@@ -259,7 +260,7 @@
     )
   }
 
-  # Reportar distribución de ranks para debugging (solo si hay muchos nombres)
+  # Report rank distribution for debugging (optional for larger inputs).
   #if (nrow(df) > 10) {
   #  rank_dist <- table(df$Rank, useNA = "ifany")
   #  message(
@@ -279,7 +280,7 @@
     "Rank"
   )
 
-  # Verificar que todas las columnas existan antes de reordenar
+  # Ensure all columns exist before reordering.
   missing_order_cols <- setdiff(column_order, colnames(df))
   if (length(missing_order_cols) > 0) {
     stop(
@@ -365,16 +366,16 @@ simple_cap <- function (x) {
 # ---------------------------------------------------------------
 #' @keywords internal
 str_to_simple_cap <- function(text) {
-  # Convertir todo el texto a minúsculas
+  # Convert the full text to lowercase.
   text <- tolower(text)
 
-  # Obtener la primera letra y convertirla a mayúscula
+  # Uppercase the first letter.
   first_letter <- toupper(substr(text, 1, 1))
 
-  # Obtener el resto del texto desde la segunda letra en adelante
+  # Extract remaining text from the second character onward.
   rest_text <- substr(text, 2, nchar(text))
 
-  # Combinar la primera letra en mayúscula con el resto del texto en minúsculas
+  # Combine first uppercase letter with lowercase remainder.
   result <- paste0(first_letter, rest_text)
 
   return(result)
@@ -384,21 +385,21 @@ str_to_simple_cap <- function(text) {
 #' @keywords internal
 .check_binomial <- function(splist_class, splist) {
 
-  # Identificar posiciones con NA en la lista original
+  # Identify NA positions in the original input.
   na_positions <- which(is.na(splist))
   #na_positions
 
-  # Identificar nombres que solo tienen género (especies sin epíteto específico)
-  # Excluir las filas que corresponden a NA en la lista original
+  # Identify genus-only names (missing specific epithet).
+  # Exclude rows corresponding to original NAs.
   missing_species <- which(apply(splist_class[, 3:4, drop = FALSE],
                                  1,
                                  function(x) {any(is.na(x))}))
 
   #missing_species
-  # Separar NAs de nombres incompletos
+  # Separate NAs from incomplete names.
   genuine_missing <- setdiff(missing_species, na_positions)
   #genuine_missing
-  # Reportar nombres a nivel de género (excluyendo NAs)
+  # Report genus-level names (excluding NAs).
   if (length(genuine_missing) > 0) {
     genus_level_names <- splist[genuine_missing]
     message(paste0("The species list (splist) should only include binomial names. ",
@@ -407,7 +408,7 @@ str_to_simple_cap <- function(text) {
                          collapse = ", ")))
   }
 
-  # Reportar NAs si existen
+  # Report NAs if present.
   if (length(na_positions) > 0) {
     message(paste0("The species list (splist) contains ",
                    length(na_positions),
@@ -416,7 +417,7 @@ str_to_simple_cap <- function(text) {
                    ". \n These will be excluded from matching."))
   }
 
-  # Retornar todas las posiciones problemáticas
+  # Return all problematic positions.
   all_problematic <- sort(c(genuine_missing, na_positions))
 
   return(all_problematic)
@@ -430,14 +431,14 @@ str_to_simple_cap <- function(text) {
 get_threatened_data <- function(type = c("original", "updated")) {
   type <- match.arg(type)
 
-  # Los datos deben estar en R/sysdata.rda
+  # Data must be available in R/sysdata.rda.
   data_name <- switch(
     type,
     "original" = "threatenedperu",
     "updated" = "threatenedperu_syn"
   )
 
-  # Acceder desde el namespace del paquete
+  # Access from the package namespace.
   ns <- asNamespace("peruflorads43")
 
   if (!exists(data_name, envir = ns, inherits = FALSE)) {
@@ -646,7 +647,7 @@ get_threatened_data <- function(type = c("original", "updated")) {
 # ---------------------------------------------------------------
 utils::globalVariables(c(
   # ============================================================
-  # Columnas de nombres originales (Orig.*)
+  # Original name columns (Orig.*)
   # ============================================================
   "Orig.Genus",
   "Orig.Infra.Rank",
@@ -657,7 +658,7 @@ utils::globalVariables(c(
   "Orig.Species",
 
   # ============================================================
-  # Columnas de nombres matched (Matched.*)
+  # Matched name columns (Matched.*)
   # ============================================================
   "Matched.Genus",
   "Matched.Infra.Rank",
@@ -668,16 +669,18 @@ utils::globalVariables(c(
   "Matched.Rank",
   "Matched.Rank.Calculated",
   "Matched.Species",
+  "Original.Match.Type",
+  "Updated.Match.Type",
 
   # ============================================================
-  # Columnas de ranks y niveles taxonómicos
+  # Rank and taxonomic-level columns
   # ============================================================
   "Comp.Rank",
   "Match.Level",
   "Rank",
 
   # ============================================================
-  # Columnas de threat status
+  # Threat-status columns
   # ============================================================
   "Threat.Status",
   "Threat_Category",
@@ -685,7 +688,7 @@ utils::globalVariables(c(
   "threat_category",
 
   # ============================================================
-  # Columnas de nomenclatura y taxonomía
+  # Nomenclature and taxonomy columns
   # ============================================================
   "accepted_name",
   "accepted_name_author",
@@ -693,7 +696,7 @@ utils::globalVariables(c(
   "taxonomic_status",
 
   # ============================================================
-  # Columnas de métodos de matching (booleanos)
+  # Matching method columns (booleans)
   # ============================================================
   "direct_match",
   "direct_match_infra_rank",
@@ -709,7 +712,7 @@ utils::globalVariables(c(
   "valid_rank",
 
   # ============================================================
-  # Columnas de distancias (fuzzy matching)
+  # Distance columns (fuzzy matching)
   # ============================================================
   "fuzzy_genus_dist",
   "fuzzy_infraspecies_2_dist",
@@ -717,7 +720,7 @@ utils::globalVariables(c(
   "fuzzy_species_dist",
 
   # ============================================================
-  # Columnas de base de datos (target_df)
+  # Database columns (target_df)
   # ============================================================
   "family",
   "Family",
@@ -730,7 +733,7 @@ utils::globalVariables(c(
   "tag_acc",
 
   # ============================================================
-  # Columnas de consolidación (is_ds043_2006_ag)
+  # Consolidation columns (is_ds043_2006_ag)
   # ============================================================
   "Accepted.Name",
   "Consolidated.Category",
@@ -752,7 +755,7 @@ utils::globalVariables(c(
   "Updated.Status",
 
   # ============================================================
-  # Columnas auxiliares y de control
+  # Auxiliary and control columns
   # ============================================================
   "Author",
   "Category",
@@ -766,7 +769,7 @@ utils::globalVariables(c(
   "head", "sorter_orig", "sorter_unique", "sorters", "unique_id",
 
   # ============================================================
-  # Operadores
+  # Operators
   # ============================================================
   "%>%"
 ))

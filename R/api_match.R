@@ -61,87 +61,82 @@ is_ds043_2006_ag <- function(splist,
     stop("splist must be a character vector", call. = FALSE)
   }
 
+  empty_details <- tibble::tibble(
+    Input.Name = character(0),
+    Consolidated.Name = character(0),
+    Consolidated.Status = character(0),
+    Consolidated.Category = character(0),
+    Protected.DS043 = logical(0),
+    Is.Synonym = logical(0),
+    Accepted.Name = character(0),
+    Final.Source = character(0),
+    Match.Scenario = character(0),
+    Nomenclature.Status = character(0),
+    Original.Matched = character(0),
+    Original.Status = character(0),
+    Updated.Matched = character(0),
+    Updated.Status = character(0)
+  )
+
   if (length(splist) == 0) {
     warning("Empty species list provided", call. = FALSE)
-    return(if(return_details) tibble::tibble() else character(0))
+    return(if(return_details) empty_details else character(0))
   }
 
   if (!prioritize %in% c("original", "updated")) {
     stop("prioritize must be 'original' or 'updated'", call. = FALSE)
   }
 
-  # Cargar datasets necesarios del paquete
-  # Método 1: Acceso directo (recomendado si LazyData: true en DESCRIPTION)
-  if (!exists("threatenedperu", mode = "list")) {
-    # Si no está cargado, intentar cargar explícitamente
-    tryCatch({
-      data("threatenedperu", envir = environment(), package = "threatenedperu")
-    }, error = function(e) {
+  # Load internal package datasets through the package data accessor.
+  threatenedperu <- tryCatch(
+    get_threatened_data("original"),
+    error = function(e) {
       stop(
         "Dataset 'threatenedperu' not found. ",
         "Please ensure the package is properly installed.\n",
         "Original error: ", e$message,
         call. = FALSE
       )
-    })
-  }
-
-  if (!exists("threatenedperu_syn", mode = "list")) {
-    tryCatch({
-      data("threatenedperu_syn", envir = environment(), package = "threatenedperu")
-    }, error = function(e) {
-      stop(
-        "Dataset 'threatenedperu_syn' not found. ",
-        "Please ensure the package is properly installed.\n",
-        "Original error: ", e$message,
-        call. = FALSE
-      )
-    })
-  }
-
-
-  # ========================================================================
-  # SECTION 2: Search in Original Database (DS 043-2006-AG 2006)
-  # ========================================================================
-
-  # res_original <- suppressMessages(
-  #  suppressWarnings(
-  #  matching_threatenedperu(
-  #  splist = splist,
-  #  source = "original"
-  # )
-  # ))
-
-  # Capture messages and warnings to filter expected ones
-  res_original <- withCallingHandlers(
-    matching_threatenedperu(splist = splist, source = "original"),
-    message = function(m) {
-      # Solo suprimir mensajes conocidos y esperados
-      expected_messages <- c(
-        "Rank distribution:",
-        "species name.*empty or NA"
-      )
-
-      if (!any(grepl(paste(expected_messages, collapse = "|"), m$message))) {
-        message(m)  # Re-lanzar mensajes no esperados
-      }
-      invokeRestart("muffleMessage")
-    },
-    warning = function(w) {
-      # NUNCA suprimir warnings - son importantes para el usuario
-      warning(w)
-      invokeRestart("muffleWarning")
     }
   )
 
+  # Validate that the updated dataset is also available.
+  tryCatch(
+    get_threatened_data("updated"),
+    error = function(e) {
+      stop(
+        "Dataset 'threatenedperu_syn' not found. ",
+        "Please ensure the package is properly installed.\n",
+        "Updated error: ", e$message,
+        call. = FALSE
+      )
+    }
+  )
+
+
   # ========================================================================
-  # SECTION 3: Search in Updated Database (Current Nomenclature)
+  # SECTION 2: Search in Original and Updated Databases
   # ========================================================================
 
-  res_updated <- matching_threatenedperu(
-    splist = splist,
-    source = "updated"
-  )
+  # Avoid duplicate informational messages because matching is run twice
+  # (original + updated). Warnings are not suppressed.
+  seen_messages <- character(0)
+  run_match <- function(source_name) {
+    withCallingHandlers(
+      matching_threatenedperu(splist = splist, source = source_name),
+      message = function(m) {
+        msg <- conditionMessage(m)
+        if (!(msg %in% seen_messages)) {
+          seen_messages <<- c(seen_messages, msg)
+          message(msg)
+        }
+        invokeRestart("muffleMessage")
+      }
+    )
+  }
+
+  res_original <- run_match("original")
+  res_updated <- run_match("updated")
 
   # ========================================================================
   # SECTION 4: Synonyms detection for original names
@@ -203,9 +198,11 @@ is_ds043_2006_ag <- function(splist,
       # Check if the original matched name is a synonym
       Is.Synonym = !is.na(Accepted.Name),
 
-      # Determine which database found a threatened species
-      Found.In.Original = stringr::str_detect(Original.Status, "[A-Z]{2,}"),
-      Found.In.Updated = stringr::str_detect(Updated.Status, "[A-Z]{2,}"),
+      # Determine which database produced a valid protected match
+      Found.In.Original = tidyr::replace_na(Original.Match.Type, FALSE) &
+        !is.na(Original.Status) & Original.Status != "Not threatened",
+      Found.In.Updated = tidyr::replace_na(Updated.Match.Type, FALSE) &
+        !is.na(Updated.Status) & Updated.Status != "Not threatened",
 
       # Determine matching scenario
       Match.Scenario = dplyr::case_when(
@@ -324,7 +321,7 @@ check_ds043 <- function(splist, return_simple = FALSE) {
 
   if (return_simple) {
     return(ifelse(
-      stringr::str_detect(results, "Threatened"),
+      !is.na(results) & results != "Not threatened",
       "Protected by DS 043-2006-AG",
       "Not protected"
     ))
@@ -626,4 +623,3 @@ is_threatened_peru <- function(splist, source = "original", return_details = FAL
     return(result_vector)
   }
 }
-
